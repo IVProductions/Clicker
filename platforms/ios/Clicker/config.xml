@@ -21,9 +21,9 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <name>HelloWorld</name>
+    <name>Clicker</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Keep it Cheesy
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
