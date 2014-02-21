@@ -1,0 +1,4 @@
+function indexCtrl($scope){
+
+
+}
