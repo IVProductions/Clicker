@@ -66,6 +66,7 @@ html, body {
 
 .main .name .nameinput input {
     height: 100%;
+    border-left: none!important;
 }
 
 .main .picture .healthbar {
