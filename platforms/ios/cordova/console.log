@@ -85,3 +85,130 @@ Terminating in response to SpringBoard's termination.
 2014-02-21 16:23:45.509 Clicker[22275:80b] Unlimited access to network resources
 2014-02-21 16:23:46.187 Clicker[22275:80b] Resetting plugins due to page load.
 2014-02-21 16:23:46.590 Clicker[22275:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 20:35:04.013 Clicker[23574:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 20:35:04.066 Clicker[23574:80b] Unlimited access to network resources
+2014-02-21 20:35:04.497 Clicker[23574:80b] Resetting plugins due to page load.
+2014-02-21 20:35:04.779 Clicker[23574:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 20:43:19.411 Clicker[24552:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 20:43:19.423 Clicker[24552:80b] Unlimited access to network resources
+2014-02-21 20:43:19.682 Clicker[24552:80b] Resetting plugins due to page load.
+2014-02-21 20:43:20.211 Clicker[24552:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 20:44:45.037 Clicker[25513:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 20:44:45.087 Clicker[25513:80b] Unlimited access to network resources
+2014-02-21 20:44:45.475 Clicker[25513:80b] Resetting plugins due to page load.
+2014-02-21 20:44:45.801 Clicker[25513:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 20:49:12.363 Clicker[26509:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 20:49:12.375 Clicker[26509:80b] Unlimited access to network resources
+2014-02-21 20:49:12.406 Clicker[26509:80b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-02-21 20:49:12.407 Clicker[26509:80b] [CDVTimer][statusbar] 1.070976ms
+2014-02-21 20:49:12.408 Clicker[26509:80b] [CDVTimer][TotalPluginStartup] 2.155006ms
+2014-02-21 20:49:12.649 Clicker[26509:80b] Resetting plugins due to page load.
+2014-02-21 20:49:13.112 Clicker[26509:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 20:50:37.661 Clicker[27475:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 20:50:37.717 Clicker[27475:80b] Unlimited access to network resources
+2014-02-21 20:50:38.130 Clicker[27475:80b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-02-21 20:50:38.131 Clicker[27475:80b] [CDVTimer][statusbar] 0.646949ms
+2014-02-21 20:50:38.131 Clicker[27475:80b] [CDVTimer][TotalPluginStartup] 1.290023ms
+2014-02-21 20:50:38.493 Clicker[27475:80b] Resetting plugins due to page load.
+2014-02-21 20:50:38.732 Clicker[27475:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 20:51:37.071 Clicker[28428:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 20:51:37.097 Clicker[28428:80b] Unlimited access to network resources
+2014-02-21 20:51:37.506 Clicker[28428:80b] Resetting plugins due to page load.
+2014-02-21 20:51:37.842 Clicker[28428:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 20:53:10.759 Clicker[29381:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 20:53:10.771 Clicker[29381:80b] Unlimited access to network resources
+2014-02-21 20:53:11.025 Clicker[29381:80b] Resetting plugins due to page load.
+2014-02-21 20:53:11.314 Clicker[29381:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 20:54:59.234 Clicker[31280:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 20:54:59.271 Clicker[31280:80b] Unlimited access to network resources
+2014-02-21 20:54:59.659 Clicker[31280:80b] Resetting plugins due to page load.
+2014-02-21 20:54:59.942 Clicker[31280:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:05:41.518 Clicker[32361:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:05:41.530 Clicker[32361:80b] Unlimited access to network resources
+2014-02-21 21:05:41.784 Clicker[32361:80b] Resetting plugins due to page load.
+2014-02-21 21:05:42.028 Clicker[32361:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:06:59.000 Clicker[33326:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:06:59.011 Clicker[33326:80b] Unlimited access to network resources
+2014-02-21 21:06:59.395 Clicker[33326:80b] Resetting plugins due to page load.
+2014-02-21 21:06:59.895 Clicker[33326:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:10:05.889 Clicker[34293:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:10:05.903 Clicker[34293:80b] Unlimited access to network resources
+2014-02-21 21:10:06.179 Clicker[34293:80b] Resetting plugins due to page load.
+2014-02-21 21:10:06.503 Clicker[34293:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:11:10.695 Clicker[35249:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:11:10.707 Clicker[35249:80b] Unlimited access to network resources
+2014-02-21 21:11:11.053 Clicker[35249:80b] Resetting plugins due to page load.
+2014-02-21 21:11:11.294 Clicker[35249:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:12:45.394 Clicker[36213:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:12:45.409 Clicker[36213:80b] Unlimited access to network resources
+2014-02-21 21:12:45.643 Clicker[36213:80b] Resetting plugins due to page load.
+2014-02-21 21:12:46.000 Clicker[36213:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:17:17.563 Clicker[37196:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:17:17.594 Clicker[37196:80b] Unlimited access to network resources
+2014-02-21 21:17:17.852 Clicker[37196:80b] Resetting plugins due to page load.
+2014-02-21 21:17:18.237 Clicker[37196:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:18:37.437 Clicker[38156:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:18:37.452 Clicker[38156:80b] Unlimited access to network resources
+2014-02-21 21:18:37.853 Clicker[38156:80b] Resetting plugins due to page load.
+2014-02-21 21:18:38.148 Clicker[38156:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:24:40.612 Clicker[39134:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:24:40.640 Clicker[39134:80b] Unlimited access to network resources
+2014-02-21 21:24:41.064 Clicker[39134:80b] Resetting plugins due to page load.
+2014-02-21 21:24:41.299 Clicker[39134:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:26:13.739 Clicker[40091:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:26:13.753 Clicker[40091:80b] Unlimited access to network resources
+2014-02-21 21:26:14.016 Clicker[40091:80b] Resetting plugins due to page load.
+2014-02-21 21:26:14.274 Clicker[40091:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:27:01.390 Clicker[41046:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:27:01.426 Clicker[41046:80b] Unlimited access to network resources
+2014-02-21 21:27:01.779 Clicker[41046:80b] Resetting plugins due to page load.
+2014-02-21 21:27:02.003 Clicker[41046:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:28:06.337 Clicker[42004:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:28:06.383 Clicker[42004:80b] Unlimited access to network resources
+2014-02-21 21:28:06.873 Clicker[42004:80b] Resetting plugins due to page load.
+2014-02-21 21:28:07.277 Clicker[42004:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:29:37.646 Clicker[43919:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:29:37.657 Clicker[43919:80b] Unlimited access to network resources
+2014-02-21 21:29:37.911 Clicker[43919:80b] Resetting plugins due to page load.
+2014-02-21 21:29:38.217 Clicker[43919:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:31:07.668 Clicker[44884:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:31:07.681 Clicker[44884:80b] Unlimited access to network resources
+2014-02-21 21:31:07.946 Clicker[44884:80b] Resetting plugins due to page load.
+2014-02-21 21:31:08.357 Clicker[44884:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:32:26.590 Clicker[45842:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:32:26.613 Clicker[45842:80b] Unlimited access to network resources
+2014-02-21 21:32:26.926 Clicker[45842:80b] Resetting plugins due to page load.
+2014-02-21 21:32:27.290 Clicker[45842:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:33:41.538 Clicker[46798:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:33:41.570 Clicker[46798:80b] Unlimited access to network resources
+2014-02-21 21:33:41.856 Clicker[46798:80b] Resetting plugins due to page load.
+2014-02-21 21:33:42.144 Clicker[46798:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:40:55.707 Clicker[47791:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:40:55.721 Clicker[47791:80b] Unlimited access to network resources
+2014-02-21 21:40:55.980 Clicker[47791:80b] Resetting plugins due to page load.
+2014-02-21 21:40:56.339 Clicker[47791:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:42:38.174 Clicker[48756:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:42:38.185 Clicker[48756:80b] Unlimited access to network resources
+2014-02-21 21:42:38.442 Clicker[48756:80b] Resetting plugins due to page load.
+2014-02-21 21:42:38.781 Clicker[48756:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-21 21:44:04.265 Clicker[50674:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-21 21:44:04.278 Clicker[50674:80b] Unlimited access to network resources
+2014-02-21 21:44:04.528 Clicker[50674:80b] Resetting plugins due to page load.
+2014-02-21 21:44:04.900 Clicker[50674:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+Terminating in response to SpringBoard's termination.
+2014-02-22 00:32:47.448 Clicker[52353:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-22 00:32:47.534 Clicker[52353:80b] Unlimited access to network resources
+2014-02-22 00:32:48.114 Clicker[52353:80b] Resetting plugins due to page load.
+2014-02-22 00:32:48.421 Clicker[52353:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-22 00:36:16.996 Clicker[53327:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-22 00:36:17.027 Clicker[53327:80b] Unlimited access to network resources
+2014-02-22 00:36:17.279 Clicker[53327:80b] Resetting plugins due to page load.
+2014-02-22 00:36:17.565 Clicker[53327:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-22 13:12:10.949 Clicker[54775:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-22 13:12:11.075 Clicker[54775:80b] Unlimited access to network resources
+2014-02-22 13:12:11.602 Clicker[54775:80b] Resetting plugins due to page load.
+2014-02-22 13:12:11.874 Clicker[54775:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-02-22 13:13:32.520 Clicker[55737:80b] Multi-tasking -> Device: YES, App: YES
+2014-02-22 13:13:32.532 Clicker[55737:80b] Unlimited access to network resources
+2014-02-22 13:13:32.795 Clicker[55737:80b] Resetting plugins due to page load.
+2014-02-22 13:13:33.381 Clicker[55737:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
