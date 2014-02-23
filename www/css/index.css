@@ -25,6 +25,96 @@ html, body {
     height: 100%;
 }
 
+/** FIRST **/
+.firstTable {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    display: inline-table;
+}
+
+.firstTable tr {
+    width: 100%;
+}
+
+.firstTable td {
+    border: 1px solid black;
+}
+
+.firstTable .nameOfValue {
+    font-size: 6pt;
+}
+
+/** SECOND **/
+.secondTable {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    display: inline-table;
+}
+
+.secondTable tr {
+    width: 100%;
+}
+
+.secondTable td {
+    border: 1px solid black;
+    border-top: none;
+}
+
+.secondTable .healthbar {
+    width: 20%;
+}
+
+.secondTable .picture {
+    width: 80%;
+}
+
+/** THIRD **/
+.thirdTable {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    display: inline-table;
+}
+.thirdTable tr {
+    width: 100%;
+}
+.thirdTable td {
+    border: 1px solid black;
+    border-top: none;
+}
+.thirdTable .checkName button {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+
+/** FOURTH **/
+.fourthTable {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    display: inline-table;
+}
+.fourthTable tr {
+    width: 100%;
+}
+.fourthTable td {
+    border: 1px solid black;
+    border-top: none;
+}
+
+.fourthTable button {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+
+
+
+/*
+
 .main .stats {
     height: 20%;
     border-bottom: 1px solid grey;
@@ -83,7 +173,6 @@ html, body {
 
 .main .picture .healthbar {
     height: 100%;
-    border-right: 1px solid grey;  
     background-color: red;
 }
 
