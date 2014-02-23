@@ -84,10 +84,13 @@ html, body {
 .main .picture .healthbar {
     height: 100%;
     border-right: 1px solid grey;  
+    background-color: red;
 }
 
 .main .picture .pictureholder {
     height: 100%;
+    background-image:url('../img/superman.jpg');
+    background-size: 100% 100%; 
 }
 
 .border-right {
