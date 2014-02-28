@@ -31,12 +31,16 @@
         <script type="text/javascript" src="js/angular.min.js"></script>
         <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.10.3.min.js"></script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
         <script type="text/javascript" src="app/app.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="app/controllers/indexCtrl.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+            window.addEventListener('load', function() {
+                FastClick.attach(document.body);
+            }, false);
         </script>
     </head>
     <body>
