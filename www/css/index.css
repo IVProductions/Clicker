@@ -68,6 +68,8 @@ html, body {
 
 .secondTable .picture {
     width: 80%;
+    background-image:url('../img/superman.jpg');
+    background-size: 100% 100%; 
 }
 
 /** THIRD **/
@@ -89,6 +91,12 @@ html, body {
     height: 100%;
     border-radius: 0px;
 }
+.thirdTable .inputName {
+    width: 75%;
+}
+.thirdTable .checkName {
+    width: 25%;
+}
 
 /** FOURTH **/
 .fourthTable {
@@ -103,6 +111,7 @@ html, body {
 .fourthTable td {
     border: 1px solid black;
     border-top: none;
+    width: 25%;
 }
 
 .fourthTable button {
