@@ -39,6 +39,7 @@ html, body {
 
 .firstTable td {
     border: 1px solid black;
+    width: 33.33%
 }
 
 .firstTable .nameOfValue {
@@ -68,8 +69,8 @@ html, body {
 
 .secondTable .picture {
     width: 80%;
-    background-image:url('../img/superman.jpg');
-    background-size: 100% 100%; 
+    /*background-image:url('../img/superman.jpg');
+    background-size: 100% 100%; */
 }
 
 /** THIRD **/
@@ -148,7 +149,7 @@ html, body {
 .fourthTable button {
     width: 100%;
     height: 100%;
-    border-radius: 0px;
+    border-radius: none;
 }
 
 
