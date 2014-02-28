@@ -71,14 +71,20 @@
     		<td class="nameOfValue">Damage</td>
   		</tr>
   		<tr>
-    		<td>1351</td>
-    		<td>1231</td>
-    		<td>124</td>
+    		<td>{{currentHealth}}</td>
+    		<td>{{health}}</td>
+    		<td>{{damage}}</td>
   		</tr>
 	</table>
 	<table class="secondTable">
 		<tr>
-    		<td class="healthbar">Health bar</td>
+    		<td class="healthbar">
+    			<div class="progressbar">
+				 <span class="progressbar-value">
+				  <em class="progressbar-cover"></em>
+				 </span>
+				</div>
+    		</td>
     		<td class="picture" ng-click="click();">Picture</td>
   		</tr>
 	</table>
