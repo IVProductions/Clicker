@@ -34,6 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         StatusBar.hide();
+        StatusBar.backgroundColorByHexString("#C0C0C0");
         app.receivedEvent('deviceready');        
     },
     // Update DOM on a Received Event
