@@ -35,7 +35,7 @@
     -->
 
     <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" onload="true" />
+        <param name="ios-package" value="CDVStatusBar" onload="false" />
     </feature>
 
     <icon src="icon.png" />
