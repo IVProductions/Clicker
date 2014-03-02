@@ -26,8 +26,9 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-    <!--<preference name="ios-statusbarstyle" value="black-opaque" />--> 
-
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
     <!--
     <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
         <false/>
@@ -35,7 +36,7 @@
     -->
 
     <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" onload="false" />
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
     </feature>
 
     <icon src="icon.png" />
