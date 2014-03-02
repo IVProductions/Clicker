@@ -36,11 +36,11 @@
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
 
-    <!--
+   
     <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
         <false/>
     </gap:config-file>
-    -->
+   
 
     
 
