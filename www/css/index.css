@@ -43,12 +43,23 @@ table {
 
 .firstTable td {
     border: 1px solid black;
-    width: 33.33%
+    width: 33.33%;
+    line-height: 1%;
 }
 
 .firstTable .nameOfValue {
-    font-size: 6pt;
-    line-height: 1%;
+    font-size: 75%;  
+}
+
+@media screen and (max-device-width : 320px){
+    .firstTable {
+        font-size: 12px!important;
+    } 
+}
+@media screen and (max-device-width : 1080px){
+    .firstTable {
+        font-size: 20px!important;
+    }
 }
 
 /** SECOND **/
