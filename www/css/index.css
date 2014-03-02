@@ -35,6 +35,7 @@ table {
     height: 20%;
     text-align: center;
     line-height: 0;
+    background-color: lightgrey;
 }
 
 .firstTable tr {
@@ -42,15 +43,21 @@ table {
 }
 
 .firstTable td {
-    border: 1px solid black;
     width: 33.33%;
     line-height: 1%;
+    border: 5px #EBEBEB solid;
+    border-top: none!important; 
 }
 
 .firstTable .nameOfValue {
-    font-size: 75%;  
+    font-size: 75%;
+    background-color: grey;
+    color: white;
+    border-bottom: none!important;  
 }
 
+
+/*
 @media screen and (max-device-width : 320px){
     .firstTable .td {
         font-size: 11px;
@@ -67,6 +74,7 @@ table {
         font-size: 14px!important;  
     }
 }
+*/
 
 /** SECOND **/
 .secondTable {
@@ -80,7 +88,6 @@ table {
 }
 
 .secondTable td {
-    border: 1px solid black;
     border-top: none;
 }
 
@@ -104,12 +111,12 @@ table {
     height: 10%;
     text-align: center;
     line-height: 0;
+    background-color: #EBEBEB;
 }
 .thirdTable tr {
     width: 100%;
 }
 .thirdTable td {
-    border: 1px solid black;
     border-top: none;
 }
 .thirdTable .checkName button {
@@ -119,9 +126,23 @@ table {
 }
 .thirdTable .inputName {
     width: 75%;
+    padding: 2px;
 }
 .thirdTable .checkName {
     width: 25%;
+    padding: 2px;
+}
+
+.thirdTable .checkName button {
+    background:none;
+    font-size: 40px;
+    border: 1px solid grey;
+}
+
+.thirdTable input {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
 }
 
 .progressbar {
@@ -161,15 +182,16 @@ table {
     height: 10%;
     text-align: center;
     line-height: 0; 
-
+    background-color: #EBEBEB;
 }
 .fourthTable tr {
     width: 100%;
 }
 .fourthTable td {
-    border: 1px solid black;
     border-top: none;
     width: 25%;
+    padding: 2px;
+    padding-top: 0px!important;
 }
 
 .fourthTable button {
@@ -177,7 +199,15 @@ table {
     height: 100%;
     border-radius: none;
 }
-
+.fourthTable .home button,
+.fourthTable .upgrades button,
+.fourthTable .next button,
+.fourthTable .prev button {
+    background:none;
+    font-size: 30px;
+    border: 1px solid grey;
+    padding-top: -10px;
+}
 
 
 /*

@@ -21,7 +21,9 @@
     		<td>{{nameMultiplier}}</td>
   		</tr>
   		<tr>
-  			<td class="nameOfValue">Base power</td>
+  			<td class="nameOfValue">
+  			<div class="holder">Base power</div>
+  			</td>
     		<td class="nameOfValue">Total power</td>
     		<td class="nameOfValue">Damage</td>
   		</tr>
@@ -57,23 +59,23 @@
     			<input type="text" ng-model="guessedName"/>
     		</td>
     		<td class="checkName">
-    			<button type="button" ng-click="check();">Check</button>
+    			<button type="button" ng-click="check();">?</button>
     		</td>
   		</tr>
 	</table>
 	<table class="fourthTable">
 		<tr>
     		<td class="home">
-    			<button type="button">Home</button>
+    			<button type="button">HOME</button>
     		</td>
     		<td class="prev">
-    			<button type="button" ng-show="prevValid" ng-click="prev();">Prev</button>	
+    			<button type="button" ng-show="prevValid" ng-click="prev();"><</button>	
     		</td>
     		<td class="next">
-    			<button type="button" ng-show="nextValid" ng-click="next();">Next</button>	
+    			<button type="button" ng-show="nextValid" ng-click="next();">></button>	
     		</td>
     		<td class="upgrades">
-    			<button type="button">Upg</button>
+    			<button type="button">UPG</button>
     		</td>
   		</tr>
 	</table>
