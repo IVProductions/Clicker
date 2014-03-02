@@ -84,6 +84,9 @@ function indexCtrl($scope, records){
 				currentHealth = health;
 				// DEFEATED CHAMPION
 				figure.defeated = true;
+				if(index == max){
+					alert("Du har runnet spillet, helsa mormor!");
+				}
 				if(index != max){
 					$scope.nextValid = true;	
 				}
@@ -117,7 +120,7 @@ function indexCtrl($scope, records){
 			name = figure.name;
 			imageUrl = figure.imageURL;
 			currentHealth = health;
-			
+
 			updatePicture();
 			updateStats();
 
