@@ -6,6 +6,7 @@ Clicker.factory('records',function() {
             "health": 100,
             "armour": 0,
             "reward": 2,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         },
         {
@@ -14,6 +15,7 @@ Clicker.factory('records',function() {
             "health": 200,
             "armour": 2,
             "reward": 10,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         },
         {
@@ -22,6 +24,7 @@ Clicker.factory('records',function() {
             "health": 300,
             "armour": 4,
             "reward": 20,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         },
         {
@@ -30,6 +33,7 @@ Clicker.factory('records',function() {
             "health": 500,
             "armour": 8,
             "reward": 50,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         },
         {
@@ -38,6 +42,7 @@ Clicker.factory('records',function() {
             "health": 800,
             "armour": 12,
             "reward": 100,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         },
         {
@@ -46,6 +51,7 @@ Clicker.factory('records',function() {
             "health": 1400,
             "armour": 18,
             "reward": 200,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         },
         {
@@ -54,6 +60,7 @@ Clicker.factory('records',function() {
             "health": 1680,
             "armour": 22,
             "reward": 300,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         },
         {
@@ -62,6 +69,7 @@ Clicker.factory('records',function() {
             "health": 2016,
             "armour": 26,
             "reward": 450,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         },
         {
@@ -70,6 +78,7 @@ Clicker.factory('records',function() {
             "health": 2419,
             "armour": 31,
             "reward": 1013,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         },
         {
@@ -78,6 +87,7 @@ Clicker.factory('records',function() {
             "health": 2903,
             "armour": 37,
             "reward": 1013,
+            "defeated": false,
             "imageURL": "../img/superman.jpg"
         }
     ]

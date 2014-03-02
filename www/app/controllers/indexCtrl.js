@@ -1,5 +1,8 @@
 function indexCtrl($scope, records){
 
+	$scope.prevValid = false;
+	$scope.nextValid = false;
+
 	// Initialize Stats 
 	var gold = 0;
 	var gems = 0;
@@ -77,6 +80,9 @@ function indexCtrl($scope, records){
 				gold = gold + reward;
 				// RESET HEALTH
 				currentHealth = health;
+				// DEFEATED CHAMPION
+				figure.defeated = true;
+				$scope.nextValid = true;
 			}
 			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
@@ -116,6 +122,10 @@ function indexCtrl($scope, records){
 			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
+		if (index == 0 ){
+			$scope.prevValid = false;
+			$scope.nextValid = true;
+		}
 	}
 
 	$scope.next = function () {
@@ -137,7 +147,14 @@ function indexCtrl($scope, records){
 
 			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
-		}
 
+			$scope.prevValid = true;
+			if(!figure.defeated){
+				$scope.nextValid = false;
+			}
+		}
+		else {
+			$scope.nextValid = false;
+		}
 	}
 }
