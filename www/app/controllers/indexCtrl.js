@@ -7,7 +7,7 @@ function indexCtrl($scope, records){
 	$scope.hitMultiplier = 1.0;
 	$scope.upgMultiplier = 1.0;
 	$scope.nameMultiplier = 1.0;
-	$scope.basePower = 10;
+	$scope.basePower = 10.0;
 	$scope.totalPower = $scope.hitMultiplier * $scope.upgMultiplier * $scope.nameMultiplier * $scope.basePower;
 
 	// GET PICTURE
@@ -28,7 +28,7 @@ function indexCtrl($scope, records){
 		// ADD TOTAL CLICKS
 		$scope.totalClicks++;
 		// HIT MULTIPLIER
-		$scope.hitMultiplier = 1 + $scope.totalClicks/20*0.001;
+		$scope.hitMultiplier = $scope.hitMultiplier + ($scope.totalClicks/20)*0.001;
 
 		// DECREASE HEALTH
 		if($scope.damage != 0){
@@ -47,7 +47,7 @@ function indexCtrl($scope, records){
 	}
 
 	$scope.update = function () {
-		$scope.totalPower = $scope.hitMultiplier * $scope.upgMultiplier * $scope.nameMultiplier * $scope.basePower;
+		$scope.totalPower = $scope.hitMultiplier*$scope.upgMultiplier*$scope.nameMultiplier*$scope.basePower;
 		$scope.damage = $scope.totalPower - $scope.armour;
 		if($scope.damage < 0){
 			$scope.damage = 0;

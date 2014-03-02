@@ -25,12 +25,16 @@ html, body {
     height: 100%;
 }
 
+table {
+
+}
+
 /** FIRST **/
 .firstTable {
     width: 100%;
     height: 20%;
     text-align: center;
-    display: inline-table;
+    line-height: 0;
 }
 
 .firstTable tr {
@@ -44,6 +48,7 @@ html, body {
 
 .firstTable .nameOfValue {
     font-size: 6pt;
+    line-height: 1%;
 }
 
 /** SECOND **/
@@ -51,7 +56,6 @@ html, body {
     width: 100%;
     height: 60%;
     text-align: center;
-    display: inline-table;
 }
 
 .secondTable tr {
@@ -69,8 +73,8 @@ html, body {
 
 .secondTable .picture {
     width: 80%;
-    background-image:url('../img/superman.jpg');
-    background-size: 100% 100%; 
+    /*background-image:url('../img/superman.jpg');
+    background-size: 100% 100%; */
 }
 
 /** THIRD **/
@@ -78,7 +82,7 @@ html, body {
     width: 100%;
     height: 10%;
     text-align: center;
-    display: inline-table;
+    line-height: 0;
 }
 .thirdTable tr {
     width: 100%;
@@ -135,7 +139,8 @@ html, body {
     width: 100%;
     height: 10%;
     text-align: center;
-    display: inline-table;
+    line-height: 0; 
+
 }
 .fourthTable tr {
     width: 100%;

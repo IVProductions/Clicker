@@ -71,8 +71,8 @@
     		<td class="nameOfValue">Damage</td>
   		</tr>
   		<tr>
-    		<td>{{currentHealth}}</td>
-    		<td>{{health}}</td>
+    		<td>{{basePower}}</td>
+    		<td>{{totalPower}}</td>
     		<td>{{damage}}</td>
   		</tr>
 	</table>
@@ -85,16 +85,21 @@
 				 </span>
 				</div>
     		</td>
-    		<td class="picture" ng-click="click();">Picture</td>
+    		<td class="picture" ng-click="click();">
+    			Health = {{health}} <br>
+    			Armour = {{armour}} <br>
+    			Reward = {{reward}} <br>
+    			Name = {{name}}
+    		</td>
   		</tr>
 	</table>
 	<table class="thirdTable">
 		<tr>
     		<td class="inputName">
-    			<input type="text"/>
+    			<input type="text" ng-model="guessedName"/>
     		</td>
     		<td class="checkName">
-    			<button type="button">Check</button>
+    			<button type="button" ng-click="check();">Check</button>
     		</td>
   		</tr>
 	</table>
@@ -104,10 +109,10 @@
     			<button type="button">Home</button>
     		</td>
     		<td class="prev">
-    			<button type="button">Prev</button>	
+    			<button type="button" ng-click="prev();">Prev</button>	
     		</td>
     		<td class="next">
-    			<button type="button">Next</button>	
+    			<button type="button" ng-click="next();">Next</button>	
     		</td>
     		<td class="upgrades">
     			<button type="button">Upg</button>
