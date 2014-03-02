@@ -310,3 +310,27 @@ Terminating in response to SpringBoard's termination.
 2014-03-01 16:49:46.240 Clicker[97242:80b] [CDVTimer][TotalPluginStartup] 127.370000ms
 2014-03-01 16:49:46.528 Clicker[97242:80b] Resetting plugins due to page load.
 2014-03-01 16:49:49.298 Clicker[97242:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-03-01 16:54:40.537 Clicker[98320:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-01 16:54:40.552 Clicker[98320:80b] Unlimited access to network resources
+2014-03-01 16:54:40.654 Clicker[98320:80b] [CDVTimer][statusbar] 33.797026ms
+2014-03-01 16:54:40.662 Clicker[98320:80b] [CDVTimer][TotalPluginStartup] 42.120993ms
+2014-03-01 16:54:40.916 Clicker[98320:80b] Resetting plugins due to page load.
+2014-03-01 16:54:43.085 Clicker[98320:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-03-01 16:57:08.376 Clicker[99325:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-01 16:57:08.398 Clicker[99325:80b] Unlimited access to network resources
+2014-03-01 16:57:08.456 Clicker[99325:80b] [CDVTimer][statusbar] 12.141049ms
+2014-03-01 16:57:08.457 Clicker[99325:80b] [CDVTimer][TotalPluginStartup] 13.124049ms
+2014-03-01 16:57:08.748 Clicker[99325:80b] Resetting plugins due to page load.
+2014-03-01 16:57:11.550 Clicker[99325:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-03-01 16:58:29.496 Clicker[1437:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-01 16:58:29.509 Clicker[1437:80b] Unlimited access to network resources
+2014-03-01 16:58:29.636 Clicker[1437:80b] [CDVTimer][statusbar] 16.779006ms
+2014-03-01 16:58:29.637 Clicker[1437:80b] [CDVTimer][TotalPluginStartup] 17.911017ms
+2014-03-01 16:58:29.859 Clicker[1437:80b] Resetting plugins due to page load.
+2014-03-01 16:58:30.203 Clicker[1437:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/
+2014-03-01 16:59:18.456 Clicker[2419:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-01 16:59:18.471 Clicker[2419:80b] Unlimited access to network resources
+2014-03-01 16:59:18.507 Clicker[2419:80b] [CDVTimer][statusbar] 11.784017ms
+2014-03-01 16:59:18.508 Clicker[2419:80b] [CDVTimer][TotalPluginStartup] 12.853026ms
+2014-03-01 16:59:18.721 Clicker[2419:80b] Resetting plugins due to page load.
+2014-03-01 16:59:19.082 Clicker[2419:80b] Finished load of: file:///Users/Kristoffer/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/AB396CB3-5F5C-46F7-969C-F540248964C2/Clicker.app/www/index.html#/

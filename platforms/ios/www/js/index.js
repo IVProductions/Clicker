@@ -20,8 +20,6 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        alert("init");
-        StatusBar.hide();
     },
     // Bind Event Listeners
     //
@@ -35,9 +33,8 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-        alert("ready");
-        StatusBar.overlaysWebView(false);
+        StatusBar.hide();
+        app.receivedEvent('deviceready');        
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
