@@ -33,7 +33,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        StatusBar.overlaysWebView(false);
+        StatusBar.hide();
         //StatusBar.hide();
         //StatusBar.backgroundColorByHexString("#C0C0C0");
         app.receivedEvent('deviceready');        
