@@ -1,69 +1,99 @@
 function indexCtrl($scope, records){
 
+	// Initialize Stats 
+	var gold = 0;
+	var gems = 0;
+	var totalClicks = 0;
+	var hitMultiplier = 1.0;
+	var upgMultiplier = 1.0;
+	var nameMultiplier = 1.0;
+	var basePower = 10.0;
+	var totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
 
-	$scope.gold = 0;
-	$scope.gems = 0;
-	$scope.totalClicks = 0;
-	$scope.hitMultiplier = 1.0;
-	$scope.upgMultiplier = 1.0;
-	$scope.nameMultiplier = 1.0;
-	$scope.basePower = 10.0;
-	$scope.totalPower = $scope.hitMultiplier * $scope.upgMultiplier * $scope.nameMultiplier * $scope.basePower;
+	var updateStats = function () {
+		totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
+		damage = totalPower - armour;
+		if(damage < 0){
+			damage = 0;
+		};
 
-	// GET PICTURE
+		// Round decimals
+		hitMultiplier = Math.round(hitMultiplier*1000)/1000;
+		nameMultiplier = Math.round(nameMultiplier*100)/100;
+		basePower = Math.round(basePower);
+		totalPower = Math.round(totalPower);
+		damage = Math.round(damage);
+		
+		$scope.gold = gold;
+		$scope.gems = gems;
+		$scope.totalClicks = totalClicks;
+		$scope.hitMultiplier = hitMultiplier;
+		$scope.upgMultiplier = upgMultiplier;
+		$scope.nameMultiplier = nameMultiplier;
+		$scope.basePower = basePower;
+		$scope.totalPower = totalPower;	
+		$scope.damage = damage;
+
+
+	};
+
+	// Initialize Picture
 	var index = 0;
 	var max = records.superheroes.length - 1;
 	var figure = records.superheroes[index];
-	$scope.health = figure.health;
-	$scope.armour = figure.armour;
-	$scope.reward = figure.reward;
-	$scope.name = figure.name;
-	$scope.currentHealth = $scope.health;
 
-	$scope.damage = $scope.totalPower - $scope.armour;
+	var health = figure.health;
+	var armour = figure.armour;
+	var reward = figure.reward;
+	var name = figure.name;
+	var currentHealth = health;
+
+	var updatePicture = function () {
+		$scope.health = health;
+		$scope.armour = armour;
+		$scope.reward = reward;
+		$scope.name = name;
+	};
+
+	// Initialize damage
+	var damage = totalPower - armour;
 
 	var percentage = 0;
 
+	updateStats();
+	updatePicture();
+
 	$scope.click = function () {
 		// ADD TOTAL CLICKS
-		$scope.totalClicks++;
+		totalClicks++;
 		// HIT MULTIPLIER
-		$scope.hitMultiplier = $scope.hitMultiplier + ($scope.totalClicks/20)*0.001;
-
+		hitMultiplier = (hitMultiplier + ((totalClicks/20)*0.001));
+		
 		// DECREASE HEALTH
-		if($scope.damage != 0){
-			$scope.currentHealth = $scope.currentHealth - $scope.damage;
-			if ($scope.currentHealth <= 0) {
+		if(damage != 0){
+			currentHealth = currentHealth - damage;
+			if (currentHealth <= 0) {
 				// INCREASE GOLD
-				$scope.gold = $scope.gold + $scope.reward;
+				gold = gold + reward;
 				// RESET HEALTH
-				$scope.currentHealth = $scope.health;
+				currentHealth = health;
 			}
-			percentage = ($scope.currentHealth/$scope.health)*100;
+			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
 
-		$scope.update();
-	}
-
-	$scope.update = function () {
-		$scope.totalPower = $scope.hitMultiplier*$scope.upgMultiplier*$scope.nameMultiplier*$scope.basePower;
-		$scope.damage = $scope.totalPower - $scope.armour;
-		if($scope.damage < 0){
-			$scope.damage = 0;
-		}
+		updateStats();
 	}
 
 	$scope.check = function () {
 		var x = $scope.guessedName.toString();
-		console.log(x);
 		var xx = x.toLowerCase();
 		var y = $scope.name;
 		var yy = y.toLowerCase();
 
 		if(xx == yy) {
-			$scope.nameMultiplier = $scope.nameMultiplier + 0.05;
-			$scope.update();
+			nameMultiplier = nameMultiplier + 0.05;
+			updateStats();
 		}
 	}
 
@@ -71,18 +101,19 @@ function indexCtrl($scope, records){
 		if (index != 0) {
 			index--;
 			figure = records.superheroes[index];
-			$scope.health = figure.health;
-			$scope.armour = figure.armour;
-			$scope.reward = figure.reward;
-			$scope.name = figure.name;
-			$scope.currentHealth = $scope.health;
-			$scope.update();
+			health = figure.health;
+			armour = figure.armour;
+			reward = figure.reward;
+			name = figure.name;
+			currentHealth = health;
+			updatePicture();
+			updateStats();
 
-			if($scope.damage < 0){
-				$scope.damage = 0;
+			if(damage < 0){
+				damage = 0;
 			}	
 
-			percentage = ($scope.currentHealth/$scope.health)*100;
+			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
 	}
@@ -91,18 +122,20 @@ function indexCtrl($scope, records){
 		if (index != max) {
 			index++;
 			figure = records.superheroes[index];
-			$scope.health = figure.health;
-			$scope.armour = figure.armour;
-			$scope.reward = figure.reward;
-			$scope.name = figure.name;	
-			$scope.currentHealth = $scope.health;
-			$scope.update();
+			health = figure.health;
+			armour = figure.armour;
+			reward = figure.reward;
+			name = figure.name;	
+			currentHealth = health;
 
-			if($scope.damage < 0){
-				$scope.damage = 0;
+			updatePicture();
+			updateStats();
+
+			if(damage < 0){
+				damage = 0;
 			}
 
-			percentage = ($scope.currentHealth/$scope.health)*100;
+			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
 
