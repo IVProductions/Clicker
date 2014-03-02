@@ -52,16 +52,19 @@ table {
 }
 
 @media screen and (max-device-width : 320px){
-    .firstTable {
-        font-size: 9px!important;
+    .firstTable .td {
+        font-size: 11px;
     } 
     .firstTable .nameOfValue {
-        font-size: 7px!important;  
+        font-size: 9px!important;  
     }
 }
 @media screen and (max-device-width : 1080px){
-    .firstTable {
-        font-size: 20px!important;
+    .firstTable .td {
+        font-size: 15px;
+    } 
+    .firstTable .nameOfValue {
+        font-size: 12px!important;  
     }
 }
 
