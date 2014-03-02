@@ -204,7 +204,7 @@ table {
 .fourthTable .next button,
 .fourthTable .prev button {
     background:none;
-    font-size: 30px;
+    font-size: 15px;
     border: 1px solid grey;
     padding-top: -10px;
 }
