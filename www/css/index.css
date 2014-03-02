@@ -73,8 +73,7 @@ table {
 
 .secondTable .picture {
     width: 80%;
-    /*background-image:url('../img/superman.jpg');
-    background-size: 100% 100%; */
+    background-size: 100% 100%;
 }
 
 /** THIRD **/

@@ -50,12 +50,14 @@ function indexCtrl($scope, records){
 	var reward = figure.reward;
 	var name = figure.name;
 	var currentHealth = health;
+	var imageUrl = figure.imageURL;
 
 	var updatePicture = function () {
 		$scope.health = health;
 		$scope.armour = armour;
 		$scope.reward = reward;
 		$scope.name = name;
+		$('.picture').css('background-image', 'url(' + imageUrl + ')');
 	};
 
 	// Initialize damage
@@ -82,7 +84,9 @@ function indexCtrl($scope, records){
 				currentHealth = health;
 				// DEFEATED CHAMPION
 				figure.defeated = true;
-				$scope.nextValid = true;
+				if(index != max){
+					$scope.nextValid = true;	
+				}
 			}
 			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
@@ -111,7 +115,9 @@ function indexCtrl($scope, records){
 			armour = figure.armour;
 			reward = figure.reward;
 			name = figure.name;
+			imageUrl = figure.imageURL;
 			currentHealth = health;
+			
 			updatePicture();
 			updateStats();
 
@@ -122,11 +128,14 @@ function indexCtrl($scope, records){
 			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
-		if (index == 0 ){
+		if (index == 0){
 			$scope.prevValid = false;
 			$scope.nextValid = true;
 		}
-		
+		else {
+			$scope.nextValid = true;
+		}
+
 	}
 
 	$scope.next = function () {
@@ -137,6 +146,7 @@ function indexCtrl($scope, records){
 			armour = figure.armour;
 			reward = figure.reward;
 			name = figure.name;	
+			imageUrl = figure.imageURL;
 			currentHealth = health;
 
 			updatePicture();
