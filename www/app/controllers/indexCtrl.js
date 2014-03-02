@@ -2,6 +2,7 @@ function indexCtrl($scope, records){
 
 	$scope.prevValid = false;
 	$scope.nextValid = false;
+	$scope.upgrade = false;
 
 	// Initialize Stats 
 	var gold = 0;
@@ -65,6 +66,8 @@ function indexCtrl($scope, records){
 
 	updateStats();
 	updatePicture();
+
+	
 
 	$scope.click = function () {
 		// ADD TOTAL CLICKS
@@ -168,4 +171,28 @@ function indexCtrl($scope, records){
 			$scope.nextValid = false;
 		}
 	}
+
+	// Upgrades
+	var upgMultiplierCost = [400,2200,6160,12936,20698,31046,45017,62124,83246,109885];
+	var upgMultiplierLevel = 0;
+	$scope.upgMultiplierCost = upgMultiplierCost[upgMultiplierLevel]; 
+	$scope.upgMultiplierLevel = upgMultiplierLevel;
+
+	$scope.upgMultiplierFunction = function() {
+		if(gold >= $scope.upgMultiplierCost && upgMultiplierLevel != (upgMultiplierCost.length-1)){
+			$scope.upgMultiplierCost = upgMultiplierCost[upgMultiplierLevel]; 
+			$scope.upgMultiplierLevel = upgMultiplierLevel;
+			upgMultiplier = upgMultiplier + 0.03;
+			gold = gold - $scope.upgMultiplierCost;
+			upgMultiplierLevel++;
+			$scope.upgMultiplierLevel = upgMultiplierLevel;
+			updateStats();	
+		}
+		else {
+			alert("not enough gold / max level reached");
+		}
+		
+	}
+
+
 }

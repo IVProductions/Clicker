@@ -75,8 +75,32 @@
     			<button type="button" ng-show="nextValid" ng-click="next();">></button>	
     		</td>
     		<td class="upgrades">
-    			<button type="button">U</button>
+    			<button type="button" ng-click="upgrade = true;">U</button>
     		</td>
   		</tr>
+	</table>
+</div>
+<div class="upgrade" ng-show="upgrade">
+	<table>
+		<tr>
+    		<td class="upgInfo">Power upg </br>Current: {{upgMultiplier}}, Next: {{upgMultiplier + 0.03}} </br> Cost: {{upgMultiplierCost}}</td>
+    		<td><button ng-click="upgMultiplierFunction();">lvl {{upgMultiplierLevel}}</button></td>
+  		</tr>	
+  		<tr>
+    		<td class="upgInfo">Gem Chance</td>
+    		<td ><button>lvl 5</button></td>
+  		</tr>
+  		<tr>
+    		<td class="upgInfo">Training interval</td>
+    		<td><button>lvl 3</button></td>
+  		</tr>
+  		<tr>
+    		<td class="upgInfo">Crit chance</td>
+    		<td><button>lvl 0</button></td>
+  		</tr>	
+  		<tr>
+    		<td class="upgInfo">{{gold}} Gold</td>
+    		<td><button ng-click="upgrade = false">Back</button></td>
+  		</tr>	
 	</table>
 </div>
