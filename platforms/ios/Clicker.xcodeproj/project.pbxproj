@@ -40,6 +40,7 @@
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 		3A262181E07140EAB15DEC2A /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6CE634AEC423AB4242A79 /* CDVStatusBar.m */; };
+		B692B1EB54DF4B5D806C2911 /* StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E070472797F4486BE6BE73C /* StatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Clicker/config.xml"; sourceTree = "<group>"; };
 		59A6CE634AEC423AB4242A79 /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		84577DD2582743FC8ED3B6E0 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		9E070472797F4486BE6BE73C /* StatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "StatusBar.m"; path = "org.apache.cordova.plugins.StatusBar/StatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		BEC84AE0B6C34E2D81ED6B06 /* StatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "StatusBar.h"; path = "org.apache.cordova.plugins.StatusBar/StatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 			children = (
 				59A6CE634AEC423AB4242A79 /* CDVStatusBar.m */,
 				84577DD2582743FC8ED3B6E0 /* CDVStatusBar.h */,
+				9E070472797F4486BE6BE73C /* StatusBar.m */,
+				BEC84AE0B6C34E2D81ED6B06 /* StatusBar.h */,
 			);
 			name = Plugins;
 			path = "Clicker/Plugins";
@@ -409,6 +414,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				3A262181E07140EAB15DEC2A /* CDVStatusBar.m in Sources */,
+				B692B1EB54DF4B5D806C2911 /* StatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
