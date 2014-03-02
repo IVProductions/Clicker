@@ -173,19 +173,22 @@ function indexCtrl($scope, records){
 	}
 
 	// Upgrades
-	var upgMultiplierCost = [400,2200,6160,12936,20698,31046,45017,62124,83246,109885];
+	var upgMultiplierCostArray = [400,2200,6160,12936,20698,31046,45017,62124,83246,109885];
 	var upgMultiplierLevel = 0;
-	$scope.upgMultiplierCost = upgMultiplierCost[upgMultiplierLevel]; 
+	var upgMultiplierCost = upgMultiplierCostArray[upgMultiplierLevel]; 
+	$scope.upgMultiplierCost = upgMultiplierCost;
 	$scope.upgMultiplierLevel = upgMultiplierLevel;
 
 	$scope.upgMultiplierFunction = function() {
-		if(gold >= $scope.upgMultiplierCost && upgMultiplierLevel != (upgMultiplierCost.length-1)){
-			$scope.upgMultiplierCost = upgMultiplierCost[upgMultiplierLevel]; 
-			$scope.upgMultiplierLevel = upgMultiplierLevel;
-			upgMultiplier = upgMultiplier + 0.03;
-			gold = gold - $scope.upgMultiplierCost;
+		
+		if(gold >= upgMultiplierCost){
+			gold = gold - upgMultiplierCost;
 			upgMultiplierLevel++;
+			upgMultiplier = upgMultiplier + 0.03;
+			upgMultiplierCost = upgMultiplierCostArray[upgMultiplierLevel]; 
+			$scope.upgMultiplierCost = upgMultiplierCost;
 			$scope.upgMultiplierLevel = upgMultiplierLevel;
+
 			updateStats();	
 		}
 		else {
