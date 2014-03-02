@@ -126,6 +126,7 @@ function indexCtrl($scope, records){
 			$scope.prevValid = false;
 			$scope.nextValid = true;
 		}
+		
 	}
 
 	$scope.next = function () {
