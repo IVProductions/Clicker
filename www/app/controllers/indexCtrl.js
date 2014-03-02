@@ -23,7 +23,7 @@ function indexCtrl($scope, records){
 		basePower = Math.round(basePower);
 		totalPower = Math.round(totalPower);
 		damage = Math.round(damage);
-		
+
 		$scope.gold = gold;
 		$scope.gems = gems;
 		$scope.totalClicks = totalClicks;
@@ -67,7 +67,7 @@ function indexCtrl($scope, records){
 		// ADD TOTAL CLICKS
 		totalClicks++;
 		// HIT MULTIPLIER
-		hitMultiplier = (hitMultiplier + ((totalClicks/20)*0.001));
+		hitMultiplier = (1 + ((totalClicks/20)*0.001));
 		
 		// DECREASE HEALTH
 		if(damage != 0){
