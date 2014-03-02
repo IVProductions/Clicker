@@ -91,5 +91,6 @@ Clicker.factory('records',function() {
             "imageURL": "img/hulk.jpg"
         }
     ]
+    
     return {superheroes:superheroes};
 })
