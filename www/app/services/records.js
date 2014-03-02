@@ -20,75 +20,75 @@ Clicker.factory('records',function() {
         },
         {
             "id": 3,
-            "name": "Superman",
+            "name": "Captain America",
             "health": 300,
             "armour": 4,
             "reward": 20,
             "defeated": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/captainamerica.jpg"
         },
         {
             "id": 4,
-            "name": "Superman",
+            "name": "Thor",
             "health": 500,
             "armour": 8,
             "reward": 50,
             "defeated": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/thor.jpg"
         },
         {
             "id": 5,
-            "name": "Superman",
+            "name": "Flash",
             "health": 800,
             "armour": 12,
             "reward": 100,
             "defeated": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/flash.jpg"
         },
         {
             "id": 6,
-            "name": "Superman",
+            "name": "Batman",
             "health": 1400,
             "armour": 18,
             "reward": 200,
             "defeated": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/batman.jpg"
         },
         {
             "id": 7,
-            "name": "Superman",
+            "name": "Spiderman",
             "health": 1680,
             "armour": 22,
             "reward": 300,
             "defeated": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/spiderman.jpg"
         },
         {
             "id": 8,
-            "name": "Superman",
+            "name": "Green Arrow",
             "health": 2016,
             "armour": 26,
             "reward": 450,
             "defeated": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/greenarrow.jpg"
         },
         {
             "id": 9,
-            "name": "Superman",
+            "name": "Wolverine",
             "health": 2419,
             "armour": 31,
             "reward": 1013,
             "defeated": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/wolverine.jpg"
         },
         {
             "id": 10,
-            "name": "Superman",
+            "name": "Hulk",
             "health": 2903,
             "armour": 37,
             "reward": 1013,
             "defeated": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/hulk.jpg"
         }
     ]
     return {superheroes:superheroes};

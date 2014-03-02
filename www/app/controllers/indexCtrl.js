@@ -36,14 +36,12 @@ function indexCtrl($scope, records){
 		$scope.basePower = basePower;
 		$scope.totalPower = totalPower;	
 		$scope.damage = damage;
-
-
 	};
 
 	// Initialize Picture
-	var index = 0;
+	$scope.index = 0;
 	var max = records.superheroes.length - 1;
-	var figure = records.superheroes[index];
+	var figure = records.superheroes[$scope.index];
 
 	var health = figure.health;
 	var armour = figure.armour;
@@ -84,17 +82,16 @@ function indexCtrl($scope, records){
 				currentHealth = health;
 				// DEFEATED CHAMPION
 				figure.defeated = true;
-				if(index == max){
+				if($scope.index == max){
 					alert("Du har runnet spillet, helsa mormor!");
 				}
-				if(index != max){
+				if($scope.index != max){
 					$scope.nextValid = true;	
 				}
 			}
 			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
-
 		updateStats();
 	}
 
@@ -111,9 +108,9 @@ function indexCtrl($scope, records){
 	}
 
 	$scope.prev = function () {
-		if (index != 0) {
-			index--;
-			figure = records.superheroes[index];
+		if ($scope.index != 0) {
+			$scope.index--;
+			figure = records.superheroes[$scope.index];
 			health = figure.health;
 			armour = figure.armour;
 			reward = figure.reward;
@@ -131,7 +128,7 @@ function indexCtrl($scope, records){
 			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
-		if (index == 0){
+		if ($scope.index == 0){
 			$scope.prevValid = false;
 			$scope.nextValid = true;
 		}
@@ -142,9 +139,9 @@ function indexCtrl($scope, records){
 	}
 
 	$scope.next = function () {
-		if (index != max) {
-			index++;
-			figure = records.superheroes[index];
+		if ($scope.index != max) {
+			$scope.index++;
+			figure = records.superheroes[$scope.index];
 			health = figure.health;
 			armour = figure.armour;
 			reward = figure.reward;
