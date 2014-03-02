@@ -40,6 +40,7 @@
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 		8DB88D3178A74499ACBC98CD /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2C2A4B6B744E5CB993004C /* CDVStatusBar.m */; };
+		C963A81E7C1C4859ACCDBC71 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAD86360BA49CF9A5FA714 /* CDVDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Clicker/config.xml"; sourceTree = "<group>"; };
 		AA2C2A4B6B744E5CB993004C /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		86D1DB13F4A5460D844F7594 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		7AFAD86360BA49CF9A5FA714 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A6A02B12E85E417F9BA069F1 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 			children = (
 				AA2C2A4B6B744E5CB993004C /* CDVStatusBar.m */,
 				86D1DB13F4A5460D844F7594 /* CDVStatusBar.h */,
+				7AFAD86360BA49CF9A5FA714 /* CDVDevice.m */,
+				A6A02B12E85E417F9BA069F1 /* CDVDevice.h */,
 			);
 			name = Plugins;
 			path = "Clicker/Plugins";
@@ -409,6 +414,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				8DB88D3178A74499ACBC98CD /* CDVStatusBar.m in Sources */,
+				C963A81E7C1C4859ACCDBC71 /* CDVDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
