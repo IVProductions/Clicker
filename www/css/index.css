@@ -36,33 +36,103 @@ table {
 }
 
 /** FIRST **/
+.firstTable2,
 .firstTable {
     width: 100%;
-    height: 20%;
+    height: 10%;
     text-align: center;
     line-height: 0;
-    background-color: lightgrey;
+    font-size: 1em;
+    /*background-color: lightgrey;*/
 }
 
+.firstTable2 tr,
 .firstTable tr {
     width: 100%;
 }
 
+.firstTable2 td,
 .firstTable td {
-    width: 33.33%;
     line-height: 1%;
-    border: 5px #EBEBEB solid;
-    border-top: none!important; 
+    /*border: 5px #EBEBEB solid;
+    border-top: none!important; */
+}
+
+.firstTable .gold {
+    width: 50%;
+    border: 1px #FFFFFF solid;
+    color: #FFFFFF;
+    border-bottom: none!important;
+}
+
+.firstTable .totalhits {
+    width: 30%;
+    border: 1px #FFFFFF solid;
+    color: #FFFFFF;
+    border-bottom: none!important;
+}
+
+.firstTable .gems {
+    width: 30%;
+    border: 1px #FFFFFF solid;
+    color: #FFFFFF;
+    border-bottom: none!important;
+}
+
+.firstTable2 .hitMultiplier {
+    width: 20%;
+    border: 1px #FFFFFF solid;
+    color: #FFFFFF;
+    border-bottom: none!important;
+}
+
+.firstTable2 .nameMultiplier {
+    width: 20%;
+    border: 1px #FFFFFF solid;
+    color: #FFFFFF;
+    border-bottom: none!important;
+}
+
+.firstTable2 .totalPower {
+    width: 30%;
+    border: 1px #FFFFFF solid;
+    color: #FFFFFF;
+    border-bottom: none!important;
+}
+
+.firstTable2 .damage {
+    width: 30%;
+    border: 1px #FFFFFF solid;
+    color: #FFFFFF;
+    border-bottom: none!important;
 }
 
 .firstTable .nameOfValue {
-    font-size: 75%;
-    background-color: grey;
+    /*background-color: grey;
     color: white;
-    border-bottom: none!important;  
+    border-bottom: none!important; */ 
 }
 
+.firstTable tr,
+.firstTable2 tr {
+    background-color: #D87575;
+}
 
+.firstTable .value,
+.firstTable2 .value {
+    background-color: #7BCED7;
+    color: black;
+    border: 1px #FFFFFF solid;
+    border-top: none!important;
+}
+
+/* 
+
+GREEN 57BE85
+RED D87575
+BLUE 7BCED7
+WHITE FFFFFF
+GREY 8F9194
 
 
 /*
@@ -116,7 +186,16 @@ table {
     text-align: left;
 }
 
+.secondTable .picture .lvlValue {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    padding: 10px;
+    text-align: right;
+}
+
 .secondTable .picture .value {
+    padding-left: 5px;
 }
 
 .secondTable .picture .health {
@@ -200,7 +279,7 @@ table {
  height: 100%;
  overflow: hidden;
  text-indent: -30px;
- background-color: red;
+ background-color: lightgreen;
  /*background: url(http://i45.tinypic.com/minc5g.png) repeat scroll center center #0f0;*/
 }
 .progressbar-cover {
