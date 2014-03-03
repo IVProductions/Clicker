@@ -103,8 +103,40 @@ table {
 }
 
 .secondTable .picture .info {
-    color: red;
     font-size: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.secondTable .picture .value {
+}
+
+.secondTable .picture .health {
+    height: 25px;
+    width: 20px;
+    background-image: url('../img/components/heart.png');
+    background-size: 60% 90%; 
+    background-repeat:no-repeat;     
+}
+
+.secondTable .picture .armor {
+    height: 25px;
+    width: 20px;
+    background-image: url('../img/components/armor.png');
+    background-size: 60% 90%; 
+    background-repeat:no-repeat;   
+}
+
+.secondTable .picture .reward {
+    height: 25px;
+    width: 20px;
+    background-image: url('../img/components/gold.png');
+    background-size: 60% 90%; 
+    background-repeat:no-repeat;     
 }
 
 /** THIRD **/
@@ -223,34 +255,80 @@ table {
 
 .upgrade table {
     width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: lightgrey;
-}
-
-.upgrade table tr {
-    width: 100%;
-    height: 20%;
 }
 
 .upgrade table td {
-    border: 5px #EBEBEB solid; 
+    padding: 10px;
+    line-height: 15px;
+}
+
+.upgrade table button {
+    color: white;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.upgrade table .active {
+    background-color: transparent;
+    background-image: url('../img/components/upgBtn_active.png');
+    background-size: 100% 100%;
+}
+
+.upgrade table .active {
+    background-color: transparent;
+    background-image: url('../img/components/upgBtn_disabled.png');
+    background-size: 100% 100%;
+}
+
+.upgrade table .lvl {
+    text-align: center;
+    font-size: 16px;
+}
+   
+.upgrade table .currency {
+    font-size: 20px;
+    text-align: center;
+} 
+/*
+.upgrade table tr {
+    width: 100%;
+    height: 10%;
+}
+
+.upgrade table td {
+
 }
 
 .upgrade table .upgInfo {
     width: 80%;
-    border: 5px #EBEBEB solid; 
+    height: 80%;
 }
 
-.upgrade table button {
-    background:none;
-    background-color: white;
-    font-size: 15px;
-    border: 1px solid grey;
+
+
+
+
+.upgrade table .disabled {
+    background-color: transparent;
+    background-image: url('../img/components/upgBtn_disabled.png');
+    background-size: 100% 100%;
+}
+
+
+
+.upgrade table .skill {
+    height: 20%;
+}
+
+.upgrade table .currency {
+    text-align: center;
     width: 100%;
-    height: 100%;
+    background-color: red;
+    background-color: red
 }
-
+*/
 /*
 
 .main .stats {

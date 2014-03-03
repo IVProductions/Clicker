@@ -44,11 +44,23 @@
     		</td>
     		<td class="picture" ng-click="click();">
     			<div class="info">
-    			Level = {{index+1}} <br>
-    			Health = {{health}} <br>
-    			Armour = {{armour}} <br>
-    			Reward = {{reward}} <br>
-    			Name = {{name}}
+    			<table>
+    				<tr>
+    					<td class="lvl">LVL{{index+1}}</td>
+    				</tr>
+    				<tr>
+    					<td class="health"></td>
+    					<td class="value"> {{health}} </td>
+    				</tr>
+    				<tr>
+    					<td class="armor"></td>
+    					<td class="value">{{armour}}</td>
+    				</tr>
+    				<tr>
+    					<td class="reward"></td>
+    					<td class="value">{{reward}}</td>
+    				</tr>
+    			</table>
     			</div>
     		</td>
   		</tr>
@@ -82,24 +94,88 @@
 </div>
 <div class="upgrade" ng-show="upgrade">
 	<table>
+		<tr class="currency">
+			<td class="gold">{{gold}} gold</td>
+			<td class="gems">{{gems}} g</td>
+		</tr>
 		<tr>
-    		<td class="upgInfo">Power upg </br>Current: {{upgMultiplier}}, Next: {{upgMultiplier + 0.03}} </br> Cost: {{upgMultiplierCost}}</td>
-    		<td><button ng-click="upgMultiplierFunction();">lvl {{upgMultiplierLevel}}</button></td>
+    		<td class="upgInfo">
+	    		<strong>Power upgrade</strong></br>
+	    		This is a more detailed description of the upgrade </br>
+	    		<table>
+		    		<td>Current:</td>
+		    		<td>{{upgMultiplier}}</td>
+		    		<td>Next:</td>
+		    		<td>{{upgMultiplier + 0.03}}</td>
+		    		<td>Cost:</td>
+		    		<td>{{upgMultiplierCost}}</td>
+	    		</table>
+    		</td>
+    		<td class="lvl">
+    		LVL 45 </br>
+    		<button class="active" ng-click="upgMultiplierFunction();"><p class="lvl"></p></button>
+    		</td>
   		</tr>	
   		<tr>
-    		<td class="upgInfo">Gem Chance</td>
-    		<td ><button>lvl 5</button></td>
+    		<td class="upgInfo">
+    			<strong>Crit Chance</strong></br>
+	    		This is a more detailed description of the upgrade </br>
+	    		<table>
+		    		<td>Current:</td>
+		    		<td>{{upgMultiplier}}</td>
+		    		<td>Next:</td>
+		    		<td>{{upgMultiplier + 0.03}}</td>
+		    		<td>Cost:</td>
+		    		<td>{{upgMultiplierCost}}</td>
+	    		</table>
+    		</td>
+    		<td class="lvl">
+    		LVL 45 </br>
+    		<button class="active" ng-click="upgMultiplierFunction();"><p class="lvl"></p></button>
+    		</td>
+  		</tr>
+  		<tr>
+    		<td class="upgInfo">
+    			<strong>Crit</strong></br>
+	    		This is a more detailed description of the upgrade </br>
+	    		<table>
+		    		<td>Current:</td>
+		    		<td>{{upgMultiplier}}</td>
+		    		<td>Next:</td>
+		    		<td>{{upgMultiplier + 0.03}}</td>
+		    		<td>Cost:</td>
+		    		<td>{{upgMultiplierCost}}</td>
+	    		</table>
+    		</td>
+    		<td class="lvl">
+    		LVL 45 </br>
+    		<button class="active" ng-click="upgMultiplierFunction();"><p class="lvl"></p></button>
+    		</td>
+  		</tr>
+  		<tr>
+    		<td class="upgInfo">
+    			<strong>Gem Chance</strong></br>
+	    		This is a more detailed description of the upgrade </br>
+	    		<table>
+		    		<td>Current:</td>
+		    		<td>{{upgMultiplier}}</td>
+		    		<td>Next:</td>
+		    		<td>{{upgMultiplier + 0.03}}</td>
+		    		<td>Cost:</td>
+		    		<td>{{upgMultiplierCost}}</td>
+	    		</table>
+    		</td>
+    		<td class="lvl">
+    		LVL 45 </br>
+    		<button class="active" ng-click="upgMultiplierFunction();"><p class="lvl"></p></button>
+    		</td>
   		</tr>
   		<tr>
     		<td class="upgInfo">Training interval</td>
-    		<td><button>lvl 3</button></td>
+    		<td><button class="disabled"></button></td>
   		</tr>
   		<tr>
-    		<td class="upgInfo">Crit chance</td>
-    		<td><button>lvl 0</button></td>
-  		</tr>	
-  		<tr>
-    		<td class="upgInfo">{{gold}} Gold</td>
+    		<td class="upgInfo"></td>
     		<td><button ng-click="upgrade = false">Back</button></td>
   		</tr>	
 	</table>
