@@ -62,7 +62,8 @@ function indexCtrl($scope, records){
 	// Initialize damage
 	var damage = totalPower - armour;
 
-	var percentage = 0;
+	var percentage = 100;
+	$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 
 	updateStats();
 	updatePicture();
@@ -93,6 +94,22 @@ function indexCtrl($scope, records){
 				}
 			}
 			percentage = (currentHealth/health)*100;
+			
+			if(percentage <= 5){
+				$('.progress-cover').css("background-color","#f63a0f");
+			}
+			else if (percentage <= 25){
+				$('.progress-cover').css("background-color","#f27011");
+			}
+			else if (percentage <= 50){
+				$('.progress-cover').css("background-color","#f2b01e");
+			}
+			else if (percentage <= 75){
+				$('.progress-cover').css("background-color","#f2d31b");
+			}
+			else {
+				$('.progress-cover').css("background-color","#86e01e");
+			}
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
 		updateStats();
@@ -196,6 +213,8 @@ function indexCtrl($scope, records){
 		}
 		
 	}
+
+
 
 
 }

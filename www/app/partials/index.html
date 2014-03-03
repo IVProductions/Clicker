@@ -2,12 +2,12 @@
 	<table class="firstTable">
 		<tr>
     		<td class="gold">GOLD</td>
-    		<td class="totalhits">TOTAL HITS</td>
+    		<td class="totalhits">HIT COUNT</td>
     		<td class="gems">GEMS</td>
     	</tr>
  		<tr>
-    		<td class="value">{{gold}}</td>
-    		<td class="value">{{totalClicks}}</td>
+    		<td class="rightBorder">{{gold}}</td>
+    		<td class="rightBorder">{{totalClicks}}</td>
     		<td class="value">{{gems}}</td>
   		</tr>
   	</table>
@@ -15,13 +15,13 @@
   		<tr>
   			<td class="hitMultiplier">HIT</td>
     		<td class="nameMultiplier">NAME</td>
-    		<td class="totalPower">TOTAL POWER</td>
+    		<td class="totalPower">POWER</td>
     		<td class="damage">DAMAGE</td>
   		</tr>
   		<tr>
-    		<td class="value">{{hitMultiplier}}</td>
-    		<td class="value">{{nameMultiplier}}</td>
-    		<td class="value">{{totalPower}}</td>
+    		<td class="rightBorder">{{hitMultiplier}}</td>
+    		<td class="rightBorder">{{nameMultiplier}}</td>
+    		<td class="rightBorder">{{totalPower}}</td>
     		<td class="value">{{damage}}</td>
   		</tr>
 	</table>
@@ -72,7 +72,7 @@
 	<table class="thirdTable">
 		<tr>
     		<td class="inputName">
-    			<input type="text" ng-model="guessedName"/>
+    			<input type="text" class="allcaps" ng-model="guessedName"/>
     		</td>
     		<td class="checkName">
     			<button type="button" ng-click="check();">?</button>

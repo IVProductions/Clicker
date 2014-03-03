@@ -31,8 +31,10 @@ html, body {
     font-family: myFirstFont;
 }
 
-table {
 
+.allcaps {
+    font-variant: small-caps;
+    text-transform: uppercase;
 }
 
 /** FIRST **/
@@ -43,6 +45,7 @@ table {
     text-align: center;
     line-height: 0;
     font-size: 1em;
+    background-color: #8F9194;
     /*background-color: lightgrey;*/
 }
 
@@ -60,50 +63,42 @@ table {
 
 .firstTable .gold {
     width: 50%;
-    border: 1px #FFFFFF solid;
-    color: #FFFFFF;
-    border-bottom: none!important;
+    color: #F9F3E3;
 }
 
 .firstTable .totalhits {
     width: 30%;
-    border: 1px #FFFFFF solid;
-    color: #FFFFFF;
+    color: #F9F3E3;
     border-bottom: none!important;
 }
 
 .firstTable .gems {
     width: 30%;
-    border: 1px #FFFFFF solid;
-    color: #FFFFFF;
+    color: #F9F3E3;
     border-bottom: none!important;
 }
 
 .firstTable2 .hitMultiplier {
     width: 20%;
-    border: 1px #FFFFFF solid;
-    color: #FFFFFF;
+    color: #F9F3E3;
     border-bottom: none!important;
 }
 
 .firstTable2 .nameMultiplier {
     width: 20%;
-    border: 1px #FFFFFF solid;
-    color: #FFFFFF;
+    color: #F9F3E3;
     border-bottom: none!important;
 }
 
 .firstTable2 .totalPower {
     width: 30%;
-    border: 1px #FFFFFF solid;
-    color: #FFFFFF;
+    color: #F9F3E3;
     border-bottom: none!important;
 }
 
 .firstTable2 .damage {
     width: 30%;
-    border: 1px #FFFFFF solid;
-    color: #FFFFFF;
+    color: #F9F3E3;
     border-bottom: none!important;
 }
 
@@ -115,24 +110,30 @@ table {
 
 .firstTable tr,
 .firstTable2 tr {
-    background-color: #D87575;
+    background-color: #62868D;
 }
 
 .firstTable .value,
 .firstTable2 .value {
-    background-color: #7BCED7;
-    color: black;
-    border: 1px #FFFFFF solid;
-    border-top: none!important;
+    color: #62868D;
+    background-color: #F9F3E3;
+    border-bottom: 3px solid #62868D;
+}
+
+.firstTable .rightBorder,
+.firstTable2 .rightBorder {
+    color: #62868D;
+    background-color: #F9F3E3;
+    border-right: 3px solid #62868D;
+    border-bottom: 3px solid #62868D;
 }
 
 /* 
 
-GREEN 57BE85
-RED D87575
-BLUE 7BCED7
-WHITE FFFFFF
-GREY 8F9194
+WHITE F9F3E3
+RED D78B7D
+BLUE 62868D
+GREY CFC8B5
 
 
 /*
@@ -192,6 +193,8 @@ GREY 8F9194
     top: 20%;
     padding: 10px;
     text-align: right;
+    font-size: 2em;
+    color: #62868D;
 }
 
 .secondTable .picture .value {
@@ -228,8 +231,9 @@ GREY 8F9194
     height: 10%;
     text-align: center;
     line-height: 0;
-    background-color: #EBEBEB;
+    background-color: #62868D;
 }
+
 .thirdTable tr {
     width: 100%;
 }
@@ -254,21 +258,27 @@ GREY 8F9194
 .thirdTable .checkName button {
     background:none;
     font-size: 15px;
-    border: 1px solid grey;
+    background-color: #F9F3E3;
+    border: none;
 }
 
 .thirdTable input {
     width: 100%;
     height: 100%;
     font-size: 15px;
+    background-color: #F9F3E3;
+}
+
+.healthbar {
+    width: 100%;
+    height: 100%;
 }
 
 .progressbar {
  width: 100%;
  height: 100%;
  position: relative;
- background-color: white;
- /*background: url(http://i48.tinypic.com/290tvnk.png) no-repeat scroll 0pt 0pt transparent;*/
+ background: #62868D;
 } 
 .progressbar-value {
  position: absolute;
@@ -278,9 +288,41 @@ GREY 8F9194
  width: 100%;
  height: 100%;
  overflow: hidden;
+ background: #57BE85;
+}
+.progressbar-cover {
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 100%;
+ border: 0;
+ left: 0;
+ bottom: 0%;
+ background: #F9F3E3;
+}
+
+/*
+.progressbar {
+ width: 100%;
+ height: 100%;
+ position: relative;
+ background-color: transparent;
+ /*background: url(http://i48.tinypic.com/290tvnk.png) no-repeat scroll 0pt 0pt transparent;*/
+ 
+/*
+.progressbar-value {
+ position: absolute;
+ display: block;
+ margin: 0;
+ border: 0;
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
  text-indent: -30px;
- background-color: lightgreen;
+ background-color: #57BE85;
+ border-radius: 6px;
  /*background: url(http://i45.tinypic.com/minc5g.png) repeat scroll center center #0f0;*/
+/*
 }
 .progressbar-cover {
  position: absolute;
@@ -290,9 +332,10 @@ GREY 8F9194
  border: 0;
  left: 0;
  bottom: 100%;
- background-color: white;
+ background-color: #F9F3E3;
+border-radius: 6px;
  /*background: url(http://i49.tinypic.com/1zwge3s.png) repeat-x scroll 0 0 transparent;*/
-}
+
 
 /** FOURTH **/
 .fourthTable {
@@ -300,7 +343,7 @@ GREY 8F9194
     height: 10%;
     text-align: center;
     line-height: 0; 
-    background-color: #EBEBEB;
+    background-color: #62868D;
 }
 .fourthTable tr {
     width: 100%;
@@ -308,7 +351,6 @@ GREY 8F9194
 .fourthTable td {
     border-top: none;
     width: 25%;
-    padding: 2px;
     padding-top: 0px!important;
 }
 
@@ -316,15 +358,14 @@ GREY 8F9194
     width: 100%;
     height: 100%;
     border-radius: none;
+    border: none;
+    background-color: #F9F3E3;
 }
 .fourthTable .home button,
 .fourthTable .upgrades button,
 .fourthTable .next button,
 .fourthTable .prev button {
-    background:none;
     font-size: 15px;
-    border: 1px solid grey;
-    padding-top: -10px;
 }
 
 .upgrade {
@@ -386,6 +427,63 @@ GREY 8F9194
     font-size: 20px;
     text-align: center;
 } 
+
+
+/*
+.main .picture .healthbar {
+    height: 500px;
+    width: 100%;
+}
+
+.progress {
+ 
+}
+
+.progress {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  position: relative;
+  height: 400px;
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: height, background-color;
+  -moz-transition-property: height, background-color;
+  -o-transition-property: height, background-color;
+  transition-property: height, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+.progress-bar:before, .progress-bar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.progress-bar:before {
+  bottom: 0;
+  /*background: url("../img/stripes.png") 0 0 repeat;
+  border-radius: 4px 4px 0 0;
+}
+.progress-bar:after {
+  z-index: 2;
+
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+}
+
 /*
 .upgrade table tr {
     width: 100%;
