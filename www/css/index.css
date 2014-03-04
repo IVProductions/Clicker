@@ -286,6 +286,8 @@ GREY CFC8B5
 .thirdTable input:disabled {
     background-color: #F9F3E3;
     color: #62868D;
+    -webkit-text-fill-color:#62868D;
+    opacity: 1!important;
 }
 
 .healthbar {
