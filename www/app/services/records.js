@@ -7,6 +7,7 @@ Clicker.factory('records',function() {
             "armour": 0,
             "reward": 2,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/superman.jpg"
         },
         {
@@ -16,6 +17,7 @@ Clicker.factory('records',function() {
             "armour": 2,
             "reward": 10,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/greenlantern.jpg"
         },
         {
@@ -25,6 +27,7 @@ Clicker.factory('records',function() {
             "armour": 4,
             "reward": 20,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/captainamerica.jpg"
         },
         {
@@ -34,6 +37,7 @@ Clicker.factory('records',function() {
             "armour": 8,
             "reward": 50,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/thor.jpg"
         },
         {
@@ -43,6 +47,7 @@ Clicker.factory('records',function() {
             "armour": 12,
             "reward": 100,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/flash.jpg"
         },
         {
@@ -52,6 +57,7 @@ Clicker.factory('records',function() {
             "armour": 18,
             "reward": 200,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/batman.jpg"
         },
         {
@@ -61,6 +67,7 @@ Clicker.factory('records',function() {
             "armour": 22,
             "reward": 300,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/spiderman.jpg"
         },
         {
@@ -70,6 +77,7 @@ Clicker.factory('records',function() {
             "armour": 26,
             "reward": 450,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/greenarrow.jpg"
         },
         {
@@ -79,6 +87,7 @@ Clicker.factory('records',function() {
             "armour": 31,
             "reward": 1013,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/wolverine.jpg"
         },
         {
@@ -88,6 +97,7 @@ Clicker.factory('records',function() {
             "armour": 37,
             "reward": 1013,
             "defeated": false,
+            "guessed": false,
             "imageURL": "img/hulk.jpg"
         }
     ]

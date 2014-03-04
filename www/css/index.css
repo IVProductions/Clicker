@@ -196,7 +196,7 @@ GREY CFC8B5
     top: 20%;
     padding: 10px;
     text-align: right;
-    font-size: 2em;
+    font-size: 1em;
     color: #D78B7D;
 }
 
@@ -252,16 +252,16 @@ GREY CFC8B5
 }
 .thirdTable .inputName {
     width: 75%;
-    padding: 2px;
+     padding-top: 2px;
 }
 .thirdTable .checkName {
     width: 25%;
-    padding: 2px;
+    padding-top: 2px;
 }
 
-.thirdTable .checkName button {
-    border:none;
-    background-color: transparent;
+.thirdTable .checkName .checkNameBtn {
+    border: none;
+    background-color: #F9F3E3;
     background-image: url('../img/components/questionMark.png');
     background-size: 50px 50px;
     background-position: center;
@@ -274,6 +274,7 @@ GREY CFC8B5
     font-size: 15px;
     background-color: #F9F3E3;
     border-radius: none;
+    border:none;
 }
 
 .healthbar {

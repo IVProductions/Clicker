@@ -120,14 +120,18 @@ function indexCtrl($scope, records){
 	}
 
 	$scope.check = function () {
-		var x = $scope.guessedName.toString();
-		var xx = x.toLowerCase();
-		var y = $scope.name;
-		var yy = y.toLowerCase();
+		if($scope.guessedName != null){
+			var x = $scope.guessedName.toString();
+			var xx = x.toLowerCase();
+			var y = $scope.name;
+			var yy = y.toLowerCase();
 
-		if(xx == yy) {
-			nameMultiplier = nameMultiplier + 0.05;
-			updateStats();
+			if(xx == yy && !figure.guessed) {
+				figure.guessed = true;
+				nameMultiplier = nameMultiplier + 0.05;
+				updateStats();
+				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
+			}
 		}
 	}
 
