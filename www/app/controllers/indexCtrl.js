@@ -131,7 +131,8 @@ function indexCtrl($scope, records){
 				nameMultiplier = nameMultiplier + 0.05;
 				updateStats();
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
-				$(".allcaps").prop('disabled', true);	
+				$('.allcaps').prop('disabled', true);	
+				$('.allcaps').css('opacity','1');
 			}
 		}
 	}
