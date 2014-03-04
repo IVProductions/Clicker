@@ -133,7 +133,7 @@ function indexCtrl($scope, records){
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
 				$('.allcaps').prop('disabled', true);	
 				$('.allcaps').css('opacity','1');
-				$('.allcaps').css('color','#62868D');
+				$('.allcaps').css('color','rgba(98,134,141,1)');
 			}
 		}
 	}
