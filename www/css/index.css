@@ -256,10 +256,13 @@ GREY CFC8B5
 }
 .thirdTable .checkName {
     width: 25%;
-    padding: 4px;
+    height: 100%;
+    padding: 2px;
 }
 
 .thirdTable .checkName .checkNameBtn {
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
     border-color: transparent;
     background-color: #F9F3E3;
@@ -274,8 +277,8 @@ GREY CFC8B5
     height: 100%;
     font-size: 25px;
     background-color: #F9F3E3;
-    border-radius: none;
-    border:none;
+    border-radius: 5px;
+    border-color: transparent;
     text-align: center;
 }
 
