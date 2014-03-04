@@ -195,7 +195,7 @@ GREY CFC8B5
     padding: 10px;
     text-align: right;
     font-size: 2em;
-    color: #62868D;
+    color: #D78B7D;
 }
 
 .secondTable .picture .value {
@@ -246,6 +246,7 @@ GREY CFC8B5
     width: 100%;
     height: 100%;
     border-radius: 0px;
+
 }
 .thirdTable .inputName {
     width: 75%;
@@ -257,10 +258,12 @@ GREY CFC8B5
 }
 
 .thirdTable .checkName button {
-    background:none;
-    font-size: 15px;
-    background-color: #F9F3E3;
-    border: none;
+    border:none;
+    background-color: transparent;
+    background-image: url('../img/components/questionMark.png');
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .thirdTable input {
@@ -268,6 +271,7 @@ GREY CFC8B5
     height: 100%;
     font-size: 15px;
     background-color: #F9F3E3;
+    border-radius: none;
 }
 
 .healthbar {
@@ -360,13 +364,45 @@ border-radius: 6px;
     height: 100%;
     border-radius: none;
     border: none;
-    background-color: #F9F3E3;
 }
 .fourthTable .home button,
 .fourthTable .upgrades button,
 .fourthTable .next button,
 .fourthTable .prev button {
-    font-size: 15px;
+    font-size: 3em;
+    color:#D78B7D;
+}
+
+.fourthTable .home button {
+    background-color: transparent;
+    background-image: url('../img/components/homeBtn.png');
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fourthTable .prev button {
+    background-color: transparent;
+    background-image: url('../img/components/prevBtn.png');
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fourthTable .next button {
+    background-color: transparent;
+    background-image: url('../img/components/nextBtn.png');
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fourthTable .upgrades button {
+    background-color: transparent;
+    background-image: url('../img/components/upgBtn.png');
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .upgrade {
