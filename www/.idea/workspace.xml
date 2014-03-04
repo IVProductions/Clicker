@@ -25,10 +25,10 @@
     <leaf>
       <file leaf-file-name="superman.jpg" pinned="false" current="true" current-in-tab="true">
         <entry file="http://localhost:63342/www/css/img/superman.jpg">
-          <provider selected="true" editor-type-id="images">
+          <provider editor-type-id="httpFileEditor">
             <state />
           </provider>
-          <provider editor-type-id="httpFileEditor">
+          <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
@@ -224,6 +224,22 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="http://localhost:63342/www/css/img/superman.jpg">
+      <provider editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="http://localhost:63342/www/css/img/superman.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+      <provider editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
     <entry file="http://localhost:63342/www/css/img/superman.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
