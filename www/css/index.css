@@ -373,7 +373,7 @@ border-radius: 6px;
 .fourthTable .home button {
     background-color: transparent;
     background-image: url('../img/components/homeBtn.png');
-    background-size: 50% 80%;
+    background-size: 15px 15px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -381,7 +381,7 @@ border-radius: 6px;
 .fourthTable .prev button {
     background-color: transparent;
     background-image: url('../img/components/prevBtn.png');
-    background-size: 50% 80%;
+    background-size: 15px 15px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -389,7 +389,7 @@ border-radius: 6px;
 .fourthTable .next button {
     background-color: transparent;
     background-image: url('../img/components/nextBtn.png');
-    background-size: 50% 80%;
+    background-size: 15px 15px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -397,7 +397,7 @@ border-radius: 6px;
 .fourthTable .upgrades button {
     background-color: transparent;
     background-image: url('../img/components/upgBtn.png');
-    background-size: 50% 80%;
+    background-size: 15px 15px;
     background-position: center;
     background-repeat: no-repeat;
 }
