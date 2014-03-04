@@ -197,7 +197,7 @@ GREY CFC8B5
     padding: 10px;
     text-align: right;
     font-size: 1em;
-    color: #D78B7D;
+    color: #62868D;
 }
 
 .secondTable .picture .value {
@@ -280,6 +280,7 @@ GREY CFC8B5
     border-radius: 5px;
     border-color: transparent;
     text-align: center;
+    color: #62868D;
 }
 
 .healthbar {
