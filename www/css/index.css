@@ -359,16 +359,11 @@ border-radius: 6px;
     padding-top: 0px!important;
 }
 
-.fourthTable button {
-    width: 100%;
-    height: 100%;
-    border-radius: none;
-    border: none;
-}
 .fourthTable .home button,
 .fourthTable .upgrades button,
 .fourthTable .next button,
 .fourthTable .prev button {
+    border:none;
     font-size: 3em;
     color:#D78B7D;
     width: 100%;
