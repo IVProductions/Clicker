@@ -378,17 +378,15 @@ border-radius: 6px;
     background-repeat: no-repeat;
 }
 
-.fourthTable .prev button {
+.fourthTable .prev .prevBtn {
     background-color: transparent;
-    background-image: url('../img/components/prevBtn.png');
     background-size: 15px 15px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.fourthTable .next button {
+.fourthTable .next .nextBtn {
     background-color: transparent;
-    background-image: url('../img/components/nextBtn.png');
     background-size: 15px 15px;
     background-position: center;
     background-repeat: no-repeat;
