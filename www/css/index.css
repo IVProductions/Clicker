@@ -369,7 +369,7 @@ border-radius: 6px;
     color:#D78B7D;
 }
 
-.fourthTable .home button {
+.fourthTable .home {
     background-color: transparent;
     background-image: url('../img/components/homeBtn.png');
     background-size: 15px 15px;
@@ -377,7 +377,7 @@ border-radius: 6px;
     background-repeat: no-repeat;
 }
 
-.fourthTable .prev button {
+.fourthTable .prev  {
     background-color: transparent;
     background-image: url('../img/components/prevBtn.png');
     background-size: 15px 15px;
@@ -385,7 +385,7 @@ border-radius: 6px;
     background-repeat: no-repeat;
 }
 
-.fourthTable .next button {
+.fourthTable .next {
     background-color: transparent;
     background-image: url('../img/components/nextBtn.png');
     background-size: 15px 15px;
@@ -393,7 +393,7 @@ border-radius: 6px;
     background-repeat: no-repeat;
 }
 
-.fourthTable .upgrades button {
+.fourthTable .upgrades {
     background-color: transparent;
     background-image: url('../img/components/upgBtn.png');
     background-size: 15px 15px;
