@@ -1,5 +1,7 @@
 function indexCtrl($scope, records){
 
+	var prevValid = false;
+	var nextValid = false;
 	$('.prevValid').css('background-image', 'none');
 	$('.nextValid').css('background-image', 'none');
 
@@ -91,6 +93,7 @@ function indexCtrl($scope, records){
 					alert("Du har runnet spillet, helsa mormor!");
 				}
 				if($scope.index != max){
+					nextValid = true;
 					$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
 				}
 			}
@@ -129,64 +132,73 @@ function indexCtrl($scope, records){
 	}
 
 	$scope.prev = function () {
-		if ($scope.index != 0) {
-			$scope.index--;
-			figure = records.superheroes[$scope.index];
-			health = figure.health;
-			armour = figure.armour;
-			reward = figure.reward;
-			name = figure.name;
-			imageUrl = figure.imageURL;
-			currentHealth = health;
+		if(prevValid){
+			if ($scope.index != 0) {
+				$scope.index--;
+				figure = records.superheroes[$scope.index];
+				health = figure.health;
+				armour = figure.armour;
+				reward = figure.reward;
+				name = figure.name;
+				imageUrl = figure.imageURL;
+				currentHealth = health;
 
-			updatePicture();
-			updateStats();
+				updatePicture();
+				updateStats();
 
-			if(damage < 0){
-				damage = 0;
-			}	
+				if(damage < 0){
+					damage = 0;
+				}	
 
-			percentage = (currentHealth/health)*100;
-			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
+				percentage = (currentHealth/health)*100;
+				$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
+			}
+			if ($scope.index == 0){
+				$('.prevValid').css('background-image', 'none');
+				$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
+				nextValid = true;
+				prevValid = false;
+			}
+			else {
+				$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
+				nextValid = true;
+			}
 		}
-		if ($scope.index == 0){
-			$('.prevValid').css('background-image', 'none');
-			$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
-		}
-		else {
-			$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
-		}
-
 	}
 
 	$scope.next = function () {
-		if ($scope.index != max) {
-			$scope.index++;
-			figure = records.superheroes[$scope.index];
-			health = figure.health;
-			armour = figure.armour;
-			reward = figure.reward;
-			name = figure.name;	
-			imageUrl = figure.imageURL;
-			currentHealth = health;
+		if(nextValid){
+			if ($scope.index != max) {
+				$scope.index++;
+				figure = records.superheroes[$scope.index];
+				health = figure.health;
+				armour = figure.armour;
+				reward = figure.reward;
+				name = figure.name;	
+				imageUrl = figure.imageURL;
+				currentHealth = health;
 
-			updatePicture();
-			updateStats();
+				updatePicture();
+				updateStats();
 
-			if(damage < 0){
-				damage = 0;
+				if(damage < 0){
+					damage = 0;
+				}
+
+				percentage = (currentHealth/health)*100;
+				$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
+
+				$('.prevValid').css('background-image', 'url(img/components/prevBtn.png)');
+				prevValid = true;
+				if(!figure.defeated){
+					$('.nextValid').css('background-image', 'none');
+					nextValid = false;
+				}
 			}
-
-			percentage = (currentHealth/health)*100;
-			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
-
-			$('.prevValid').css('background-image', 'url(img/components/prevBtn.png)');
-			if(!figure.defeated){
-				$('.nextValid').css('background-image', 'none');
+			else {
+				$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
+				nextValid = true;
 			}
-		}
-		else {
-			$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
 		}
 	}
 
