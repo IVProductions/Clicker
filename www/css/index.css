@@ -372,23 +372,23 @@ border-radius: 6px;
 .fourthTable .home {
     background-color: transparent;
     background-image: url('../img/components/homeBtn.png');
-    background-size: 15px 15px;
+    background-size: 30px 30px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.fourthTable .prev  {
+.fourthTable .prevValid  {
     background-color: transparent;
     background-image: url('../img/components/prevBtn.png');
-    background-size: 15px 15px;
+    background-size: 30px 30px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.fourthTable .next {
+.fourthTable .nextValid {
     background-color: transparent;
     background-image: url('../img/components/nextBtn.png');
-    background-size: 15px 15px;
+    background-size: 30px 30px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -396,7 +396,7 @@ border-radius: 6px;
 .fourthTable .upgrades {
     background-color: transparent;
     background-image: url('../img/components/upgBtn.png');
-    background-size: 15px 15px;
+    background-size: 30px 30px;
     background-position: center;
     background-repeat: no-repeat;
 }

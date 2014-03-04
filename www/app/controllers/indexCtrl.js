@@ -1,7 +1,8 @@
 function indexCtrl($scope, records){
 
-	$scope.prevValid = false;
-	$scope.nextValid = false;
+	$('.prevValid').css('background-image', 'none');
+	$('.nextValid').css('background-image', 'none');
+
 	$scope.upgrade = false;
 
 	// Initialize Stats 
@@ -90,7 +91,7 @@ function indexCtrl($scope, records){
 					alert("Du har runnet spillet, helsa mormor!");
 				}
 				if($scope.index != max){
-					$scope.nextValid = true;	
+					$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
 				}
 			}
 			percentage = (currentHealth/health)*100;
@@ -149,11 +150,11 @@ function indexCtrl($scope, records){
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
 		if ($scope.index == 0){
-			$scope.prevValid = false;
-			$scope.nextValid = true;
+			$('.prevValid').css('background-image', 'none');
+			$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
 		}
 		else {
-			$scope.nextValid = true;
+			$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
 		}
 
 	}
@@ -179,13 +180,13 @@ function indexCtrl($scope, records){
 			percentage = (currentHealth/health)*100;
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 
-			$scope.prevValid = true;
+			$('.prevValid').css('background-image', 'url(img/components/prevBtn.png)');
 			if(!figure.defeated){
-				$scope.nextValid = false;
+				$('.nextValid').css('background-image', 'none');
 			}
 		}
 		else {
-			$scope.nextValid = false;
+			$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
 		}
 	}
 
