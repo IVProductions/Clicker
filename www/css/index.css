@@ -283,6 +283,11 @@ GREY CFC8B5
     color: #62868D;
 }
 
+.thirdTable input:disabled {
+    background-color: #F9F3E3;
+    color: #62868D;
+}
+
 .healthbar {
     width: 100%;
     height: 100%;
