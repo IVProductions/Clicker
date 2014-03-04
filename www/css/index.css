@@ -252,11 +252,11 @@ GREY CFC8B5
 }
 .thirdTable .inputName {
     width: 75%;
-     padding-top: 2px;
+    padding: 2px;
 }
 .thirdTable .checkName {
     width: 25%;
-    padding-top: 2px;
+    padding: 2px;
 }
 
 .thirdTable .checkName .checkNameBtn {
