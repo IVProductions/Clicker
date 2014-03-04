@@ -131,6 +131,7 @@ function indexCtrl($scope, records){
 				nameMultiplier = nameMultiplier + 0.05;
 				updateStats();
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
+				$(".allcaps").prop('disabled', true);	
 			}
 		}
 	}
@@ -156,6 +157,17 @@ function indexCtrl($scope, records){
 
 				percentage = (currentHealth/health)*100;
 				$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
+
+				if(figure.guessed){
+					$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
+					$scope.guessedName = figure.name;
+					$(".allcaps").prop('disabled', true);	
+				}
+				else {
+					$('.checkNameBtn').css('background-image', 'url(img/components/questionMark.png)');
+					$scope.guessedName = "";
+					$(".allcaps").prop('disabled', false);	
+				}
 			}
 			if ($scope.index == 0){
 				$('.prevValid').css('background-image', 'none');
@@ -197,6 +209,17 @@ function indexCtrl($scope, records){
 				if(!figure.defeated){
 					$('.nextValid').css('background-image', 'none');
 					nextValid = false;
+				}
+
+				if(figure.guessed){
+					$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
+					$scope.guessedName = figure.name;
+					$(".allcaps").prop('disabled', true);	
+				}
+				else {
+					$('.checkNameBtn').css('background-image', 'url(img/components/questionMark.png)');
+					$scope.guessedName = "";
+					$(".allcaps").prop('disabled', false);	
 				}
 			}
 			else {
