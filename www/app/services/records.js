@@ -2,13 +2,13 @@ Clicker.factory('records',function() {
     var superheroes = [
         {
             "id": 1,
-            "name": "Superman",
+            "name": "Thor",
             "health": 100,
             "armour": 0,
             "reward": 2,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/thor.png"
         },
         {
             "id": 2,
@@ -32,13 +32,13 @@ Clicker.factory('records',function() {
         },
         {
             "id": 4,
-            "name": "Thor",
+            "name": "Superman",
             "health": 500,
             "armour": 8,
             "reward": 50,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/thor.jpg"
+            "imageURL": "img/superman.jpg"
         },
         {
             "id": 5,
