@@ -9,7 +9,7 @@ function indexCtrl($scope, records){
 	$scope.upgrades = false;
 
 	// Initialize Stats 
-	var gold = 10000;
+	var gold = 0;
 	var gems = 5;
 	var totalClicks = 0;
 	var hitMultiplier = 1.0;
