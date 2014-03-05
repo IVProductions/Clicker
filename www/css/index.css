@@ -418,28 +418,79 @@ border-radius: 6px;
 
 
 .upgradeView {
-  position: absolute;
-  left: 0;
-  bottom: 0%;
-  top: 100%;
-  background-color: #62868D;
-  height: 90%;
-  width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    top: 100%;
+    background-color: #62868D;
+    height: 90%;
+    width: 100%;
+    font-family: myFirstFont;
+    font-size: 1em;
 }
 
 .upgradeView table {
-    background-color: white;
     width: 100%;
+}
+
+.upgradeView table tr {
+    height: 80px;
+    border-bottom: 3px solid #F9F3E3;
 }
 
 .upgradeView table .info {
     width: 80%;
-    background-color: green;
+    vertical-align: top;
+    color: #F8F2E3;
+    padding: 5px;
+}
+
+.upgradeView table .info .upgLvl {
+    position: absolute; 
+    right: 22%;
+}
+
+.upgradeView table .info .cost,
+.upgradeView table .info .next,
+.upgradeView table .info .current,
+.upgradeView table .info .description {
+    font-size: 0.8em; 
+}
+
+.upgradeView .backBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 20%;
+    height: 50px;
+    background-color: transparent;
+    background-image: url('../img/components/backBtn.png');
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
+.upgradeView table .info .next {
+    position: absolute;
+    left: 30%;
+}
+
+.upgradeView table .info .cost {
+    position: absolute;
+    right: 22%;
 }
 
 .upgradeView table .upgBtn {
     width: 20%;
-    background-color: red;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    background-image: url('../img/components/upgSingle.png');
+    background-size: 50px 50px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .upgrade {
