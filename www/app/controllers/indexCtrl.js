@@ -256,12 +256,16 @@ function indexCtrl($scope, records){
 	}
 
 	$scope.showUpgrades = function() {
-		$scope.upgrades = true;
-		$('.upgradeView').animate({'top' : '10%'}, {duration: 500, complete: function() {}});
+		$('.upgradeView').show();
+		$('.upgradeView').animate({top : '10%'}, 500, function () {
+
+		});
 	}
 
 	$scope.hideUpgrades = function() {
-		$('.upgradeView').animate({'top' : '100%'}, {duration: 500, complete: function() {$scope.upgrades = false;}});
+		$('.upgradeView').animate({top : '100%'}, 500, function () {
+			$('.upgradeView').hide();
+		});
 	}
 
 
