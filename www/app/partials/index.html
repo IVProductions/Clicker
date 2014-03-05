@@ -87,7 +87,7 @@
     		</td>
     		<td class="nextValid" ng-click="next();">
     		</td>
-    		<td class="upgrades" ng-click="upgrade = true;">
+    		<td class="upgrades" ng-click="showUpgrades()">
     		</td>
   		</tr>
 	</table>
@@ -180,3 +180,4 @@
   		</tr>	
 	</table>
 </div>
+<div class="upgradeView" ng-show="upgrades"><button ng-click="upgrades = false"></button></div>

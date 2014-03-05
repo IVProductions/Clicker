@@ -33,6 +33,16 @@ html, body {
     background-color:#62868D;
 }
 
+.upgradeView {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  top: 100%;
+  background-color: red;
+  height: 90%;
+  width: 100%;
+}
+
 
 .allcaps {
     font-variant: small-caps;

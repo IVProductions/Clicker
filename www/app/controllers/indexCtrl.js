@@ -6,6 +6,7 @@ function indexCtrl($scope, records){
 	$('.nextValid').css('background-image', 'none');
 
 	$scope.upgrade = false;
+	$scope.upgrades = false;
 
 	// Initialize Stats 
 	var gold = 0;
@@ -254,7 +255,9 @@ function indexCtrl($scope, records){
 		
 	}
 
-
-
+	$scope.showUpgrades = function() {
+		$scope.upgrades = true;
+		$('.upgradeView').animate({'top' : '10%'}, 150);
+	}
 
 }
