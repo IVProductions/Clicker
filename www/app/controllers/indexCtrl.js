@@ -129,7 +129,7 @@ function indexCtrl($scope, records){
 
 			if(xx == yy && !figure.guessed) {
 				figure.guessed = true;
-				nameMultiplier = nameMultiplier + 0.05;
+				nameMultiplier = nameMultiplier + 0.1;
 				updateStats();
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
 				$('.allcaps').prop('disabled', true);	
