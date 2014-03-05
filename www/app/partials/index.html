@@ -34,7 +34,7 @@
 				 </span>
 				</div>
     		</td>
-    		<td class="picture" ng-click="click();">
+    		<td class="picture" ng-click="click($event);">
     			<div class="lvlValue">
     				LVL {{index+1}}
     			</div>
@@ -158,4 +158,3 @@
     </table>
     <button class="backBtn" ng-click="hideUpgrades()"></button>
 </div>
-<img src="img/components/gem.png" class="gemAnim" height="10" width="10">

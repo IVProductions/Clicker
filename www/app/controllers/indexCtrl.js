@@ -84,7 +84,8 @@ function indexCtrl($scope, records){
 
 	
 
-	$scope.click = function () {
+	$scope.click = function (event) {
+		console.log(event);
 		// ADD TOTAL CLICKS
 		totalClicks++;
 		// HIT MULTIPLIER
@@ -111,11 +112,15 @@ function indexCtrl($scope, records){
 				// GEM CHANCE
 				var random2 = Math.random();
 				if(random2 <= gemChance){
-					var $gemAnim = $("<img>", {src: "img/components/gem.png", height: "20", width: "20"});
+					var $gemAnim = $("<img>", {src: "img/components/gem.png", class: "gemAnim", height: "50", width: "50"});
 					$gemAnim.css('position', 'absolute');
-					$gemAnim.css('top', '50%');
-					$gemAnim.css('right', '50%');
+					$gemAnim.css('top', ''+event.pageY+'px');
+					$gemAnim.css('left', ''+event.pageX+'px');
 					$(".main").append($gemAnim);
+					$('.gemAnim').animate({top : '5%', left: '90%', height: '10', width: '10'}, 500, function () {
+						$('.gemAnim').hide();
+					});
+
 					gems++;
 				}
 				if($scope.index == max){
@@ -347,7 +352,8 @@ function indexCtrl($scope, records){
 	// ************************** //
 
 	// ********** GEM CHANCE *********** //
-	var gemChance = 0.03;
+	var gemChance = 1.0;
+	//var gemChance = 0.03;
 	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
 	var upgGemChanceLevel = 0;
 	var upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel];

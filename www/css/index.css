@@ -574,12 +574,6 @@ border-radius: 6px;
     text-align: center;
 } 
 
-.gemAnim {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-}
-
 /*
 .main .picture .healthbar {
     height: 500px;
