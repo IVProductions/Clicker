@@ -186,13 +186,13 @@
         <tr>
             <td class="info">
                 Power 
-                <span class="upgLvl">lvl 5</span> <br>
+                <span class="upgLvl">lvl {{upgPowerLevel}}</span> <br>
                 <span class="description">This is a more detailed description of the upgrade</span><br>
-                <span class="current">Current: 1.05</span>
-                <span class="next">Next: 1.15</span>
-                <span class="cost"><img src="img/components/gold.png" height="10" width="10"> 400</span>
+                <span class="current">Current: {{upgMultiplier}}</span>
+                <span class="next">Next: {{upgMultiplier+0.03}}</span>
+                <span class="cost"><img src="img/components/gold.png" height="10" width="10"> {{upgPowerCost}}</span>
             </td>
-            <td class="upgBtn"></td>
+            <td class="upgBtn" ng-click="upgradePower()"></td>
         </tr>
         <tr>
             <td class="info">Crit 
@@ -206,21 +206,21 @@
         </tr>
         <tr>
             <td class="info">Crit Chance 
-                <span class="upgLvl">lvl 5</span> <br>
+                <span class="upgLvl">lvl {{upgCritChanceLevel}}</span> <br>
                 <span class="description">This is a more detailed description of the upgrade</span><br>
-                <span class="current">Current: 1.05</span>
-                <span class="next">Next: 1.15</span>
-                <span class="cost"><img src="img/components/gold.png" height="10" width="10"> 400</span>
+                <span class="current">Current: {{critChance}} %</span>
+                <span class="next">Next: {{critChance+1}} %</span>
+                <span class="cost"><img src="img/components/gold.png" height="10" width="10"> {{upgCritChanceCost}}</span>
             </td>
             <td class="upgBtn"></td>
         </tr>
         <tr>
             <td class="info">Gem Chance 
-                <span class="upgLvl">lvl 5</span> <br>
+                <span class="upgLvl">lvl {{upgGemChanceLevel}}</span> <br>
                 <span class="description">This is a more detailed description of the upgrade</span><br>
-                <span class="current">Current: 1.05</span>
-                <span class="next">Next: 1.15</span>
-                <span class="cost"><img src="img/components/gold.png" height="10" width="10"> 400</span>
+                <span class="current">Current: {{gemChance}} %</span>
+                <span class="next">Next: {{gemChance+1}} %</span>
+                <span class="cost"><img src="img/components/gold.png" height="10" width="10"> {{upgGemChanceCost}}</span>
             </td>
             <td class="upgBtn"></td>
         </tr>
@@ -245,6 +245,6 @@
             <td class="trainBtn"></td>
         </tr>
     </table>
-    
+
     <button class="backBtn" ng-click="hideUpgrades()"></button>
 </div>

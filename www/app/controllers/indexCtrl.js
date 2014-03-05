@@ -9,12 +9,12 @@ function indexCtrl($scope, records){
 	$scope.upgrades = false;
 
 	// Initialize Stats 
-	var gold = 0;
+	var gold = 10000;
 	var gems = 0;
 	var totalClicks = 0;
 	var hitMultiplier = 1.0;
-	var upgMultiplier = 1.0;
 	var nameMultiplier = 1.0;
+	var upgMultiplier = 1.0;
 	var basePower = 10.0;
 	var totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
 
@@ -41,6 +41,9 @@ function indexCtrl($scope, records){
 		$scope.basePower = basePower;
 		$scope.totalPower = totalPower;	
 		$scope.damage = damage;
+
+		$scope.critChance = critChance;
+		$scope.gemChance = gemChance;
 	};
 
 	// Initialize Picture
@@ -90,6 +93,11 @@ function indexCtrl($scope, records){
 				currentHealth = health;
 				// DEFEATED CHAMPION
 				figure.defeated = true;
+				// GEM CHANCE
+				var random = Math.random()*100;
+				if(random <= gemChance){
+					gems++;
+				}
 				if($scope.index == max){
 					alert("Du har runnet spillet, helsa mormor!");
 				}
@@ -254,6 +262,113 @@ function indexCtrl($scope, records){
 		}
 		
 	}
+
+	// ********** POWER / UPG MULTIPLIER *********** //
+	var upgPowerCostArray = [400,2200,6160,12936,20698,31046,45017,62124,83246,109885];
+	var upgPowerLevel = 0;
+	var upgPowerCost = upgPowerCostArray[upgPowerLevel];
+	$scope.upgPowerCost = upgPowerCost;
+	$scope.upgPowerLevel = upgPowerLevel;
+	$scope.upgradePower = function () {
+		if(gold >= upgPowerCost){
+			gold = gold - upgPowerCost;
+			upgPowerLevel++;
+
+			// **************** //
+			upgMultiplier = upgMultiplier + 0.03;
+			// **************** //
+
+			upgPowerCost = upgPowerCostArray[upgPowerLevel]; 
+			$scope.upgPowerCost = upgPowerCost;
+			$scope.upgPowerLevel = upgPowerLevel;
+
+			updateStats();	
+		}
+		else {
+			alert("not enough gold / max level reached");
+		}	
+	}
+	// ************************** //
+
+	// ********** CRIT *********** //
+	var upgCritCostArray = [400,2200,6160,12936,20698,31046,45017,62124,83246,109885];
+	$scope.upgradeCrit = function () {
+			
+	}
+	// ************************** //
+
+
+	// ********** CRIT CHANCE *********** //
+	var critChance = 1;
+	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
+	var upgCritChanceLevel = 0;
+	var upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel];
+	$scope.upgCritChanceCost = upgCritChanceCost;
+	$scope.upgCritChanceLevel = upgCritChanceLevel;
+	$scope.critChance = critChance;
+	$scope.upgradeCritChance = function () {
+		if(gold >= upgCritChanceCost){
+			gold = gold - upgCritChanceCost;
+			upgCritChanceLevel++;
+
+			// **************** //
+			critChance++;
+			// **************** //
+
+			upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel]; 
+			$scope.upgCritChanceCost = upgCritChanceCost;
+			$scope.upgCritChanceLevel = upgCritChanceLevel;
+
+			updateStats();	
+		}
+		else {
+			alert("not enough gold / max level reached");
+		}		
+	}
+	// ************************** //
+
+	// ********** GEM CHANCE *********** //
+	var gemChance = 50;
+	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
+	var upgGemChanceLevel = 0;
+	var upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel];
+	$scope.upgGemChanceCost = upgGemChanceCost;
+	$scope.upgGemChanceLevel = upgGemChanceLevel;
+	$scope.gemChance = gemChance;
+	$scope.upgradeGemChance = function () {
+		if(gold >= upgGemChanceCost){
+			gold = gold - upgGemChanceCost;
+			upgGemChanceLevel++;
+
+			// **************** //
+			gemChance++;
+			// **************** //
+
+			upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel]; 
+			$scope.upgGemChanceCost = upgGemChanceCost;
+			$scope.upgGemChanceLevel = upgGemChanceLevel;
+
+			updateStats();	
+		}
+		else {
+			alert("not enough gold / max level reached");
+		}		
+	}
+	// ************************** //
+
+
+	// ********** TRAINING EFFECT *********** //
+	$scope.upgradeTrainingEffect = function () {
+
+	}
+	// ************************** //
+
+	// ********** TRAIN *********** //
+	$scope.train = function () {
+
+	}
+	// ************************** //
+
 
 	$scope.showUpgrades = function() {
 		$('.upgradeView').show();
