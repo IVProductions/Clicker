@@ -10,7 +10,7 @@ function indexCtrl($scope, records){
 
 	// Initialize Stats 
 	var gold = 10000;
-	var gems = 0;
+	var gems = 50;
 	var totalClicks = 0;
 	var hitMultiplier = 1.0;
 	var nameMultiplier = 1.0;
@@ -42,8 +42,15 @@ function indexCtrl($scope, records){
 		$scope.totalPower = totalPower;	
 		$scope.damage = damage;
 
+		critChance = Math.round(critChance*1000)/1000;
+		gemChance = Math.round(gemChance*1000)/1000;
+		crit = Math.round(crit*100)/100;
+		trainingEffect = Math.round(trainingEffect*100)/100;
+
 		$scope.critChance = critChance;
 		$scope.gemChance = gemChance;
+		$scope.crit = crit;
+		$scope.trainingEffect = trainingEffect;
 	};
 
 	// Initialize Picture
@@ -85,7 +92,15 @@ function indexCtrl($scope, records){
 		
 		// DECREASE HEALTH
 		if(damage != 0){
-			currentHealth = currentHealth - damage;
+			//CRIT CHANCE
+			var random1 = Math.random();
+			if(random1 <= critChance){
+				//alert('crit! = '+(damage*(crit/100)));
+				currentHealth = currentHealth - (damage*crit);
+			}
+			else {
+				currentHealth = currentHealth - damage;
+			}
 			if (currentHealth <= 0) {
 				// INCREASE GOLD
 				gold = gold + reward;
@@ -94,8 +109,8 @@ function indexCtrl($scope, records){
 				// DEFEATED CHAMPION
 				figure.defeated = true;
 				// GEM CHANCE
-				var random = Math.random()*100;
-				if(random <= gemChance){
+				var random2 = Math.random();
+				if(random2 <= gemChance){
 					gems++;
 				}
 				if($scope.index == max){
@@ -238,30 +253,7 @@ function indexCtrl($scope, records){
 		}
 	}
 
-	// Upgrades
-	var upgMultiplierCostArray = [400,2200,6160,12936,20698,31046,45017,62124,83246,109885];
-	var upgMultiplierLevel = 0;
-	var upgMultiplierCost = upgMultiplierCostArray[upgMultiplierLevel]; 
-	$scope.upgMultiplierCost = upgMultiplierCost;
-	$scope.upgMultiplierLevel = upgMultiplierLevel;
-
-	$scope.upgMultiplierFunction = function() {
-		
-		if(gold >= upgMultiplierCost){
-			gold = gold - upgMultiplierCost;
-			upgMultiplierLevel++;
-			upgMultiplier = upgMultiplier + 0.03;
-			upgMultiplierCost = upgMultiplierCostArray[upgMultiplierLevel]; 
-			$scope.upgMultiplierCost = upgMultiplierCost;
-			$scope.upgMultiplierLevel = upgMultiplierLevel;
-
-			updateStats();	
-		}
-		else {
-			alert("not enough gold / max level reached");
-		}
-		
-	}
+	// UPGRADES
 
 	// ********** POWER / UPG MULTIPLIER *********** //
 	var upgPowerCostArray = [400,2200,6160,12936,20698,31046,45017,62124,83246,109885];
@@ -291,15 +283,37 @@ function indexCtrl($scope, records){
 	// ************************** //
 
 	// ********** CRIT *********** //
-	var upgCritCostArray = [400,2200,6160,12936,20698,31046,45017,62124,83246,109885];
+	var crit = 1.5;
+	var upgCritCostArray = [18000,99000,277000,582000,931000,1400000,2095000,3140000,4715000,7072000];
+	var upgCritLevel = 0;
+	var upgCritCost = upgCritCostArray[upgCritLevel];
+	$scope.upgCritCost = upgCritCost;
+	$scope.upgCritLevel = upgCritLevel;
+	$scope.crit = crit;
 	$scope.upgradeCrit = function () {
-			
+		if(gold >= upgCritCost){
+			gold = gold - upgCritCost;
+			upgCritLevel++;
+
+			// **************** //
+			crit += 0.05;
+			// **************** //
+
+			upgCritCost = upgCritCostArray[upgCritLevel]; 
+			$scope.upgCritCost = upgCritCost;
+			$scope.upgCritLevel = upgCritLevel;
+
+			updateStats();	
+		}
+		else {
+			alert("not enough gold / max level reached");
+		}			
 	}
 	// ************************** //
 
 
 	// ********** CRIT CHANCE *********** //
-	var critChance = 1;
+	var critChance = 0.05;
 	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
 	var upgCritChanceLevel = 0;
 	var upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel];
@@ -312,7 +326,7 @@ function indexCtrl($scope, records){
 			upgCritChanceLevel++;
 
 			// **************** //
-			critChance++;
+			critChance = critChance + 0.005;
 			// **************** //
 
 			upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel]; 
@@ -328,7 +342,7 @@ function indexCtrl($scope, records){
 	// ************************** //
 
 	// ********** GEM CHANCE *********** //
-	var gemChance = 50;
+	var gemChance = 0.03;
 	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
 	var upgGemChanceLevel = 0;
 	var upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel];
@@ -341,7 +355,7 @@ function indexCtrl($scope, records){
 			upgGemChanceLevel++;
 
 			// **************** //
-			gemChance++;
+			gemChance = gemChance + 0.004;
 			// **************** //
 
 			upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel]; 
@@ -358,14 +372,57 @@ function indexCtrl($scope, records){
 
 
 	// ********** TRAINING EFFECT *********** //
+	var trainingEffect = 1.0;
+	var upgTrainingEffectCostArray = [10000,55000,154000,323000,517000,776000,1164000,1746000,2619000,3929000];
+	var upgTrainingEffectLevel = 0;
+	var upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel];
+	$scope.upgTrainingEffectCost = upgTrainingEffectCost;
+	$scope.upgTrainingEffectLevel = upgTrainingEffectLevel;
+	$scope.trainingEffect = trainingEffect;
 	$scope.upgradeTrainingEffect = function () {
+		if(gold >= upgTrainingEffectCost){
+			gold = gold - upgTrainingEffectCost;
+			upgTrainingEffectLevel++;
 
+			// **************** //
+			trainingEffect = trainingEffect + 0.05;
+			// **************** //
+
+			upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel]; 
+			$scope.upgTrainingEffectCost = upgTrainingEffectCost;
+			$scope.upgTrainingEffectLevel = upgTrainingEffectLevel;
+
+			updateStats();	
+		}
+		else {
+			alert("not enough gold / max level reached");
+		}
 	}
 	// ************************** //
 
 	// ********** TRAIN *********** //
-	$scope.train = function () {
 
+	$scope.train = function () {
+		if(gems >= 1){
+			gems--;
+
+			// **************** //
+			var rand = Math.random()*100;
+			var rand2 = Math.random()+trainingEffect;
+			if(rand <= 10){
+				basePower = basePower*rand2;
+			}
+			// **************** //
+
+			upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel]; 
+			$scope.upgGemChanceCost = upgGemChanceCost;
+			$scope.upgGemChanceLevel = upgGemChanceLevel;
+
+			updateStats();	
+		}
+		else {
+			alert("not enough gold / max level reached");
+		}	
 	}
 	// ************************** //
 

@@ -92,102 +92,13 @@
   		</tr>
 	</table>
 </div>
-<div class="upgrade" ng-show="upgrade">
-	<table>
-		<tr class="currency">
-			<td class="gold">{{gold}} gold</td>
-			<td class="gems">{{gems}} g</td>
-		</tr>
-		<tr>
-    		<td class="upgInfo">
-	    		<strong>Power upgrade</strong></br>
-	    		This is a more detailed description of the upgrade </br>
-	    		<table>
-		    		<td>Current:</td>
-		    		<td>{{upgMultiplier}}</td>
-		    		<td>Next:</td>
-		    		<td>{{upgMultiplier + 0.03}}</td>
-		    		<td>Cost:</td>
-		    		<td>{{upgMultiplierCost}}</td>
-	    		</table>
-    		</td>
-    		<td class="lvl">
-    		LVL 45 </br>
-    		<button class="active" ng-click="upgMultiplierFunction();"><p class="lvl"></p></button>
-    		</td>
-  		</tr>	
-  		<tr>
-    		<td class="upgInfo">
-    			<strong>Crit Chance</strong></br>
-	    		This is a more detailed description of the upgrade </br>
-	    		<table>
-		    		<td>Current:</td>
-		    		<td>{{upgMultiplier}}</td>
-		    		<td>Next:</td>
-		    		<td>{{upgMultiplier + 0.03}}</td>
-		    		<td>Cost:</td>
-		    		<td>{{upgMultiplierCost}}</td>
-	    		</table>
-    		</td>
-    		<td class="lvl">
-    		LVL 45 </br>
-    		<button class="active" ng-click="upgMultiplierFunction();"><p class="lvl"></p></button>
-    		</td>
-  		</tr>
-  		<tr>
-    		<td class="upgInfo">
-    			<strong>Crit</strong></br>
-	    		This is a more detailed description of the upgrade </br>
-	    		<table>
-		    		<td>Current:</td>
-		    		<td>{{upgMultiplier}}</td>
-		    		<td>Next:</td>
-		    		<td>{{upgMultiplier + 0.03}}</td>
-		    		<td>Cost:</td>
-		    		<td>{{upgMultiplierCost}}</td>
-	    		</table>
-    		</td>
-    		<td class="lvl">
-    		LVL 45 </br>
-    		<button class="active" ng-click="upgMultiplierFunction();"><p class="lvl"></p></button>
-    		</td>
-  		</tr>
-  		<tr>
-    		<td class="upgInfo">
-    			<strong>Gem Chance</strong></br>
-	    		This is a more detailed description of the upgrade </br>
-	    		<table>
-		    		<td>Current:</td>
-		    		<td>{{upgMultiplier}}</td>
-		    		<td>Next:</td>
-		    		<td>{{upgMultiplier + 0.03}}</td>
-		    		<td>Cost:</td>
-		    		<td>{{upgMultiplierCost}}</td>
-	    		</table>
-    		</td>
-    		<td class="lvl">
-    		LVL 45 </br>
-    		<button class="active" ng-click="upgMultiplierFunction();"><p class="lvl"></p></button>
-    		</td>
-  		</tr>
-  		<tr>
-    		<td class="upgInfo">Training interval</td>
-    		<td><button class="disabled"></button></td>
-  		</tr>
-  		<tr>
-    		<td class="upgInfo"></td>
-    		<td><button ng-click="upgrade = false">Back</button></td>
-  		</tr>	
-	</table>
-</div>
-
 <div class="upgradeView" ng-show="upgrades">
     <table>
         <tr>
             <td class="info">
                 Power 
                 <span class="upgLvl">lvl {{upgPowerLevel}}</span> <br>
-                <span class="description">This is a more detailed description of the upgrade</span><br>
+                <span class="description">Permanently increase your power</span><br>
                 <span class="current">Current: {{upgMultiplier}}</span>
                 <span class="next">Next: {{upgMultiplier+0.03}}</span>
                 <span class="cost"><img src="img/components/gold.png" height="10" width="10"> {{upgPowerCost}}</span>
@@ -196,53 +107,53 @@
         </tr>
         <tr>
             <td class="info">Crit 
-                <span class="upgLvl">lvl 5</span> <br>
-                <span class="description">This is a more detailed description of the upgrade</span><br>
-                <span class="current">Current: 1.05</span>
-                <span class="next">Next: 1.15</span>
-                <span class="cost"><img src="img/components/gold.png" height="10" width="10"> 400</span>
+                <span class="upgLvl">lvl {{upgCritLevel}}</span> <br>
+                <span class="description">Increases the effect of a critical strike</span><br>
+                <span class="current">Current: {{crit}}</span>
+                <span class="next">Next: {{crit+0.05}}</span>
+                <span class="cost"><img src="img/components/gold.png" height="10" width="10"> {{upgCritCost}}</span>
             </td>
-            <td class="upgBtn"></td>
+            <td class="upgBtn" ng-click="upgradeCrit()"></td>
         </tr>
         <tr>
             <td class="info">Crit Chance 
                 <span class="upgLvl">lvl {{upgCritChanceLevel}}</span> <br>
-                <span class="description">This is a more detailed description of the upgrade</span><br>
-                <span class="current">Current: {{critChance}} %</span>
-                <span class="next">Next: {{critChance+1}} %</span>
+                <span class="description">Increases the chance for a critical strike</span><br>
+                <span class="current">Current: {{critChance}}</span>
+                <span class="next">Next: {{critChance+0.005}}</span>
                 <span class="cost"><img src="img/components/gold.png" height="10" width="10"> {{upgCritChanceCost}}</span>
             </td>
-            <td class="upgBtn"></td>
+            <td class="upgBtn" ng-click="upgradeCritChance()"></td>
         </tr>
         <tr>
             <td class="info">Gem Chance 
                 <span class="upgLvl">lvl {{upgGemChanceLevel}}</span> <br>
-                <span class="description">This is a more detailed description of the upgrade</span><br>
-                <span class="current">Current: {{gemChance}} %</span>
-                <span class="next">Next: {{gemChance+1}} %</span>
+                <span class="description">Increases the chance of finding a gem</span><br>
+                <span class="current">Current: {{gemChance}}</span>
+                <span class="next">Next: {{gemChance+0.004}}</span>
                 <span class="cost"><img src="img/components/gold.png" height="10" width="10"> {{upgGemChanceCost}}</span>
             </td>
-            <td class="upgBtn"></td>
+            <td class="upgBtn" ng-click="upgradeGemChance()"></td>
         </tr>
         <tr>
             <td class="info">Training effect 
-                <span class="upgLvl">lvl 5</span> <br>
-                <span class="description">This is a more detailed description of the upgrade</span><br>
-                <span class="current">Current: 1.05</span>
-                <span class="next">Next: 1.15</span>
+                <span class="upgLvl">lvl {{upgTrainingEffectLevel}}</span> <br>
+                <span class="description">Increases the effect of training</span><br>
+                <span class="current">Current: {{trainingEffect+1}}</span>
+                <span class="next">Next: {{trainingEffect+1.05}}</span>
                 <span class="cost"><img src="img/components/gold.png" height="10" width="10"> 400</span>
             </td>
-            <td class="upgBtn"></td>
+            <td class="upgBtn" ng-click="upgradeTrainingEffect()"></td>
         </tr>
         <tr>
             <td class="info">Training 
-                <span class="upgLvl">lvl 5</span> <br>
+                <span class="upgLvl"></span> <br>
                 <span class="description">A chance to permanently increase your base power</span><br>
                 <span class="current">Current: {{basePower}}</span>
                 <span class="next">Next: ?</span>
                 <span class="cost"><img src="img/components/gem.png" height="10" width="10"> 1</span>
             </td>
-            <td class="trainBtn"></td>
+            <td class="trainBtn" ng-click="train()"></td>
         </tr>
     </table>
     <button class="backBtn" ng-click="hideUpgrades()"></button>
