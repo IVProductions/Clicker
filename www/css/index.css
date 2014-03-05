@@ -434,7 +434,7 @@ border-radius: 6px;
 }
 
 .upgradeView table tr {
-    height: 80px;
+    height: 90px;
     border-bottom: 3px solid #F9F3E3;
 }
 
@@ -450,11 +450,16 @@ border-radius: 6px;
     right: 22%;
 }
 
+.upgradeView table .info .description {
+    padding-bottom: 5px;
+}
+
 .upgradeView table .info .cost,
 .upgradeView table .info .next,
 .upgradeView table .info .current,
 .upgradeView table .info .description {
     font-size: 0.8em; 
+    line-height: 0.8em;
 }
 
 .upgradeView .backBtn {
