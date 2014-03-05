@@ -502,6 +502,18 @@ border-radius: 6px;
     background-repeat: no-repeat;
 }
 
+.upgradeView table .trainBtn {
+    width: 20%;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    background-image: url('../img/components/trainBtn.png');
+    background-size: 40px 40px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .upgrade {
     position: absolute;
     top: 0;
