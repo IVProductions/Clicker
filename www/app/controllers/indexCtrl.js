@@ -257,8 +257,12 @@ function indexCtrl($scope, records){
 
 	$scope.showUpgrades = function() {
 		$scope.upgrades = true;
-		$('.upgradeView').animate({'top' : '10%'}, 150);
+		$('.upgradeView').animate({'top' : '10%'}, {duration: 1000, complete: function() {}});
 	}
-	
+
+	$scope.hideUpgrades = function() {
+		$('.upgradeView').animate({'top' : '100%'}, {duration: 1000, complete: function() { $scope.upgrades = false; }});
+	}
+
 
 }
