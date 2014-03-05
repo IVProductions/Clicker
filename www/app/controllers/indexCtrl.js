@@ -111,6 +111,11 @@ function indexCtrl($scope, records){
 				// GEM CHANCE
 				var random2 = Math.random();
 				if(random2 <= gemChance){
+					var $gemAnim = $("<img>", {src: "img/components/gem.png", height: "20", width: "20"});
+					$gemAnim.css('position', 'absolute');
+					$gemAnim.css('top', '50%');
+					$gemAnim.css('right', '50%');
+					$(".main").append($gemAnim);
 					gems++;
 				}
 				if($scope.index == max){
