@@ -15,7 +15,7 @@ function indexCtrl($scope, records){
 	var hitMultiplier = 1.0;
 	var nameMultiplier = 1.0;
 	var upgMultiplier = 1.0;
-	var basePower = 10.0;
+	var basePower = 100.0;
 	var totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
 
 	var updateStats = function () {
@@ -112,13 +112,14 @@ function indexCtrl($scope, records){
 				// GEM CHANCE
 				var random2 = Math.random();
 				if(random2 <= gemChance){
-					var $gemAnim = $("<img>", {src: "img/components/gem.png", class: "gemAnim", height: "50", width: "50"});
+					var r = random2.toString().substring(3,5);
+					var $gemAnim = $("<img>", {src: "img/components/gem.png", class: "gemAnim"+r, height: "50", width: "50"});
 					$gemAnim.css('position', 'absolute');
-					$gemAnim.css('top', ''+event.pageY+'px');
-					$gemAnim.css('left', ''+event.pageX+'px');
+					$gemAnim.css('top', ''+(event.pageY)+'px');
+					$gemAnim.css('left', ''+(event.pageX-25)+'px');
 					$(".main").append($gemAnim);
-					$('.gemAnim').animate({top : '5%', left: '90%', height: '10', width: '10'}, 500, function () {
-						$('.gemAnim').hide();
+					$('.gemAnim'+r).animate({top : '5%', left: '90%', height: '10', width: '10'}, 500, function () {
+						$('.gemAnim'+r).remove();
 					});
 
 					gems++;
