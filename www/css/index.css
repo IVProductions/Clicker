@@ -434,7 +434,7 @@ border-radius: 6px;
 }
 
 .upgradeView table tr {
-    height: 80px;
+    height: 70px;
     border-bottom: 3px solid #F9F3E3;
 }
 
@@ -469,6 +469,11 @@ border-radius: 6px;
     background-position: center;
     background-repeat: no-repeat;
     border:none;
+}
+
+.upgradeView table .info .current {
+    position: absolute;
+    left: 5px;
 }
 
 .upgradeView table .info .next {
