@@ -10,7 +10,7 @@ function indexCtrl($scope, records){
 
 	// Initialize Stats 
 	var gold = 10000;
-	var gems = 50;
+	var gems = 5;
 	var totalClicks = 0;
 	var hitMultiplier = 1.0;
 	var nameMultiplier = 1.0;
