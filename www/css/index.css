@@ -33,17 +33,6 @@ html, body {
     background-color:#62868D;
 }
 
-.upgradeView {
-  position: absolute;
-  left: 0;
-  bottom: 0%;
-  top: 100%;
-  background-color: red;
-  height: 90%;
-  width: 100%;
-}
-
-
 .allcaps {
     font-variant: small-caps;
     text-transform: uppercase;
@@ -425,6 +414,32 @@ border-radius: 6px;
     background-size: 30px 30px;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+.upgradeView {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  top: 100%;
+  background-color: #62868D;
+  height: 90%;
+  width: 100%;
+}
+
+.upgradeView table {
+    background-color: white;
+    width: 100%;
+}
+
+.upgradeView table .info {
+    width: 80%;
+    background-color: green;
+}
+
+.upgradeView table .upgBtn {
+    width: 20%;
+    background-color: red;
 }
 
 .upgrade {

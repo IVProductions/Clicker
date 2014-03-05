@@ -259,5 +259,6 @@ function indexCtrl($scope, records){
 		$scope.upgrades = true;
 		$('.upgradeView').animate({'top' : '10%'}, 150);
 	}
+	
 
 }
