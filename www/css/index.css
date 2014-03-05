@@ -458,8 +458,7 @@ border-radius: 6px;
 .upgradeView table .info .next,
 .upgradeView table .info .current,
 .upgradeView table .info .description {
-    font-size: 0.8em; 
-    line-height: 0.8em;
+    font-size: 0.6em; 
 }
 
 .upgradeView .backBtn {
