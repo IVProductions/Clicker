@@ -1,5 +1,8 @@
 function indexCtrl($scope, records){
 
+	// Prevent vertical scrolling 
+	document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+
 	var prevValid = false;
 	var nextValid = false;
 	$('.prevValid').css('background-image', 'none');
