@@ -411,6 +411,7 @@ function indexCtrl($scope, records){
 			var rand2 = Math.random()+trainingEffect;
 			if(rand <= 10){
 				basePower = basePower*rand2;
+				alert('new basepower! '+basepower);
 			}
 			// **************** //
 
