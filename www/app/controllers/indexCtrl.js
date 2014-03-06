@@ -94,10 +94,11 @@ function indexCtrl($scope, records){
 		// DECREASE HEALTH
 		if(damage != 0){
 			//CRIT CHANCE
+			$(".crit").remove();
 			var random1 = Math.random();
 			if(random1 <= critChance){
-				var r = random1.toString().substring(3,5);
-				var $critAnim = $("<img>", {src: "img/components/crit.png", class: "critAnim"+r, height: "10", width: "10"});
+				var r = random1.toString().substring(3,7);
+				var $critAnim = $("<img>", {src: "img/components/crit.png", class: "critAnim"+r+" crit", height: "10", width: "10"});
 				$critAnim.css('position', 'absolute');
 				$critAnim.css('top', ''+(event.pageY)+'px');
 				$critAnim.css('left', ''+(event.pageX-25)+'px');
@@ -107,6 +108,7 @@ function indexCtrl($scope, records){
 				//});
 				$('.critAnim'+r).effect("scale", {percent:1000, origin:['middle','center']}, 300, function () {
 					$('.critAnim'+r).remove();
+					$(".crit").remove();
 				});
 				currentHealth = currentHealth - (damage*crit);
 			}
@@ -364,7 +366,7 @@ function indexCtrl($scope, records){
 	// ************************** //
 
 	// ********** GEM CHANCE *********** //
-	var gemChance = 0.3;
+	var gemChance = 1.0;
 	//var gemChance = 0.03;
 	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
 	var upgGemChanceLevel = 0;
