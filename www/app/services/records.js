@@ -8,7 +8,7 @@ Clicker.factory('records',function() {
             "reward": 2,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/thor.png"
+            "imageURL": "img/captainamerica.png"
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@ Clicker.factory('records',function() {
             "reward": 10,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/greenlantern.jpg"
+            "imageURL": "img/batman.jpg"
         },
         {
             "id": 3,
@@ -28,7 +28,7 @@ Clicker.factory('records',function() {
             "reward": 20,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/captainamerica.jpg"
+            "imageURL": "img/spiderman.jpg"
         },
         {
             "id": 4,
@@ -38,7 +38,7 @@ Clicker.factory('records',function() {
             "reward": 50,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/flash.jpg"
         },
         {
             "id": 5,
@@ -48,7 +48,7 @@ Clicker.factory('records',function() {
             "reward": 100,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/flash.jpg"
+            "imageURL": "img/ironman.jpg"
         },
         {
             "id": 6,
@@ -58,7 +58,7 @@ Clicker.factory('records',function() {
             "reward": 200,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/batman.jpg"
+            "imageURL": "img/wonderwoman.jpg"
         },
         {
             "id": 7,
@@ -78,7 +78,7 @@ Clicker.factory('records',function() {
             "reward": 450,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/greenarrow.jpg"
+            "imageURL": "img/superman.jpg"
         },
         {
             "id": 9,
@@ -88,7 +88,7 @@ Clicker.factory('records',function() {
             "reward": 675,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/wolverine.jpg"
+            "imageURL": "img/greenarrow.jpg"
         },
         {
             "id": 10,
@@ -108,7 +108,7 @@ Clicker.factory('records',function() {
             "reward": 1519,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/wolverine.jpg"
         },
 	{
             "id": 12,
@@ -118,7 +118,7 @@ Clicker.factory('records',function() {
             "reward": 2278,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/robin.jpg"
         },
 	{
             "id": 13,
@@ -138,7 +138,7 @@ Clicker.factory('records',function() {
             "reward": 5126,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/blackcanary.jpg"
         },
 	{
             "id": 15,
@@ -148,7 +148,7 @@ Clicker.factory('records',function() {
             "reward": 7689,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/daredevil.jpg"
         },
 	{
             "id": 16,
@@ -158,7 +158,7 @@ Clicker.factory('records',function() {
             "reward": 11533,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/thevision.jpg"
         },
 	{
             "id": 17,
@@ -168,7 +168,7 @@ Clicker.factory('records',function() {
             "reward": 17300,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/falcon.jpeg"
         },
 	{
             "id": 18,
@@ -178,7 +178,7 @@ Clicker.factory('records',function() {
             "reward": 25949,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/aquaman.jpg"
         },
 	{
             "id": 19,
@@ -188,7 +188,7 @@ Clicker.factory('records',function() {
             "reward": 38924,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/mrfantastic.jpg"
         },
 	{
             "id": 20,
@@ -198,7 +198,7 @@ Clicker.factory('records',function() {
             "reward": 58386,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/martianmanhunter.jpg"
         },
 	{
             "id": 21,
@@ -208,7 +208,7 @@ Clicker.factory('records',function() {
             "reward": 87579,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/antman.jpg"
         },
 	{
             "id": 22,
@@ -218,7 +218,7 @@ Clicker.factory('records',function() {
             "reward": 131368,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/thething.jpg"
         },
 	{
             "id": 23,
@@ -228,7 +228,7 @@ Clicker.factory('records',function() {
             "reward": 197052,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/catwoman.jpg"
         },
 	{
             "id": 24,
@@ -238,7 +238,7 @@ Clicker.factory('records',function() {
             "reward": 295578,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/hawkgirl.jpeg"
         },
 	{
             "id": 25,
@@ -248,7 +248,7 @@ Clicker.factory('records',function() {
             "reward": 443368,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/hawkeye.jpg"
         },
 	{
             "id": 26,
@@ -258,7 +258,7 @@ Clicker.factory('records',function() {
             "reward": 665051,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/hawkman.jpg"
         },
 	{
             "id": 27,
@@ -268,7 +268,7 @@ Clicker.factory('records',function() {
             "reward": 997577,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/storm.jpg"
         },
 	{
             "id": 28,
@@ -278,7 +278,7 @@ Clicker.factory('records',function() {
             "reward": 1496366,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/blackpanther.jpeg"
         },
 	{
             "id": 29,
@@ -288,7 +288,7 @@ Clicker.factory('records',function() {
             "reward": 2244548,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/supergirl.jpg"
         },
 	{
             "id": 30,
@@ -298,7 +298,7 @@ Clicker.factory('records',function() {
             "reward": 3366822,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/ironfist.jpg"
         },
 	{
             "id": 31,
@@ -308,7 +308,7 @@ Clicker.factory('records',function() {
             "reward": 5050234,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/doctorfate.jpg"
         },
 	{
             "id": 32,
@@ -318,7 +318,7 @@ Clicker.factory('records',function() {
             "reward": 7575350,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/beast.jpg"
         },
 	{
             "id": 33,
@@ -328,7 +328,7 @@ Clicker.factory('records',function() {
             "reward": 11366822,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/blackwidow.jpg"
         },
 	{
             "id": 34,
@@ -338,7 +338,7 @@ Clicker.factory('records',function() {
             "reward": 17044539,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/crimsonfox.jpg"
         },
 	{
             "id": 35,
@@ -348,7 +348,7 @@ Clicker.factory('records',function() {
             "reward": 25566808,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/stargirl.jpg"
         },
 	{
             "id": 36,
@@ -358,7 +358,7 @@ Clicker.factory('records',function() {
             "reward": 38350212,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/iceman.jpeg"
         },
 	{
             "id": 37,
@@ -368,7 +368,7 @@ Clicker.factory('records',function() {
             "reward": 57525318,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/bluebeetle.jpg"
         },
 	{
             "id": 38,
@@ -378,7 +378,7 @@ Clicker.factory('records',function() {
             "reward": 86287977,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/zatanna.jpg"
         },
 	{
             "id": 39,
@@ -388,7 +388,7 @@ Clicker.factory('records',function() {
             "reward": 129431965,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/huntress.jpg"
         },
 	{
             "id": 40,
@@ -398,7 +398,7 @@ Clicker.factory('records',function() {
             "reward": 194147947,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/atom.jpg"
         },
 	{
             "id": 41,
@@ -408,7 +408,7 @@ Clicker.factory('records',function() {
             "reward": 291221921,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/batgirl.jpg"
         },
 	{
             "id": 42,
@@ -418,7 +418,7 @@ Clicker.factory('records',function() {
             "reward": 436832882,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/greenarrow.jpg"
         },
 	{
             "id": 43,
@@ -428,7 +428,7 @@ Clicker.factory('records',function() {
             "reward": 655249323,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/powerman.jpg"
         },
 	{
             "id": 44,
@@ -438,7 +438,7 @@ Clicker.factory('records',function() {
             "reward": 982873984,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/colossus.jpg"
         },
 	{
             "id": 45,
@@ -448,7 +448,7 @@ Clicker.factory('records',function() {
             "reward": 1474310976,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/captainatom.jpg"
         },
 	{
             "id": 46,
@@ -458,7 +458,7 @@ Clicker.factory('records',function() {
             "reward": 2211466464,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/cyclops.jpg"
         },
 	{
             "id": 47,
@@ -468,7 +468,7 @@ Clicker.factory('records',function() {
             "reward": 3317199696,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/invisiblewoman.jpg"
         },
 	{
             "id": 48,
@@ -478,7 +478,7 @@ Clicker.factory('records',function() {
             "reward": 4975799544,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/generalglory.jpeg"
         },
 	{
             "id": 49,
@@ -488,7 +488,7 @@ Clicker.factory('records',function() {
             "reward": 7463699317,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/firehawk.jpg"
         },
 	{
             "id": 50,
@@ -498,7 +498,7 @@ Clicker.factory('records',function() {
             "reward": 11195548975,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/shazam.jpeg"
         }
 	    ]
     
