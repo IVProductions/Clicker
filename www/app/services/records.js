@@ -68,7 +68,7 @@ Clicker.factory('records',function() {
             "reward": 300,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/spiderman.jpg"
+            "imageURL": "img/superman.jpg"
         },
         {
             "id": 8,
@@ -88,7 +88,7 @@ Clicker.factory('records',function() {
             "reward": 675,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/greenarrow.jpg"
+            "imageURL": "img/greenlantern.jpg"
         },
         {
             "id": 10,
@@ -128,7 +128,7 @@ Clicker.factory('records',function() {
             "reward": 3417,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/hulk.jpg"
+            "imageURL": "img/blackcanary.jpg"
         },
 	{
             "id": 14,
@@ -138,7 +138,7 @@ Clicker.factory('records',function() {
             "reward": 5126,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/blackcanary.jpg"
+            "imageURL": "img/cyborg.jpg"
         },
 	{
             "id": 15,
