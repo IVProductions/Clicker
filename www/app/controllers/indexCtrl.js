@@ -381,7 +381,7 @@ function indexCtrl($scope, records){
 
 
 	// ********** CRIT CHANCE *********** //
-	var critChance = 0.50;
+	var critChance = 0.05;
 	var nextCritChance = critChance + 0.005;
 	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
 	var upgCritChanceLevel = 0;

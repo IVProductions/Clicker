@@ -18,7 +18,7 @@ Clicker.factory('records',function() {
             "reward": 10,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/batman.jpg"
+            "imageURL": "img/batman.png"
         },
         {
             "id": 3,
