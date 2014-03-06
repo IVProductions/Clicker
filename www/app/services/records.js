@@ -2,7 +2,7 @@ Clicker.factory('records',function() {
     var superheroes = [
         {
             "id": 1,
-            "name": "Thor",
+            "name": "Captain America",
             "health": 100,
             "armour": 0,
             "reward": 2,
@@ -12,7 +12,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 2,
-            "name": "Green Lantern",
+            "name": «Batman»,
             "health": 200,
             "armour": 2,
             "reward": 10,
