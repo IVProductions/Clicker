@@ -15,7 +15,7 @@ function indexCtrl($scope, records){
 	var hitMultiplier = 1.0;
 	var nameMultiplier = 1.0;
 	var upgMultiplier = 1.0;
-	var basePower = 100.0;
+	var basePower = 10.0;
 	var totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
 
 	var updateStats = function () {
@@ -336,8 +336,7 @@ function indexCtrl($scope, records){
 
 
 	// ********** CRIT CHANCE *********** //
-	var critChance = 0.3;
-	//var critChance = 0.05;
+	var critChance = 0.05;
 	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
 	var upgCritChanceLevel = 0;
 	var upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel];
@@ -366,8 +365,7 @@ function indexCtrl($scope, records){
 	// ************************** //
 
 	// ********** GEM CHANCE *********** //
-	var gemChance = 1.0;
-	//var gemChance = 0.03;
+	var gemChance = 0.03;
 	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
 	var upgGemChanceLevel = 0;
 	var upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel];
