@@ -8,7 +8,7 @@ Clicker.factory('records',function() {
             "reward": 2,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/captainamerica.png"
+            "imageURL": "img/captainamerica.jpg"
         },
         {
             "id": 2,
