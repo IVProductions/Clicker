@@ -78,7 +78,7 @@ Clicker.factory('records',function() {
             "reward": 450,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/superman.jpg"
+            "imageURL": "img/thor.png"
         },
         {
             "id": 9,
