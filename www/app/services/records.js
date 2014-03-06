@@ -12,11 +12,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 2,
-<<<<<<< HEAD
-            "name": ‘Batman’,
-=======
             "name": 'Batman',
->>>>>>> 663fa76dc160bba3322228f1b7a518b6dd85f676
             "health": 200,
             "armour": 2,
             "reward": 10,
@@ -26,7 +22,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 3,
-            "name": ‘Spider-Man’,
+            "name": 'Spider-Man',
             "health": 300,
             "armour": 4,
             "reward": 20,
@@ -36,7 +32,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 4,
-            "name": ‘Flash,
+            "name": 'Flash',
             "health": 500,
             "armour": 8,
             "reward": 50,
@@ -46,7 +42,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 5,
-            "name": ‘Iron Man’,
+            "name": 'Iron Man',
             "health": 600,
             "armour": 12,
             "reward": 100,
@@ -56,7 +52,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 6,
-            "name": ‘Wonderwoman’,
+            "name": 'Wonderwoman',
             "health": 800,
             "armour": 18,
             "reward": 200,
@@ -66,7 +62,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 7,
-            "name": ‘Superman’,
+            "name": 'Superman',
             "health": 1000,
             "armour": 22,
             "reward": 300,
@@ -76,7 +72,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 8,
-            "name": ‘Thor’,
+            "name": 'Thor',
             "health": 1200,
             "armour": 26,
             "reward": 450,
@@ -86,7 +82,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 9,
-            "name": ‘Green Lantern’,
+            "name": 'Green Lantern',
             "health": 1440,
             "armour": 31,
             "reward": 675,
@@ -96,7 +92,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 10,
-            "name": ‘The Hulk’,
+            "name": 'The Hulk',
             "health": 1800,
             "armour": 40,
             "reward": 1013,
@@ -106,7 +102,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 11,
-            "name": ‘Wolverine’,
+            "name": 'Wolverine',
             "health": 2500,
             "armour": 48,
             "reward": 1519,
@@ -116,7 +112,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 12,
-            "name": ‘Robin’,
+            "name": 'Robin',
             "health": 3000,
             "armour": 48,
             "reward": 2278,
@@ -126,7 +122,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 13,
-            "name": ‘Black Canary’,
+            "name": 'Black Canary',
             "health": 3600,
             "armour": 100,
             "reward": 3417,
@@ -136,7 +132,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 14,
-            "name": ‘Cyborg’,
+            "name": 'Cyborg',
             "health": 4320,
             "armour": 120,
             "reward": 5126,
@@ -146,7 +142,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 15,
-            "name": ‘Daredevil’,
+            "name": 'Daredevil',
             "health": 5184,
             "armour": 144,
             "reward": 7689,
@@ -156,7 +152,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 16,
-            "name": ‘The Vision’,
+            "name": 'The Vision',
             "health": 6221,
             "armour": 173,
             "reward": 11533,
@@ -166,7 +162,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 17,
-            "name": ‘Falcon’,
+            "name": 'Falcon',
             "health": 7465,
             "armour": 207,
             "reward": 17300,
@@ -176,7 +172,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 18,
-            "name": ‘Aquaman’,
+            "name": 'Aquaman',
             "health": 8958,
             "armour": 249,
             "reward": 25949,
@@ -186,7 +182,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 19,
-            "name": ‘Mr. Fantastic’,
+            "name": 'Mr. Fantastic',
             "health": 10750,
             "armour": 299,
             "reward": 38924,
@@ -196,7 +192,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 20,
-            "name": ‘Martian Manhunter’,
+            "name": 'Martian Manhunter',
             "health": 12899,
             "armour": 358,
             "reward": 58386,
@@ -206,7 +202,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 21,
-            "name": ‘Ant-Man’,
+            "name": 'Ant-Man',
             "health": 15479,
             "armour": 430,
             "reward": 87579,
@@ -216,7 +212,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 22,
-            "name": ‘The Thing’,
+            "name": 'The Thing',
             "health": 18575,
             "armour": 516,
             "reward": 131368,
@@ -226,7 +222,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 23,
-            "name": ‘Catwoman’,
+            "name": 'Catwoman',
             "health": 22290,
             "armour": 619,
             "reward": 197052,
@@ -236,7 +232,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 24,
-            "name": ‘Hawkgirl’,
+            "name": 'Hawkgirl',
             "health": 26748,
             "armour": 743,
             "reward": 295578,
@@ -246,7 +242,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 25,
-            "name": ‘Hawkeye’,
+            "name": 'Hawkeye',
             "health": 32098,
             "armour": 892,
             "reward": 443368,
@@ -256,7 +252,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 26,
-            "name": ‘Hawkman’,
+            "name": 'Hawkman',
             "health": 38518,
             "armour": 1070,
             "reward": 665051,
@@ -266,7 +262,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 27,
-            "name": ‘Storm’,
+            "name": 'Storm',
             "health": 46221,
             "armour": 1284,
             "reward": 997577,
@@ -276,7 +272,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 28,
-            "name": ‘Black Panther’,
+            "name": 'Black Panther',
             "health": 55465,
             "armour": 1541,
             "reward": 1496366,
@@ -286,7 +282,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 29,
-            "name": ‘Supergirl’,
+            "name": 'Supergirl',
             "health": 66558,
             "armour": 1849,
             "reward": 2244548,
@@ -296,7 +292,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 30,
-            "name": ‘Iron Fist’,
+            "name": 'Iron Fist',
             "health": 79870,
             "armour": 2219,
             "reward": 3366822,
@@ -306,7 +302,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 31,
-            "name": ‘Doctor Fate’,
+            "name": 'Doctor Fate',
             "health": 95844,
             "armour": 2662,
             "reward": 5050234,
@@ -316,7 +312,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 32,
-            "name": ‘Beast’,
+            "name": 'Beast',
             "health": 115013,
             "armour": 3195,
             "reward": 7575350,
@@ -326,7 +322,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 33,
-            "name": ‘Black Widow’,
+            "name": 'Black Widow',
             "health": 138015,
             "armour": 3834,
             "reward": 11366822,
@@ -336,7 +332,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 34,
-            "name": ‘Crimson Fox’,
+            "name": 'Crimson Fox',
             "health": 165618,
             "armour": 4601,
             "reward": 17044539,
@@ -346,7 +342,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 35,
-            "name": ‘Stargirl’,
+            "name": 'Stargirl',
             "health": 198742,
             "armour": 5521,
             "reward": 25566808,
@@ -356,7 +352,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 36,
-            "name": ‘Iceman’,
+            "name": 'Iceman',
             "health": 238491,
             "armour": 6625,
             "reward": 38350212,
@@ -366,7 +362,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 37,
-            "name": ‘Blue Beetle’,
+            "name": 'Blue Beetle',
             "health": 286189,
             "armour": 7950,
             "reward": 57525318,
@@ -376,7 +372,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 38,
-            "name": ‘Zatanna’,
+            "name": 'Zatanna',
             "health": 343426,
             "armour": 9540,
             "reward": 86287977,
@@ -386,7 +382,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 39,
-            "name": ‘Huntress’,
+            "name": 'Huntress',
             "health": 412112,
             "armour": 11448,
             "reward": 129431965,
@@ -396,7 +392,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 40,
-            "name": ‘Atom’,
+            "name": 'Atom',
             "health": 494534,
             "armour": 13737,
             "reward": 194147947,
@@ -406,7 +402,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 41,
-            "name": ‘Batgirl’,
+            "name": 'Batgirl',
             "health": 593441,
             "armour": 16484,
             "reward": 291221921,
@@ -416,7 +412,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 42,
-            "name": ‘Green Arrow’,
+            "name": 'Green Arrow',
             "health": 712129,
             "armour": 19781,
             "reward": 436832882,
@@ -426,7 +422,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 43,
-            "name": ‘Power Man’,
+            "name": 'Power Man',
             "health": 854555,
             "armour": 23738,
             "reward": 655249323,
@@ -436,7 +432,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 44,
-            "name": ‘Colossus’,
+            "name": 'Colossus',
             "health": 1025466,
             "armour": 28485,
             "reward": 982873984,
@@ -446,7 +442,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 45,
-            "name": ‘Captain Atom’,
+            "name": 'Captain Atom',
             "health": 1230559,
             "armour": 34182,
             "reward": 1474310976,
@@ -456,7 +452,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 46,
-            "name": ‘Cyclops’,
+            "name": 'Cyclops',
             "health": 1476671,
             "armour": 41019,
             "reward": 2211466464,
@@ -466,7 +462,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 47,
-            "name": ‘Invisible Woman’,
+            "name": 'Invisible Woman',
             "health": 1772005,
             "armour": 49222,
             "reward": 3317199696,
@@ -476,7 +472,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 48,
-            "name": ‘General Glory’,
+            "name": 'General Glory',
             "health": 2126406,
             "armour": 59067,
             "reward": 4975799544,
@@ -486,7 +482,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 49,
-            "name": ‘Firehawk’,
+            "name": 'Firehawk',
             "health": 2551687,
             "armour": 70880,
             "reward": 7463699317,
@@ -496,7 +492,7 @@ Clicker.factory('records',function() {
         },
 	{
             "id": 50,
-            "name": ‘Shazam’,
+            "name": 'Shazam',
             "health": 3062024,
             "armour": 85056,
             "reward": 11195548975,
