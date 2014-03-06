@@ -102,7 +102,10 @@ function indexCtrl($scope, records){
 				$critAnim.css('top', ''+(event.pageY)+'px');
 				$critAnim.css('left', ''+(event.pageX-25)+'px');
 				$(".main").append($critAnim);
-				$('.critAnim'+r).animate({percent: 200}, 500, function () {
+				//$('.critAnim'+r).animate({percent: 200}, 500, function () {
+				//	$('.critAnim'+r).remove();
+				//});
+				$('.critAnim'+r).effect("scale", {percent:700, origin:['middle','center']}, 500, function () {
 					$('.critAnim'+r).remove();
 				});
 				currentHealth = currentHealth - (damage*crit);

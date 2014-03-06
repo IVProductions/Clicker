@@ -12,7 +12,7 @@ Clicker.factory('records',function() {
         },
         {
             "id": 2,
-            "name": «Batman»,
+            "name": 'Batman',
             "health": 200,
             "armour": 2,
             "reward": 10,
