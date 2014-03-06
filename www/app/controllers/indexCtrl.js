@@ -105,7 +105,7 @@ function indexCtrl($scope, records){
 				//$('.critAnim'+r).animate({percent: 200}, 500, function () {
 				//	$('.critAnim'+r).remove();
 				//});
-				$('.critAnim'+r).effect("scale", {percent:700, origin:['middle','center']}, 500, function () {
+				$('.critAnim'+r).effect("scale", {percent:1000, origin:['middle','center']}, 300, function () {
 					$('.critAnim'+r).remove();
 				});
 				currentHealth = currentHealth - (damage*crit);
@@ -334,7 +334,7 @@ function indexCtrl($scope, records){
 
 
 	// ********** CRIT CHANCE *********** //
-	var critChance = 1.0;
+	var critChance = 0.3;
 	//var critChance = 0.05;
 	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
 	var upgCritChanceLevel = 0;
@@ -364,7 +364,7 @@ function indexCtrl($scope, records){
 	// ************************** //
 
 	// ********** GEM CHANCE *********** //
-	var gemChance = 0.03;
+	var gemChance = 0.3;
 	//var gemChance = 0.03;
 	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
 	var upgGemChanceLevel = 0;
