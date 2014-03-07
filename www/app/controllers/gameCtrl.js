@@ -1,4 +1,4 @@
-function gameCtrl($scope, records, statsRecords){
+function gameCtrl($scope, $location, records, statsRecords){
 
 	var prevValid = false;
 	var nextValid = false;
@@ -293,9 +293,10 @@ function gameCtrl($scope, records, statsRecords){
 			if(xx == yy && !enemy.guessed) {
 				enemy.guessed = true;
 				nameMultiplier = nameMultiplier + 0.1;
-				updateStats();
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
+				$('.checkNameBtn').css('background-color', 'none');
 				$('.allcaps').prop('disabled', true);	
+				updateStats();
 			}
 		}
 	}
@@ -593,5 +594,8 @@ function gameCtrl($scope, records, statsRecords){
 		});
 	}
 
+	$scope.changeView = function(view){
+        $location.path(view);
+    }
 
 }
