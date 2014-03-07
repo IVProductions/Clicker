@@ -295,6 +295,8 @@ function indexCtrl($scope, records){
 				name = figure.name;
 				imageUrl = figure.imageURL;
 				currentHealth = health;
+				defeated = figure.defeated;
+				guessed = figure.guessed;
 
 				updatePicture();
 				updateStats();
@@ -342,6 +344,8 @@ function indexCtrl($scope, records){
 				name = figure.name;	
 				imageUrl = figure.imageURL;
 				currentHealth = health;
+				defeated = figure.defeated;
+				guessed = figure.guessed;
 
 				updatePicture();
 				updateStats();
@@ -355,12 +359,12 @@ function indexCtrl($scope, records){
 
 				$('.prevValid').css('background-image', 'url(img/components/prevBtn.png)');
 				prevValid = true;
-				if(!figure.defeated){
+				if(!defeated){
 					$('.nextValid').css('background-image', 'none');
 					nextValid = false;
 				}
 
-				if(figure.guessed){
+				if(guessed){
 					$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
 					$scope.guessedName = figure.name;
 					$(".allcaps").prop('disabled', true);	
