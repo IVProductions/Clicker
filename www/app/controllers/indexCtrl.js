@@ -159,6 +159,10 @@ function indexCtrl($scope, records){
 			$('.nextValid').css('background-image', 'none');
 			nextValid = false;
 		}
+		else {
+			$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');	
+			nextValid = true;
+		}
 		if($scope.index != 0){
 			$('.prevValid').css('background-image', 'url(img/components/prevBtn.png)');
 			prevValid = true;	
@@ -283,7 +287,7 @@ function indexCtrl($scope, records){
 		if(prevValid){
 			if ($scope.index != 0) {
 				$scope.index--;
-				window.localStorage.setItem("index",index);
+				window.localStorage.setItem("index",$scope.index);
 				figure = records.superheroes[$scope.index];
 				health = figure.health;
 				armour = figure.armour;
@@ -330,7 +334,7 @@ function indexCtrl($scope, records){
 		if(nextValid){
 			if ($scope.index != max) {
 				$scope.index++;
-				window.localStorage.setItem("index",index);
+				window.localStorage.setItem("index",$scope.index);
 				figure = records.superheroes[$scope.index];
 				health = figure.health;
 				armour = figure.armour;
