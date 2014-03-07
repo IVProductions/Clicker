@@ -13,26 +13,47 @@ function indexCtrl($scope, records){
 	var gold = 0;
 	if(window.localStorage.getItem("gold") != null){
 		gold = parseInt(window.localStorage.getItem("gold"));
-	}
+	};
 	// ****** GEM ******* //
 	var gems = 5;
-	if(window.localStorage.getItem("gem") != null){
+	if(window.localStorage.getItem("gems") != null){
 		gems = parseInt(window.localStorage.getItem("gems"));
-	}
+	};
 	// ****** TOTAL CLICKS ******* //
 	var totalClicks = 0;
 	if(window.localStorage.getItem("totalClicks") != null){
 		totalClicks = parseInt(window.localStorage.getItem("totalClicks"));
-	}
+	};
+	// ****** HIT MULTIPLIER ******* //
 	var hitMultiplier = 1.0;
+	if(window.localStorage.getItem("hitMultiplier") != null){
+		hitMultiplier = parseFloat(window.localStorage.getItem("hitMultiplier"));
+	};
+	// ****** NAME MULTIPLIER ******* //
 	var nameMultiplier = 1.0;
+	if(window.localStorage.getItem("nameMultiplier") != null){
+		nameMultiplier = parseFloat(window.localStorage.getItem("nameMultiplier"));
+	};
+	// ****** UPG MULTIPLIER ******* //
 	var upgMultiplier = 1.0;
+	if(window.localStorage.getItem("upgMultiplier") != null){
+		upgMultiplier = parseFloat(window.localStorage.getItem("upgMultiplier"));
+	};
 	var nextUpgMultiplier = upgMultiplier + 0.03;
-	var basePower = 10.0;
+	// ****** BASEPOWER ******* //
+	var basePower = 10;
+	if(window.localStorage.getItem("basePower") != null){
+		basePower = parseInt(window.localStorage.getItem("basePower"));
+	};
+	// ****** TOTAL POWER ******* //
 	var totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
-
+	if(window.localStorage.getItem("totalPower") != null){
+		totalPower = parseFloat(window.localStorage.getItem("totalPower"));
+	};
+	
 	var updateStats = function () {
 		totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
+		window.localStorage.setItem("totalPower",totalPower);
 		damage = totalPower - armour;
 		if(damage < 0){
 			damage = 0;
@@ -144,7 +165,7 @@ function indexCtrl($scope, records){
 		window.localStorage.setItem("totalClicks",totalClicks);
 		// HIT MULTIPLIER
 		hitMultiplier = (1 + ((totalClicks/20)*0.001));
-		
+		window.localStorage.setItem("hitMultiplier",hitMultiplier);
 		// DECREASE HEALTH
 		if(damage != 0){
 			//CRIT CHANCE
@@ -232,6 +253,7 @@ function indexCtrl($scope, records){
 			if(xx == yy && !figure.guessed) {
 				figure.guessed = true;
 				nameMultiplier = nameMultiplier + 0.1;
+				window.localStorage.setItem("nameMultiplier",nameMultiplier);
 				updateStats();
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
 				$('.allcaps').prop('disabled', true);	
@@ -347,6 +369,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			upgMultiplier = upgMultiplier + 0.03;
+			window.localStorage.setItem("upgMultiplier",upgMultiplier);
 			nextUpgMultiplier = nextUpgMultiplier + 0.03;
 			// **************** //
 
@@ -364,6 +387,9 @@ function indexCtrl($scope, records){
 
 	// ********** CRIT *********** //
 	var crit = 1.5;
+	if(window.localStorage.getItem("crit") != null){
+		crit = parseFloat(window.localStorage.getItem("crit"));
+	};
 	var nextCrit = crit + 0.05;
 	var upgCritCostArray = [18000,99000,277000,582000,931000,1400000,2095000,3140000,4715000,7072000];
 	var upgCritLevel = 0;
@@ -379,6 +405,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			crit += 0.05;
+			window.localStorage.setItem("crit",crit);
 			nextCrit += 0.05;
 			// **************** //
 
@@ -397,6 +424,9 @@ function indexCtrl($scope, records){
 
 	// ********** CRIT CHANCE *********** //
 	var critChance = 0.05;
+	if(window.localStorage.getItem("critChance") != null){
+		critChance = parseFloat(window.localStorage.getItem("critChance"));
+	};
 	var nextCritChance = critChance + 0.005;
 	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
 	var upgCritChanceLevel = 0;
@@ -412,6 +442,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			critChance = critChance + 0.005;
+			window.localStorage.setItem("critChance",critChance);
 			nextCritChance = nextCritChance + 0.005;
 			// **************** //
 
@@ -429,6 +460,9 @@ function indexCtrl($scope, records){
 
 	// ********** GEM CHANCE *********** //
 	var gemChance = 0.03;
+	if(window.localStorage.getItem("gemChance") != null){
+		gemChance = parseFloat(window.localStorage.getItem("gemChance"));
+	};
 	var nextGemChance = gemChance + 0.004;
 	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
 	var upgGemChanceLevel = 0;
@@ -444,6 +478,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			gemChance = gemChance + 0.004;
+			window.localStorage.setItem("gemChance",gemChance);
 			nextGemChance = nextCritChance + 0.004;
 			// **************** //
 
@@ -462,6 +497,9 @@ function indexCtrl($scope, records){
 
 	// ********** TRAINING EFFECT *********** //
 	var trainingEffect = 1.0;
+	if(window.localStorage.getItem("trainingEffect") != null){
+		trainingEffect = parseFloat(window.localStorage.getItem("trainingEffect"));
+	};
 	var nextTrainingEffect = trainingEffect + 0.05;
 	var upgTrainingEffectCostArray = [10000,55000,154000,323000,517000,776000,1164000,1746000,2619000,3929000];
 	var upgTrainingEffectLevel = 0;
@@ -477,6 +515,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			trainingEffect = trainingEffect + 0.05;
+			window.localStorage.setItem("trainingEffect",trainingEffect);
 			nextTrainingEffect = nextTrainingEffect + 0.05;
 			// **************** //
 
