@@ -11,7 +11,7 @@ function indexCtrl($scope, records){
 	// Initialize Stats 
 	var gold = 0;
 	if(window.localStorage.getItem("gold") != null){
-		gold = window.localStorage.getItem("gold");
+		gold = parseInt(window.localStorage.getItem("gold"));
 	}
 	var gems = 5;
 	var totalClicks = 0;
