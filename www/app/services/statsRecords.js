@@ -11,7 +11,7 @@ Clicker.factory('statsRecords',function() {
             "upgMultiplier": 1.0,
             "basePower": 10,
             "crit": 1.5,
-            "critchance": 0.05,
+            "critChance": 0.05,
             "gemChance": 0.03,
             "trainingEffect": 1.0
         },
@@ -26,7 +26,7 @@ Clicker.factory('statsRecords',function() {
             "upgMultiplier": 1.0,
             "basePower": 10,
             "crit": 1.5,
-            "critchance": 0.05,
+            "critChance": 0.05,
             "gemChance": 0.03,
             "trainingEffect": 1.0  
         }

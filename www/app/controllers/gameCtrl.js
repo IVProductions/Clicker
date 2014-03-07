@@ -8,7 +8,6 @@ function gameCtrl($scope, records, statsRecords){
 	$scope.upgrade = false;
 	$scope.upgrades = false;
 
-
 	var themeIndex = window.localStorage.getItem("theme");
 	var stats = statsRecords.stats;
 	if(window.localStorage.getItem("stats") != null){
@@ -26,7 +25,6 @@ function gameCtrl($scope, records, statsRecords){
 
     var currentEnemies = enemies[themeIndex];
 
-    console.log(currentStats);
 	// Initialize Stats 
 	// ****** GOLD ******* //
 	var gold = parseInt(currentStats.gold);
@@ -45,7 +43,19 @@ function gameCtrl($scope, records, statsRecords){
 	var basePower = parseInt(currentStats.basePower);
 	// ****** TOTAL POWER ******* //
 	var totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
-	
+	// ****** CRIT ******* //
+	var crit = parseFloat(currentStats.crit);
+	var nextCrit = crit + 0.05;
+	// ****** CRITCHANCE ******* //
+	var critChance = parseFloat(currentStats.critChance);
+	var nextCritChance = critChance + 0.005;
+	// ****** GEMCHANCE ******* //
+	var gemChance = parseFloat(currentStats.gemChance);
+	var nextGemChance = gemChance + 0.004;
+	// ****** TRAINING EFFECT ******* //
+	var trainingEffect = parseFloat(currentStats.trainingEffect);
+	var nextTrainingEffect = trainingEffect + 0.05;
+
 	var updateStats = function () {
 		totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
 		damage = totalPower - armour;
@@ -422,8 +432,6 @@ function gameCtrl($scope, records, statsRecords){
 	// ************************** //
 
 	// ********** CRIT *********** //
-	var crit = parseFloat(currentStats.crit);
-	var nextCrit = crit + 0.05;
 	var upgCritCostArray = [18000,99000,277000,582000,931000,1400000,2095000,3140000,4715000,7072000];
 	var upgCritLevel = 0;
 	var upgCritCost = upgCritCostArray[upgCritLevel];
@@ -455,8 +463,6 @@ function gameCtrl($scope, records, statsRecords){
 
 
 	// ********** CRIT CHANCE *********** //
-	var critChance = parseFloat(currentStats.critChance);
-	var nextCritChance = critChance + 0.005;
 	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
 	var upgCritChanceLevel = 0;
 	var upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel];
@@ -487,8 +493,6 @@ function gameCtrl($scope, records, statsRecords){
 	// ************************** //
 
 	// ********** GEM CHANCE *********** //
-	var gemChance = parseFloat(currentStats.gemChance);
-	var nextGemChance = gemChance + 0.004;
 	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
 	var upgGemChanceLevel = 0;
 	var upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel];
@@ -520,8 +524,6 @@ function gameCtrl($scope, records, statsRecords){
 
 
 	// ********** TRAINING EFFECT *********** //
-	var trainingEffect = parseFloat(currentStats.trainingEffect);
-	var nextTrainingEffect = trainingEffect + 0.05;
 	var upgTrainingEffectCostArray = [10000,55000,154000,323000,517000,776000,1164000,1746000,2619000,3929000];
 	var upgTrainingEffectLevel = 0;
 	var upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel];

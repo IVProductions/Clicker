@@ -121,7 +121,7 @@
     </configuration>
     <configuration default="false" name="ClickerDebug" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="firefox" />
+        <option name="engineId" value="chrome" />
         <option name="fileUrl" value="http://localhost:63342/www/" />
       </JSRemoteDebuggerConfigurationSettings>
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
