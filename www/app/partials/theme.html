@@ -1,2 +1,23 @@
-<button ng-click="play('superheroes')">SUPERHEROES</button>
-<button ng-click="play('supervillains')">SUPERVILLAINS</button>
+<div class="theme">
+	<table>
+		<tr class="themeHolder">
+			<td class="superheroes" ng-click="play('superheroes')">
+			SUPERHEROES</br>
+			<span class="infoTheme">
+			Names: {{stats[0].names}}/{{enemies[0].length}}</br>
+			Level: {{stats[0].highscore}}
+			</span>
+			</td>
+		</tr>
+		<tr class="themeHolder">
+			<td class="supervillains" ng-click="play('supervillains')">
+			SUPERVILLAINS</br>
+			<span class="infoTheme">
+			Names: {{stats[1].names}}/{{enemies[1].length}}</br>
+			Level: {{stats[1].highscore}}
+			</span>
+			</td>
+		</tr>
+	</table>
+</div>
+

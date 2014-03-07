@@ -13,7 +13,9 @@ Clicker.factory('statsRecords',function() {
             "crit": "1.5",
             "critChance": "0.05",
             "gemChance": "0.03",
-            "trainingEffect": "1.0"
+            "trainingEffect": "1.0",
+            "names": "0",
+            "highscore": "1"
         },
         {
             // SUPERVILLAINS
@@ -28,7 +30,9 @@ Clicker.factory('statsRecords',function() {
             "crit": "1.5",
             "critChance": "0.05",
             "gemChance": "0.03",
-            "trainingEffect": "1.0"
+            "trainingEffect": "1.0",
+            "names": "0",
+            "highscore": "1"
         }
     ]
     

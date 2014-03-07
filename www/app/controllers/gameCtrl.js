@@ -259,7 +259,12 @@ function gameCtrl($scope, $location, records, statsRecords){
 				if($scope.index != max){
 					nextValid = true;
 					$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
+					if(($scope.index + 2) > parseInt(currentStats.highscore)){
+						currentStats.highscore = parseInt($scope.index + 2);
+					}
 				}
+
+
 			}
 			percentage = (currentHealth/health)*100;
 			
@@ -296,6 +301,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
 				$('.checkNameBtn').css('background-color', 'transparent!important');
 				$('.allcaps').prop('disabled', true);	
+				currentStats.names = parseInt(currentStats.names) + 1;
 				updateStats();
 			}
 		}
@@ -387,7 +393,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 				if(guessed){
 					$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
-					$('.checkNameBtn').css('background-color', 'transparent!important');
+					$('.checkNameBtn').css('background-color', 'transparent!important');c
 					$scope.guessedName = enemy.name;
 					$(".allcaps").prop('disabled', true);	
 				}
