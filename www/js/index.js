@@ -35,7 +35,10 @@ var app = {
     onDeviceReady: function() {
         if (window.device.platform === 'iOS' && parseFloat(window.device.version) === 7.0){
             StatusBar.hide();   
-        }       
+        }  
+        alert(window.localStorage.getItem("name"));  
+        window.localStorage.setItem("name", "cheeseman");
+
             
         //StatusBar.hide();
         //StatusBar.backgroundColorByHexString("#C0C0C0");
