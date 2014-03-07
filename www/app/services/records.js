@@ -100,7 +100,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/hulk.jpg"
         },
-	{
+	   {
             "id": 11,
             "name": 'Wolverine',
             "health": 2500,
@@ -110,7 +110,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/wolverine.jpg"
         },
-	{
+	   {
             "id": 12,
             "name": 'Robin',
             "health": 3000,
@@ -120,7 +120,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/robin.jpg"
         },
-	{
+	   {
             "id": 13,
             "name": 'Black Canary',
             "health": 3600,
@@ -130,7 +130,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/blackcanary.jpg"
         },
-	{
+	   {
             "id": 14,
             "name": 'Cyborg',
             "health": 4320,
@@ -140,7 +140,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/cyborg.jpg"
         },
-	{
+	   {
             "id": 15,
             "name": 'Daredevil',
             "health": 5184,
@@ -150,7 +150,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/daredevil.jpg"
         },
-	{
+	   {
             "id": 16,
             "name": 'The Vision',
             "health": 6221,
@@ -160,7 +160,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/thevision.jpg"
         },
-	{
+	   {
             "id": 17,
             "name": 'Falcon',
             "health": 7465,
@@ -170,7 +170,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/falcon.jpeg"
         },
-	{
+	   { 
             "id": 18,
             "name": 'Aquaman',
             "health": 8958,
@@ -180,7 +180,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/aquaman.jpg"
         },
-	{
+	   {  
             "id": 19,
             "name": 'Mr. Fantastic',
             "health": 10750,
@@ -190,7 +190,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/mrfantastic.jpg"
         },
-	{
+	   {
             "id": 20,
             "name": 'Martian Manhunter',
             "health": 12899,
@@ -200,7 +200,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/martianmanhunter.jpg"
         },
-	{
+	   {
             "id": 21,
             "name": 'Ant-Man',
             "health": 15479,
@@ -210,7 +210,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/antman.jpg"
         },
-	{
+	   {
             "id": 22,
             "name": 'The Thing',
             "health": 18575,
@@ -220,7 +220,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/thething.jpg"
         },
-	{
+	   {
             "id": 23,
             "name": 'Catwoman',
             "health": 22290,
@@ -230,7 +230,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/catwoman.jpg"
         },
-	{
+	   {
             "id": 24,
             "name": 'Hawkgirl',
             "health": 26748,
@@ -240,7 +240,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/hawkgirl.jpeg"
         },
-	{
+	   {
             "id": 25,
             "name": 'Hawkeye',
             "health": 32098,
@@ -250,7 +250,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/hawkeye.jpg"
         },
-	{
+	   {
             "id": 26,
             "name": 'Hawkman',
             "health": 38518,
@@ -260,7 +260,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/hawkman.jpg"
         },
-	{
+	   {
             "id": 27,
             "name": 'Storm',
             "health": 46221,
@@ -270,7 +270,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/storm.jpg"
         },
-	{
+	   {
             "id": 28,
             "name": 'Black Panther',
             "health": 55465,
@@ -280,7 +280,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/blackpanther.jpeg"
         },
-	{
+	   {
             "id": 29,
             "name": 'Supergirl',
             "health": 66558,
@@ -290,7 +290,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/supergirl.jpg"
         },
-	{
+	   {
             "id": 30,
             "name": 'Iron Fist',
             "health": 79870,
@@ -300,7 +300,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/ironfist.jpg"
         },
-	{
+	   {
             "id": 31,
             "name": 'Doctor Fate',
             "health": 95844,
@@ -310,7 +310,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/doctorfate.jpg"
         },
-	{
+	   {
             "id": 32,
             "name": 'Beast',
             "health": 115013,
@@ -320,7 +320,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/beast.jpg"
         },
-	{
+	   { 
             "id": 33,
             "name": 'Black Widow',
             "health": 138015,
@@ -330,7 +330,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/blackwidow.jpg"
         },
-	{
+	   {  
             "id": 34,
             "name": 'Crimson Fox',
             "health": 165618,
@@ -340,7 +340,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/crimsonfox.jpg"
         },
-	{
+	   {
             "id": 35,
             "name": 'Stargirl',
             "health": 198742,
@@ -350,7 +350,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/stargirl.jpg"
         },
-	{
+	   {
             "id": 36,
             "name": 'Iceman',
             "health": 238491,
@@ -360,7 +360,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/iceman.jpeg"
         },
-	{
+	   {
             "id": 37,
             "name": 'Blue Beetle',
             "health": 286189,
@@ -370,7 +370,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/bluebeetle.jpg"
         },
-	{
+	   {
             "id": 38,
             "name": 'Zatanna',
             "health": 343426,
@@ -380,7 +380,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/zatanna.jpg"
         },
-	{
+	   {
             "id": 39,
             "name": 'Huntress',
             "health": 412112,
@@ -390,7 +390,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/huntress.jpg"
         },
-	{
+	   {
             "id": 40,
             "name": 'Atom',
             "health": 494534,
@@ -400,7 +400,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/atom.jpg"
         },
-	{
+	   {
             "id": 41,
             "name": 'Batgirl',
             "health": 593441,
@@ -410,7 +410,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/batgirl.jpg"
         },
-	{
+	   {
             "id": 42,
             "name": 'Green Arrow',
             "health": 712129,
@@ -420,7 +420,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/greenarrow.jpg"
         },
-	{
+	   {
             "id": 43,
             "name": 'Power Man',
             "health": 854555,
@@ -430,7 +430,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/powerman.jpg"
         },
-	{
+	   {
             "id": 44,
             "name": 'Colossus',
             "health": 1025466,
@@ -440,7 +440,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/colossus.jpg"
         },
-	{
+	   {
             "id": 45,
             "name": 'Captain Atom',
             "health": 1230559,
@@ -450,7 +450,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/captainatom.jpg"
         },
-	{
+	   {
             "id": 46,
             "name": 'Cyclops',
             "health": 1476671,
@@ -460,7 +460,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/cyclops.jpg"
         },
-	{
+	   {
             "id": 47,
             "name": 'Invisible Woman',
             "health": 1772005,
@@ -470,7 +470,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/invisiblewoman.jpg"
         },
-	{
+	   {
             "id": 48,
             "name": 'General Glory',
             "health": 2126406,
@@ -480,7 +480,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/generalglory.jpeg"
         },
-	{
+	   {
             "id": 49,
             "name": 'Firehawk',
             "health": 2551687,
@@ -490,7 +490,7 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/firehawk.jpg"
         },
-	{
+	   {
             "id": 50,
             "name": 'Shazam',
             "health": 3062024,
@@ -500,7 +500,11 @@ Clicker.factory('records',function() {
             "guessed": false,
             "imageURL": "img/shazam.jpeg"
         }
-	    ]
+    ]
+
+    if(window.localStorage.getItem("superheroes") != null){
+        superheroes = JSON.parse(window.localStorage.getItem("superheroes"));
+    };
     
     return {superheroes:superheroes};
 })

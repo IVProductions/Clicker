@@ -254,6 +254,7 @@ function indexCtrl($scope, records){
 				figure.guessed = true;
 				nameMultiplier = nameMultiplier + 0.1;
 				window.localStorage.setItem("nameMultiplier",nameMultiplier);
+				window.localStorage.setItem("superheroes",JSON.stringify(records.superheroes)),
 				updateStats();
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
 				$('.allcaps').prop('disabled', true);	
