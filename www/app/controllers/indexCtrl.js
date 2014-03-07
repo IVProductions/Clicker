@@ -9,12 +9,21 @@ function indexCtrl($scope, records){
 	$scope.upgrades = false;
 
 	// Initialize Stats 
+	// ****** GOLD ******* //
 	var gold = 0;
 	if(window.localStorage.getItem("gold") != null){
 		gold = parseInt(window.localStorage.getItem("gold"));
 	}
+	// ****** GEM ******* //
 	var gems = 5;
+	if(window.localStorage.getItem("gem") != null){
+		gems = parseInt(window.localStorage.getItem("gems"));
+	}
+	// ****** TOTAL CLICKS ******* //
 	var totalClicks = 0;
+	if(window.localStorage.getItem("totalClicks") != null){
+		totalClicks = parseInt(window.localStorage.getItem("totalClicks"));
+	}
 	var hitMultiplier = 1.0;
 	var nameMultiplier = 1.0;
 	var upgMultiplier = 1.0;
@@ -132,6 +141,7 @@ function indexCtrl($scope, records){
 		console.log(event);
 		// ADD TOTAL CLICKS
 		totalClicks++;
+		window.localStorage.setItem("totalClicks",totalClicks);
 		// HIT MULTIPLIER
 		hitMultiplier = (1 + ((totalClicks/20)*0.001));
 		
@@ -180,6 +190,7 @@ function indexCtrl($scope, records){
 						$('.gemAnim'+r).remove();
 					});
 					gems++;
+					window.localStorage.setItem("gems",gems);
 				}
 				if($scope.index == max){
 					alert("Du har runnet spillet, helsa mormor!");
