@@ -294,7 +294,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 				enemy.guessed = true;
 				nameMultiplier = nameMultiplier + 0.1;
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
-				$('.checkNameBtn').css('background-color', 'none');
+				$('.checkNameBtn').css('background-color', 'transparent!important');
 				$('.allcaps').prop('disabled', true);	
 				updateStats();
 			}
@@ -329,6 +329,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 				if(enemy.guessed){
 					$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
+					$('.checkNameBtn').css('background-color', 'transparent!important');
 					$scope.guessedName = enemy.name;
 					$(".allcaps").prop('disabled', true);	
 				}
@@ -386,6 +387,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 				if(guessed){
 					$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
+					$('.checkNameBtn').css('background-color', 'transparent!important');
 					$scope.guessedName = enemy.name;
 					$(".allcaps").prop('disabled', true);	
 				}
