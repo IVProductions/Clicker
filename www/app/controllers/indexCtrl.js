@@ -153,7 +153,14 @@ function indexCtrl($scope, records){
 		$scope.name = name;
 		$('.picture').css('background-image', 'url(' + imageUrl + ')');
 		if(guessed){
-			$scope.guessed = name;
+			$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
+			$scope.guessedName = figure.name;
+			$(".allcaps").prop('disabled', true);	
+		}
+		else {
+			$('.checkNameBtn').css('background-image', 'url(img/components/questionMark.png)');
+			$scope.guessedName = "";
+			$(".allcaps").prop('disabled', false);	
 		}
 		if(!defeated){
 			$('.nextValid').css('background-image', 'none');
