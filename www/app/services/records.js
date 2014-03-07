@@ -28,7 +28,7 @@ Clicker.factory('records',function() {
             "reward": 20,
             "defeated": false,
             "guessed": false,
-            "imageURL": "img/spiderman.jpg"
+            "imageURL": "img/spiderman.png"
         },
         {
             "id": 4,
