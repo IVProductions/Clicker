@@ -214,7 +214,7 @@ function indexCtrl($scope, records){
 				currentHealth = health;
 				// DEFEATED CHAMPION
 				figure.defeated = true;
-				window.localStorage.setItem("superheroes",JSON.stringify(records.superheroes)),
+				window.localStorage.setItem("superheroes",JSON.stringify(records.superheroes));
 				// GEM CHANCE
 				var random2 = Math.random();
 				if(random2 <= gemChance){
