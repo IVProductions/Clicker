@@ -1,4 +1,4 @@
-function indexCtrl($scope, records){
+function gameCtrl($scope, records, statsRecords){
 
 	var prevValid = false;
 	var nextValid = false;
@@ -8,52 +8,46 @@ function indexCtrl($scope, records){
 	$scope.upgrade = false;
 	$scope.upgrades = false;
 
+
+	var themeIndex = window.localStorage.getItem("theme");
+	var stats = statsRecords.stats;
+	if(window.localStorage.getItem("stats") != null){
+        stats = JSON.parse(window.localStorage.getItem("stats"));
+    };
+
+    console.log(stats);
+
+    var currentStats = stats[themeIndex];
+
+	var enemies = records.enemies;
+	if(window.localStorage.getItem("enemies") != null){
+        enemies = JSON.parse(window.localStorage.getItem("enemies"));
+    };
+
+    var currentEnemies = enemies[themeIndex];
+
+    console.log(currentStats);
 	// Initialize Stats 
 	// ****** GOLD ******* //
-	var gold = 0;
-	if(window.localStorage.getItem("gold") != null){
-		gold = parseInt(window.localStorage.getItem("gold"));
-	};
+	var gold = parseInt(currentStats.gold);
 	// ****** GEM ******* //
-	var gems = 5;
-	if(window.localStorage.getItem("gems") != null){
-		gems = parseInt(window.localStorage.getItem("gems"));
-	};
+	var gems = parseInt(currentStats.gems);
 	// ****** TOTAL CLICKS ******* //
-	var totalClicks = 0;
-	if(window.localStorage.getItem("totalClicks") != null){
-		totalClicks = parseInt(window.localStorage.getItem("totalClicks"));
-	};
+	var totalClicks = parseInt(currentStats.totalClicks);
 	// ****** HIT MULTIPLIER ******* //
-	var hitMultiplier = 1.0;
-	if(window.localStorage.getItem("hitMultiplier") != null){
-		hitMultiplier = parseFloat(window.localStorage.getItem("hitMultiplier"));
-	};
+	var hitMultiplier = parseFloat(currentStats.hitMultiplier);
 	// ****** NAME MULTIPLIER ******* //
-	var nameMultiplier = 1.0;
-	if(window.localStorage.getItem("nameMultiplier") != null){
-		nameMultiplier = parseFloat(window.localStorage.getItem("nameMultiplier"));
-	};
+	var nameMultiplier = parseFloat(currentStats.nameMultiplier);
 	// ****** UPG MULTIPLIER ******* //
-	var upgMultiplier = 1.0;
-	if(window.localStorage.getItem("upgMultiplier") != null){
-		upgMultiplier = parseFloat(window.localStorage.getItem("upgMultiplier"));
-	};
+	var upgMultiplier = parseFloat(currentStats.upgMultiplier);
 	var nextUpgMultiplier = upgMultiplier + 0.03;
 	// ****** BASEPOWER ******* //
-	var basePower = 10;
-	if(window.localStorage.getItem("basePower") != null){
-		basePower = parseInt(window.localStorage.getItem("basePower"));
-	};
+	var basePower = parseInt(currentStats.basePower);
 	// ****** TOTAL POWER ******* //
 	var totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
-	if(window.localStorage.getItem("totalPower") != null){
-		totalPower = parseFloat(window.localStorage.getItem("totalPower"));
-	};
 	
 	var updateStats = function () {
 		totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
-		window.localStorage.setItem("totalPower",totalPower);
 		damage = totalPower - armour;
 		if(damage < 0){
 			damage = 0;
@@ -127,24 +121,38 @@ function indexCtrl($scope, records){
 		$scope.nextCrit = nextCrit;
 		$scope.trainingEffect = trainingEffect;
 		$scope.nextTrainingEffect = nextTrainingEffect;
+
+		currentStats.gems = gems;
+		currentStats.gold = gold;
+		currentStats.totalClicks = totalClicks;
+		currentStats.hitMultiplier = hitMultiplier;
+		currentStats.upgMultiplier = upgMultiplier;
+		currentStats.nameMultiplier = nameMultiplier;
+		currentStats.basePower = basePower;
+		currentStats.critChance = critChance;
+		currentStats.crit = crit;
+		currentStats.gemChance = gemChance;
+		currentStats.trainingEffect = trainingEffect;
+		currentStats.index = $scope.index;
+
+		window.localStorage.setItem("enemies",JSON.stringify(enemies));
+		window.localStorage.setItem("stats",JSON.stringify(stats));
 	};
 
 	// Initialize Picture
-	$scope.index = 0;
-	if(window.localStorage.getItem("index") != null){
-		$scope.index = parseInt(window.localStorage.getItem("index"));
-	};
-	var max = records.superheroes.length - 1;
-	var figure = records.superheroes[$scope.index];
+	$scope.index = currentStats.index;
 
-	var health = figure.health;
-	var armour = figure.armour;
-	var reward = figure.reward;
-	var name = figure.name;
+	var max = currentEnemies.length - 1;
+	var enemy = currentEnemies[$scope.index];
+
+	var health = enemy.health;
+	var armour = enemy.armour;
+	var reward = enemy.reward;
+	var name = enemy.name;
 	var currentHealth = health;
-	var imageUrl = figure.imageURL;
-    var defeated = figure.defeated;
-    var guessed = figure.guessed;
+	var imageUrl = enemy.imageURL;
+    var defeated = enemy.defeated;
+    var guessed = enemy.guessed;
 
 	var updatePicture = function () {
 		$scope.health = health;
@@ -154,7 +162,7 @@ function indexCtrl($scope, records){
 		$('.picture').css('background-image', 'url(' + imageUrl + ')');
 		if(guessed){
 			$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
-			$scope.guessedName = figure.name;
+			$scope.guessedName = enemy.name;
 			$(".allcaps").prop('disabled', true);	
 		}
 		else {
@@ -186,13 +194,10 @@ function indexCtrl($scope, records){
 	updatePicture();
 
 	$scope.click = function (event) {
-		console.log(event);
 		// ADD TOTAL CLICKS
 		totalClicks++;
-		window.localStorage.setItem("totalClicks",totalClicks);
 		// HIT MULTIPLIER
 		hitMultiplier = (1 + ((totalClicks/20)*0.001));
-		window.localStorage.setItem("hitMultiplier",hitMultiplier);
 		// DECREASE HEALTH
 		if(damage != 0){
 			//CRIT CHANCE
@@ -202,7 +207,7 @@ function indexCtrl($scope, records){
 				var r = random1.toString().substring(3,7);
 				var $critAnim = $("<img>", {src: "img/components/crit.png", class: "critAnim"+r+" crit", height: "10", width: "10"});
 				$critAnim.css('position', 'absolute');
-				$critAnim.css('top', ''+(event.pageY-50)+'px');
+				$critAnim.css('top', ''+(event.pageY-75)+'px');
 				$critAnim.css('left', ''+(event.pageX-25)+'px');
 				$(".main").append($critAnim);
 				//$('.critAnim'+r).animate({percent: 200}, 500, function () {
@@ -220,12 +225,10 @@ function indexCtrl($scope, records){
 			if (currentHealth <= 0) {
 				// INCREASE GOLD
 				gold = gold + reward;
-        		window.localStorage.setItem("gold", gold);
 				// RESET HEALTH
 				currentHealth = health;
 				// DEFEATED CHAMPION
-				figure.defeated = true;
-				window.localStorage.setItem("superheroes",JSON.stringify(records.superheroes));
+				enemy.defeated = true;
 				// GEM CHANCE
 				var random2 = Math.random();
 				if(random2 <= gemChance){
@@ -239,7 +242,6 @@ function indexCtrl($scope, records){
 						$('.gemAnim'+r).remove();
 					});
 					gems++;
-					window.localStorage.setItem("gems",gems);
 				}
 				if($scope.index == max){
 					alert("Du har runnet spillet, helsa mormor!");
@@ -278,11 +280,9 @@ function indexCtrl($scope, records){
 			var y = $scope.name;
 			var yy = y.toLowerCase();
 
-			if(xx == yy && !figure.guessed) {
-				figure.guessed = true;
+			if(xx == yy && !enemy.guessed) {
+				enemy.guessed = true;
 				nameMultiplier = nameMultiplier + 0.1;
-				window.localStorage.setItem("nameMultiplier",nameMultiplier);
-				window.localStorage.setItem("superheroes",JSON.stringify(records.superheroes)),
 				updateStats();
 				$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
 				$('.allcaps').prop('disabled', true);	
@@ -294,16 +294,17 @@ function indexCtrl($scope, records){
 		if(prevValid){
 			if ($scope.index != 0) {
 				$scope.index--;
-				window.localStorage.setItem("index",$scope.index);
-				figure = records.superheroes[$scope.index];
-				health = figure.health;
-				armour = figure.armour;
-				reward = figure.reward;
-				name = figure.name;
-				imageUrl = figure.imageURL;
+				currentStats.index = $scope.index;
+				window.localStorage.setItem("stats",JSON.stringify(stats));
+				enemy = currentEnemies[$scope.index];
+				health = enemy.health;
+				armour = enemy.armour;
+				reward = enemy.reward;
+				name = enemy.name;
+				imageUrl = enemy.imageURL;
 				currentHealth = health;
-				defeated = figure.defeated;
-				guessed = figure.guessed;
+				defeated = enemy.defeated;
+				guessed = enemy.guessed;
 
 				updatePicture();
 				updateStats();
@@ -315,9 +316,9 @@ function indexCtrl($scope, records){
 				percentage = (currentHealth/health)*100;
 				$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 
-				if(figure.guessed){
+				if(enemy.guessed){
 					$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
-					$scope.guessedName = figure.name;
+					$scope.guessedName = enemy.name;
 					$(".allcaps").prop('disabled', true);	
 				}
 				else {
@@ -343,16 +344,17 @@ function indexCtrl($scope, records){
 		if(nextValid){
 			if ($scope.index != max) {
 				$scope.index++;
-				window.localStorage.setItem("index",$scope.index);
-				figure = records.superheroes[$scope.index];
-				health = figure.health;
-				armour = figure.armour;
-				reward = figure.reward;
-				name = figure.name;	
-				imageUrl = figure.imageURL;
+				currentStats.index = $scope.index;
+				window.localStorage.setItem("stats",JSON.stringify(stats));
+				enemy = currentEnemies[$scope.index];
+				health = enemy.health;
+				armour = enemy.armour;
+				reward = enemy.reward;
+				name = enemy.name;	
+				imageUrl = enemy.imageURL;
 				currentHealth = health;
-				defeated = figure.defeated;
-				guessed = figure.guessed;
+				defeated = enemy.defeated;
+				guessed = enemy.guessed;
 
 				updatePicture();
 				updateStats();
@@ -373,7 +375,7 @@ function indexCtrl($scope, records){
 
 				if(guessed){
 					$('.checkNameBtn').css('background-image', 'url(img/components/checkBtn.png)');
-					$scope.guessedName = figure.name;
+					$scope.guessedName = enemy.name;
 					$(".allcaps").prop('disabled', true);	
 				}
 				else {
@@ -404,7 +406,6 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			upgMultiplier = upgMultiplier + 0.03;
-			window.localStorage.setItem("upgMultiplier",upgMultiplier);
 			nextUpgMultiplier = nextUpgMultiplier + 0.03;
 			// **************** //
 
@@ -421,10 +422,7 @@ function indexCtrl($scope, records){
 	// ************************** //
 
 	// ********** CRIT *********** //
-	var crit = 1.5;
-	if(window.localStorage.getItem("crit") != null){
-		crit = parseFloat(window.localStorage.getItem("crit"));
-	};
+	var crit = parseFloat(currentStats.crit);
 	var nextCrit = crit + 0.05;
 	var upgCritCostArray = [18000,99000,277000,582000,931000,1400000,2095000,3140000,4715000,7072000];
 	var upgCritLevel = 0;
@@ -440,7 +438,6 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			crit += 0.05;
-			window.localStorage.setItem("crit",crit);
 			nextCrit += 0.05;
 			// **************** //
 
@@ -458,10 +455,7 @@ function indexCtrl($scope, records){
 
 
 	// ********** CRIT CHANCE *********** //
-	var critChance = 0.05;
-	if(window.localStorage.getItem("critChance") != null){
-		critChance = parseFloat(window.localStorage.getItem("critChance"));
-	};
+	var critChance = parseFloat(currentStats.critChance);
 	var nextCritChance = critChance + 0.005;
 	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
 	var upgCritChanceLevel = 0;
@@ -477,7 +471,6 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			critChance = critChance + 0.005;
-			window.localStorage.setItem("critChance",critChance);
 			nextCritChance = nextCritChance + 0.005;
 			// **************** //
 
@@ -494,10 +487,7 @@ function indexCtrl($scope, records){
 	// ************************** //
 
 	// ********** GEM CHANCE *********** //
-	var gemChance = 0.03;
-	if(window.localStorage.getItem("gemChance") != null){
-		gemChance = parseFloat(window.localStorage.getItem("gemChance"));
-	};
+	var gemChance = parseFloat(currentStats.gemChance);
 	var nextGemChance = gemChance + 0.004;
 	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
 	var upgGemChanceLevel = 0;
@@ -513,7 +503,6 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			gemChance = gemChance + 0.004;
-			window.localStorage.setItem("gemChance",gemChance);
 			nextGemChance = nextCritChance + 0.004;
 			// **************** //
 
@@ -531,10 +520,7 @@ function indexCtrl($scope, records){
 
 
 	// ********** TRAINING EFFECT *********** //
-	var trainingEffect = 1.0;
-	if(window.localStorage.getItem("trainingEffect") != null){
-		trainingEffect = parseFloat(window.localStorage.getItem("trainingEffect"));
-	};
+	var trainingEffect = parseFloat(currentStats.trainingEffect);
 	var nextTrainingEffect = trainingEffect + 0.05;
 	var upgTrainingEffectCostArray = [10000,55000,154000,323000,517000,776000,1164000,1746000,2619000,3929000];
 	var upgTrainingEffectLevel = 0;
@@ -550,7 +536,6 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			trainingEffect = trainingEffect + 0.05;
-			window.localStorage.setItem("trainingEffect",trainingEffect);
 			nextTrainingEffect = nextTrainingEffect + 0.05;
 			// **************** //
 

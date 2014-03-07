@@ -6,11 +6,14 @@ var Clicker = angular.module('Clicker', []).run(function() {
 <!--Routing-->
 Clicker.config(function ($routeProvider){
     $routeProvider.when("/", {
-        templateUrl:"app/partials/index.html",
-        controller:"indexCtrl"
-    }).when("/next",{
-            templateUrl:"app/partials/index.html",
-            controller:"indexCtrl"
+        templateUrl:"app/partials/play.html",
+        controller:"playCtrl"
+    }).when("/theme",{
+        templateUrl:"app/partials/theme.html",
+        controller:"themeCtrl"
+    }).when("/game",{
+        templateUrl:"app/partials/game.html",
+        controller:"gameCtrl"
     }).otherwise({
         redirectTo:"/"
     })
