@@ -131,6 +131,9 @@ function indexCtrl($scope, records){
 
 	// Initialize Picture
 	$scope.index = 0;
+	if(window.localStorage.getItem("index") != null){
+		$scope.index = parseInt(window.localStorage.getItem("index"));
+	};
 	var max = records.superheroes.length - 1;
 	var figure = records.superheroes[$scope.index];
 
@@ -140,6 +143,8 @@ function indexCtrl($scope, records){
 	var name = figure.name;
 	var currentHealth = health;
 	var imageUrl = figure.imageURL;
+    var defeated = figure.defeated;
+    var guessed = figure.guessed;
 
 	var updatePicture = function () {
 		$scope.health = health;
@@ -147,6 +152,17 @@ function indexCtrl($scope, records){
 		$scope.reward = reward;
 		$scope.name = name;
 		$('.picture').css('background-image', 'url(' + imageUrl + ')');
+		if(guessed){
+			$scope.guessed = name;
+		}
+		if(!defeated){
+			$('.nextValid').css('background-image', 'none');
+			nextValid = false;
+		}
+		if($scope.index != 0){
+			$('.prevValid').css('background-image', 'url(img/components/prevBtn.png)');
+			prevValid = true;	
+		}
 	};
 
 	// Initialize damage
@@ -198,6 +214,7 @@ function indexCtrl($scope, records){
 				currentHealth = health;
 				// DEFEATED CHAMPION
 				figure.defeated = true;
+				window.localStorage.setItem("superheroes",JSON.stringify(records.superheroes)),
 				// GEM CHANCE
 				var random2 = Math.random();
 				if(random2 <= gemChance){
@@ -266,6 +283,7 @@ function indexCtrl($scope, records){
 		if(prevValid){
 			if ($scope.index != 0) {
 				$scope.index--;
+				window.localStorage.setItem("index",index);
 				figure = records.superheroes[$scope.index];
 				health = figure.health;
 				armour = figure.armour;
@@ -312,6 +330,7 @@ function indexCtrl($scope, records){
 		if(nextValid){
 			if ($scope.index != max) {
 				$scope.index++;
+				window.localStorage.setItem("index",index);
 				figure = records.superheroes[$scope.index];
 				health = figure.health;
 				armour = figure.armour;
@@ -543,7 +562,6 @@ function indexCtrl($scope, records){
 			var rand2 = Math.random()+trainingEffect;
 			if(rand <= 10){
 				basePower = basePower*rand2;
-				alert('new basepower! '+basepower);
 			}
 			// **************** //
 
