@@ -15,6 +15,7 @@ function indexCtrl($scope, records){
 	var hitMultiplier = 1.0;
 	var nameMultiplier = 1.0;
 	var upgMultiplier = 1.0;
+	var nextUpgMultiplier = upgMultiplier + 0.03;
 	var basePower = 10.0;
 	var totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
 
@@ -28,29 +29,71 @@ function indexCtrl($scope, records){
 		// Round decimals
 		hitMultiplier = Math.round(hitMultiplier*1000)/1000;
 		nameMultiplier = Math.round(nameMultiplier*100)/100;
+		upgMultiplier = Math.round(upgMultiplier*100)/100;
+		nextUpgMultiplier = Math.round(nextUpgMultiplier*100)/100;
 		basePower = Math.round(basePower);
 		totalPower = Math.round(totalPower);
 		damage = Math.round(damage);
 
-		$scope.gold = gold;
+		switch(parseInt(gold.toString().length)){
+			case 4:
+			  	$scope.gold = gold.toString().substring(0,1) + "'" + gold.toString().substring(1,4);
+			  	break;
+			case 5:
+			  	$scope.gold = gold.toString().substring(0,2) + "'" + gold.toString().substring(2,5);
+			  	break;
+			case 6:
+			  	$scope.gold = gold.toString().substring(0,3) + "'" + gold.toString().substring(3,6);
+			  	break;
+			case 7:
+			  	$scope.gold = gold.toString().substring(0,1) + "." + gold.toString().substring(1,3) + " Million";
+			  	break;
+			case 8:
+			  	$scope.gold = gold.toString().substring(0,2) + "." + gold.toString().substring(2,4) + " Million";
+			  	break;
+			case 9:
+			  	$scope.gold = gold.toString().substring(0,3) + "." + gold.toString().substring(3,5) + " Million";
+			  	break;
+			case 10:
+			  	$scope.gold = gold.toString().substring(0,1) + "." + gold.toString().substring(1,3) + " Billion";
+			  	break;
+			case 11:
+			  	$scope.gold = gold.toString().substring(0,2) + "." + gold.toString().substring(2,4) + " Billion";
+			  	break;
+			case 12:
+			  	$scope.gold = gold.toString().substring(0,3) + "." + gold.toString().substring(3,5) + " Billion";
+			  	break;
+			default:
+		  		$scope.gold = gold;
+		}
+
 		$scope.gems = gems;
 		$scope.totalClicks = totalClicks;
 		$scope.hitMultiplier = hitMultiplier;
 		$scope.upgMultiplier = upgMultiplier;
+		$scope.nextUpgMultiplier = nextUpgMultiplier;
 		$scope.nameMultiplier = nameMultiplier;
 		$scope.basePower = basePower;
 		$scope.totalPower = totalPower;	
 		$scope.damage = damage;
 
 		critChance = Math.round(critChance*1000)/1000;
+		nextCritChance = Math.round(nextCritChance*1000)/1000;
 		gemChance = Math.round(gemChance*1000)/1000;
+		nextGemChance = Math.round(nextGemChance*1000)/1000;
 		crit = Math.round(crit*100)/100;
+		nextCrit = Math.round(nextCrit*100)/100;
 		trainingEffect = Math.round(trainingEffect*100)/100;
+		nextTrainingEffect = Math.round(nextTrainingEffect*100)/100;
 
 		$scope.critChance = critChance;
+		$scope.nextCritChance = nextCritChance;
 		$scope.gemChance = gemChance;
+		$scope.nextGemChance = nextGemChance;
 		$scope.crit = crit;
+		$scope.nextCrit = nextCrit;
 		$scope.trainingEffect = trainingEffect;
+		$scope.nextTrainingEffect = nextTrainingEffect;
 	};
 
 	// Initialize Picture
@@ -82,8 +125,6 @@ function indexCtrl($scope, records){
 	updateStats();
 	updatePicture();
 
-	
-
 	$scope.click = function (event) {
 		console.log(event);
 		// ADD TOTAL CLICKS
@@ -100,7 +141,7 @@ function indexCtrl($scope, records){
 				var r = random1.toString().substring(3,7);
 				var $critAnim = $("<img>", {src: "img/components/crit.png", class: "critAnim"+r+" crit", height: "10", width: "10"});
 				$critAnim.css('position', 'absolute');
-				$critAnim.css('top', ''+(event.pageY)+'px');
+				$critAnim.css('top', ''+(event.pageY-50)+'px');
 				$critAnim.css('left', ''+(event.pageX-25)+'px');
 				$(".main").append($critAnim);
 				//$('.critAnim'+r).animate({percent: 200}, 500, function () {
@@ -291,6 +332,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			upgMultiplier = upgMultiplier + 0.03;
+			nextUpgMultiplier = nextUpgMultiplier + 0.03;
 			// **************** //
 
 			upgPowerCost = upgPowerCostArray[upgPowerLevel]; 
@@ -307,12 +349,14 @@ function indexCtrl($scope, records){
 
 	// ********** CRIT *********** //
 	var crit = 1.5;
+	var nextCrit = crit + 0.05;
 	var upgCritCostArray = [18000,99000,277000,582000,931000,1400000,2095000,3140000,4715000,7072000];
 	var upgCritLevel = 0;
 	var upgCritCost = upgCritCostArray[upgCritLevel];
 	$scope.upgCritCost = upgCritCost;
 	$scope.upgCritLevel = upgCritLevel;
 	$scope.crit = crit;
+	$scope.nextCrit = nextCrit;
 	$scope.upgradeCrit = function () {
 		if(gold >= upgCritCost){
 			gold = gold - upgCritCost;
@@ -320,6 +364,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			crit += 0.05;
+			nextCrit += 0.05;
 			// **************** //
 
 			upgCritCost = upgCritCostArray[upgCritLevel]; 
@@ -337,12 +382,14 @@ function indexCtrl($scope, records){
 
 	// ********** CRIT CHANCE *********** //
 	var critChance = 0.05;
+	var nextCritChance = critChance + 0.005;
 	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
 	var upgCritChanceLevel = 0;
 	var upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel];
 	$scope.upgCritChanceCost = upgCritChanceCost;
 	$scope.upgCritChanceLevel = upgCritChanceLevel;
 	$scope.critChance = critChance;
+	$scope.nextCritChance = nextCritChance;
 	$scope.upgradeCritChance = function () {
 		if(gold >= upgCritChanceCost){
 			gold = gold - upgCritChanceCost;
@@ -350,6 +397,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			critChance = critChance + 0.005;
+			nextCritChance = nextCritChance + 0.005;
 			// **************** //
 
 			upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel]; 
@@ -366,12 +414,14 @@ function indexCtrl($scope, records){
 
 	// ********** GEM CHANCE *********** //
 	var gemChance = 0.03;
+	var nextGemChance = gemChance + 0.004;
 	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
 	var upgGemChanceLevel = 0;
 	var upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel];
 	$scope.upgGemChanceCost = upgGemChanceCost;
 	$scope.upgGemChanceLevel = upgGemChanceLevel;
 	$scope.gemChance = gemChance;
+	$scope.nextGemChance = nextGemChance;
 	$scope.upgradeGemChance = function () {
 		if(gold >= upgGemChanceCost){
 			gold = gold - upgGemChanceCost;
@@ -379,6 +429,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			gemChance = gemChance + 0.004;
+			nextGemChance = nextCritChance + 0.004;
 			// **************** //
 
 			upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel]; 
@@ -396,12 +447,14 @@ function indexCtrl($scope, records){
 
 	// ********** TRAINING EFFECT *********** //
 	var trainingEffect = 1.0;
+	var nextTrainingEffect = trainingEffect + 0.05;
 	var upgTrainingEffectCostArray = [10000,55000,154000,323000,517000,776000,1164000,1746000,2619000,3929000];
 	var upgTrainingEffectLevel = 0;
 	var upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel];
 	$scope.upgTrainingEffectCost = upgTrainingEffectCost;
 	$scope.upgTrainingEffectLevel = upgTrainingEffectLevel;
 	$scope.trainingEffect = trainingEffect;
+	$scope.nextTrainingEffect = nextTrainingEffect;
 	$scope.upgradeTrainingEffect = function () {
 		if(gold >= upgTrainingEffectCost){
 			gold = gold - upgTrainingEffectCost;
@@ -409,6 +462,7 @@ function indexCtrl($scope, records){
 
 			// **************** //
 			trainingEffect = trainingEffect + 0.05;
+			nextTrainingEffect = nextTrainingEffect + 0.05;
 			// **************** //
 
 			upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel]; 
