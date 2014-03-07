@@ -10,6 +10,9 @@ function indexCtrl($scope, records){
 
 	// Initialize Stats 
 	var gold = 0;
+	if(window.localStorage.getItem("gold") != null){
+		gold = window.localStorage.getItem("gold");
+	}
 	var gems = 5;
 	var totalClicks = 0;
 	var hitMultiplier = 1.0;
@@ -159,6 +162,7 @@ function indexCtrl($scope, records){
 			if (currentHealth <= 0) {
 				// INCREASE GOLD
 				gold = gold + reward;
+        		window.localStorage.setItem("gold", gold);
 				// RESET HEALTH
 				currentHealth = health;
 				// DEFEATED CHAMPION
