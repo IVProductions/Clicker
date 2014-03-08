@@ -211,9 +211,9 @@ function gameCtrl($scope, $location, records, statsRecords){
 		// DECREASE HEALTH
 		if(damage != 0){
 			//CRIT CHANCE
-			$(".crit").remove();
 			var random1 = Math.random();
 			if(random1 <= critChance){
+				$(".crit").remove();
 				var r = random1.toString().substring(3,7);
 				var $critAnim = $("<img>", {src: "img/components/crit.png", class: "critAnim"+r+" crit", height: "10", width: "10"});
 				$critAnim.css('position', 'absolute');
