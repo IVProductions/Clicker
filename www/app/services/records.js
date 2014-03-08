@@ -39,7 +39,7 @@ Clicker.factory('records',function() {
                 "reward": 50,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "img/flash.jpg"
+                "imageURL": "img/flash.png"
             },
             {
                 "id": 5,
@@ -49,7 +49,7 @@ Clicker.factory('records',function() {
                 "reward": 100,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "img/ironman.jpg"
+                "imageURL": "img/ironman.png"
             },
             {
                 "id": 6,
@@ -59,7 +59,7 @@ Clicker.factory('records',function() {
                 "reward": 200,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "img/wonderwoman.jpg"
+                "imageURL": "img/wonderwoman.png"
             },
             {
                 "id": 7,
