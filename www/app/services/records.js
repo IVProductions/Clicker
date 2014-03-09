@@ -541,9 +541,9 @@ Clicker.factory('records',function() {
             {
                 "id": 2,
                 "name": 'Stan',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 200,
+                "armour": 2,
+                "reward": 10,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/stan.png"
@@ -551,9 +551,9 @@ Clicker.factory('records',function() {
             {
                 "id": 3,
                 "name": 'Kyle',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 300,
+                "armour": 4,
+                "reward": 20,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/kyle.png"
@@ -561,9 +561,9 @@ Clicker.factory('records',function() {
             {
                 "id": 4,
                 "name": 'Kenny',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 500,
+                "armour": 8,
+                "reward": 50,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/kenny.png"
@@ -571,9 +571,9 @@ Clicker.factory('records',function() {
             {
                 "id": 5,
                 "name": 'Bebe',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 600,
+                "armour": 12,
+                "reward": 100,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/bebe.png"
@@ -581,9 +581,9 @@ Clicker.factory('records',function() {
             {
                 "id": 6,
                 "name": 'Butters',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 800,
+                "armour": 18,
+                "reward": 200,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/butters.png"
@@ -591,9 +591,9 @@ Clicker.factory('records',function() {
             {
                 "id": 7,
                 "name": 'Clyde',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 1000,
+                "armour": 22,
+                "reward": 300,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/clyde.png"
@@ -601,9 +601,9 @@ Clicker.factory('records',function() {
             {
                 "id": 8,
                 "name": 'Craig',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 1200,
+                "armour": 26,
+                "reward": 450,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/craig.png"
@@ -611,9 +611,9 @@ Clicker.factory('records',function() {
             {
                 "id": 9,
                 "name": 'Jimmy',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 1440,
+                "armour": 31,
+                "reward": 675,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/jimmy.png"
@@ -621,9 +621,9 @@ Clicker.factory('records',function() {
             {
                 "id": 10,
                 "name": 'Dougie',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 1800,
+                "armour": 40,
+                "reward": 1013,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/dougie.png"
@@ -631,9 +631,9 @@ Clicker.factory('records',function() {
             {
                 "id": 11,
                 "name": 'Tweak',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 2500,
+                "armour": 48,
+                "reward": 1519,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/tweak.png"
@@ -641,9 +641,9 @@ Clicker.factory('records',function() {
             {
                 "id": 12,
                 "name": 'Timmy',
-                "health": 100,
-                "armour": 0,
-                "reward": 2,
+                "health": 3000,
+                "armour": 48,
+                "reward": 2278,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/timmy.png"
