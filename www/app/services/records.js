@@ -511,7 +511,7 @@ Clicker.factory('records',function() {
                 "reward": 2,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "res/icon/ios/morten.png"
+                "imageURL": "img/captainamerica.png"
             },
             {
                 "id": 2,
@@ -521,7 +521,7 @@ Clicker.factory('records',function() {
                 "reward": 11195548975,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "res/icon/ios/morten.png"
+                "imageURL": "img/cptnew.png"
             }  
         ]
     ]
