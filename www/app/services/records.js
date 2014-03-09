@@ -567,6 +567,86 @@ Clicker.factory('records',function() {
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/kenny.png"
+            },
+            {
+                "id": 5,
+                "name": 'Bebe',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/bebe.png"
+            },
+            {
+                "id": 6,
+                "name": 'Butters',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/butters.png"
+            },
+            {
+                "id": 7,
+                "name": 'Clyde',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/clyde.png"
+            }, 
+            {
+                "id": 8,
+                "name": 'Craig',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/craig.png"
+            },
+            {
+                "id": 9,
+                "name": 'Jimmy',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/jimmy.png"
+            },
+            {
+                "id": 10,
+                "name": 'Dougie',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/dougie.png"
+            },
+            {
+                "id": 11,
+                "name": 'Tweak',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/tweak.png"
+            },
+            {
+                "id": 12,
+                "name": 'Timmy',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/timmy.png"
             } 
         ]
     ]
