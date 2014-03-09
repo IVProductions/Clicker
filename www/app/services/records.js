@@ -530,23 +530,43 @@ Clicker.factory('records',function() {
         [
             {
                 "id": 1,
-                "name": 'Morten Eriksen',
+                "name": 'Cartman',
                 "health": 100,
                 "armour": 0,
                 "reward": 2,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "img/captainamerica.png"
+                "imageURL": "img/southpark/cartman.png"
             },
             {
                 "id": 2,
-                "name": 'Morten Eriksen',
+                "name": 'Stan',
                 "health": 100,
                 "armour": 0,
                 "reward": 2,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "img/captainamerica.png"
+                "imageURL": "img/southpark/stan.png"
+            },
+            {
+                "id": 3,
+                "name": 'Kyle',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/kyle.png"
+            },
+            {
+                "id": 4,
+                "name": 'Kenny',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/kenny.png"
             } 
         ]
     ]
