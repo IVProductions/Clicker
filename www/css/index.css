@@ -640,6 +640,13 @@ border-radius: 6px;
     text-align: center;
 } 
 
+
+@media screen and (max-width:1080px) {
+    .main {
+        font-size: 4em;
+    }
+}
+
 /*
 .main .picture .healthbar {
     height: 500px;
