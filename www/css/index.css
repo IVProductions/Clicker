@@ -670,6 +670,7 @@ border-radius: 6px;
     .secondTable .picture .reward {
         height: 75px;
         width: 60px;    
+        background-size: 70% 90%!important; 
     }
 
     .theme table tr .superheroes,
@@ -687,6 +688,7 @@ border-radius: 6px;
     }
 
     .play button {
+        margin-top: 300px;
         width: 600px;
         height: 150px;
     }
@@ -700,6 +702,14 @@ border-radius: 6px;
     .upgradeView table .info .current,
     .upgradeView table .info .description {
         font-size: 2em; 
+    }
+
+    .thirdTable input {
+        font-size: 60px;
+    }
+
+    .theme table tr td {
+        padding: 20px;
     }
 }
 
