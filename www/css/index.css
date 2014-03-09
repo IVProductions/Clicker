@@ -80,6 +80,14 @@ html, body {
     background-position: right;  
 }
 
+.theme table tr .southpark {
+    padding: 10px;
+    background-image: url('../img/components/southparkLogo.png');
+    background-size: 80px 80px; 
+    background-repeat:no-repeat;
+    background-position: right;  
+}
+
 .theme .infoTheme {
     font-size: 10px;
 }

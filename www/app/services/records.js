@@ -1,5 +1,6 @@
 Clicker.factory('records',function() {
     var enemies = [
+        // SUPERHEROES
         [
             {
                 "id": 1,
@@ -501,7 +502,8 @@ Clicker.factory('records',function() {
                 "guessed": false,
                 "imageURL": "img/shazam.jpeg"
             } 
-        ],  
+        ], 
+        // SUPERVILLAINS 
         [
             {
                 "id": 1,
@@ -523,6 +525,29 @@ Clicker.factory('records',function() {
                 "guessed": false,
                 "imageURL": "img/cptnew.png"
             }  
+        ],
+        // SOUTH PARK
+        [
+            {
+                "id": 1,
+                "name": 'Morten Eriksen',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/captainamerica.png"
+            },
+            {
+                "id": 2,
+                "name": 'Morten Eriksen',
+                "health": 100,
+                "armour": 0,
+                "reward": 2,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/captainamerica.png"
+            } 
         ]
     ]
     

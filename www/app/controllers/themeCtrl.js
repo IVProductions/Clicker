@@ -19,5 +19,9 @@ function themeCtrl($scope, $location, statsRecords, records){
         	window.localStorage.setItem("theme",1);
         	$location.path('game');	
         }
+        else if (theme == 'southpark'){
+        	window.localStorage.setItem("theme",2);
+        	$location.path('game');	
+        }
     }
 }
