@@ -642,7 +642,8 @@ border-radius: 6px;
 
 
 @media screen and (max-width:1080px) {
-    .theme,
+    
+    /*.theme,
     .play,
     .main {
         font-size: 4em;
@@ -710,7 +711,7 @@ border-radius: 6px;
 
     .theme table tr td {
         padding: 20px;
-    }
+    }*/
 }
 
 /*
