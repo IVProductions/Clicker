@@ -426,12 +426,22 @@ function gameCtrl($scope, $location, records, statsRecords){
 	var upgPowerCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgPowerCost = upgPowerCostArray[upgPowerLevel];
 	$scope.upgPowerCost = upgPowerCost;
-	$scope.upgPowerLevel = upgPowerLevel;
+	$scope.upgPowerLevel = upgPowerLevel + 1;
 	$scope.upgradePower = function () {
 		if(gold >= upgPowerCost){
 			gold = gold - upgPowerCost;
 			upgPowerLevel++;
 
+			if(upgPowerLevel == (upgPowerCostArray.length - 1)){
+				$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			}
+			else if(gold >= upgPowerCost){
+				$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
+			}
+			else {
+				$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
+			}
+			
 			// **************** //
 			upgMultiplier = upgMultiplier + 0.03;
 			nextUpgMultiplier = nextUpgMultiplier + 0.03;
@@ -453,13 +463,23 @@ function gameCtrl($scope, $location, records, statsRecords){
 	var upgCritCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgCritCost = upgCritCostArray[upgCritLevel];
 	$scope.upgCritCost = upgCritCost;
-	$scope.upgCritLevel = upgCritLevel;
+	$scope.upgCritLevel = upgCritLevel + 1;
 	$scope.crit = crit;
 	$scope.nextCrit = nextCrit;
 	$scope.upgradeCrit = function () {
 		if(gold >= upgCritCost){
 			gold = gold - upgCritCost;
 			upgCritLevel++;
+
+			if(upgCritLevel == (upgCritCostArray.length - 1)){
+				$('.critBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			}
+			else if(gold >= upgCritCost){
+				$('.critBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
+			}
+			else {
+				$('.critBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
+			}
 
 			// **************** //
 			crit += 0.05;
@@ -483,13 +503,23 @@ function gameCtrl($scope, $location, records, statsRecords){
 	var upgCritChanceCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel];
 	$scope.upgCritChanceCost = upgCritChanceCost;
-	$scope.upgCritChanceLevel = upgCritChanceLevel;
+	$scope.upgCritChanceLevel = upgCritChanceLevel + 1;
 	$scope.critChance = critChance;
 	$scope.nextCritChance = nextCritChance;
 	$scope.upgradeCritChance = function () {
 		if(gold >= upgCritChanceCost){
 			gold = gold - upgCritChanceCost;
 			upgCritChanceLevel++;
+
+			if(upgCritChanceLevel == (upgCritChanceCostArray.length - 1)){
+				$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			}
+			else if(gold >= upgCritChanceCost){
+				$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
+			}
+			else {
+				$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
+			}
 
 			// **************** //
 			critChance = critChance + 0.005;
@@ -512,13 +542,23 @@ function gameCtrl($scope, $location, records, statsRecords){
 	var upgGemChanceCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel];
 	$scope.upgGemChanceCost = upgGemChanceCost;
-	$scope.upgGemChanceLevel = upgGemChanceLevel;
+	$scope.upgGemChanceLevel = upgGemChanceLevel + 1;
 	$scope.gemChance = gemChance;
 	$scope.nextGemChance = nextGemChance;
 	$scope.upgradeGemChance = function () {
 		if(gold >= upgGemChanceCost){
 			gold = gold - upgGemChanceCost;
 			upgGemChanceLevel++;
+
+			if(upgGemChanceLevel == (upgGemChanceCostArray.length - 1)){
+				$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			}
+			else if(gold >= upgGemChanceCost){
+				$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
+			}
+			else {
+				$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
+			}
 
 			// **************** //
 			gemChance = gemChance + 0.004;
@@ -542,13 +582,23 @@ function gameCtrl($scope, $location, records, statsRecords){
 	var upgTrainingEffectCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel];
 	$scope.upgTrainingEffectCost = upgTrainingEffectCost;
-	$scope.upgTrainingEffectLevel = upgTrainingEffectLevel;
+	$scope.upgTrainingEffectLevel = upgTrainingEffectLevel + 1;
 	$scope.trainingEffect = trainingEffect;
 	$scope.nextTrainingEffect = nextTrainingEffect;
 	$scope.upgradeTrainingEffect = function () {
 		if(gold >= upgTrainingEffectCost){
 			gold = gold - upgTrainingEffectCost;
 			upgTrainingEffectLevel++;
+
+			if(upgTrainingEffectLevel == (upgTrainingEffectCostArray.length - 1)){
+				$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			}
+			else if(gold >= upgTrainingEffectCost){
+				$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
+			}
+			else {
+				$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
+			}
 
 			// **************** //
 			trainingEffect = trainingEffect + 0.05;
