@@ -583,6 +583,13 @@ function gameCtrl($scope, $location, records, statsRecords){
 		if(gems >= 1){
 			gems--;
 
+			if(gems >=1)){
+				$('.trainEffectBtn').css('background-image', 'url(img/components/trainBtn.png)');	
+			}
+			else {
+				$('.trainEffectBtn').css('background-image', 'url(img/components/trainBtn-Disabled.png)');		
+			}
+
 			// **************** //
 			var rand = Math.random()*100;
 			var rand2 = Math.random()+trainingEffect;
@@ -606,6 +613,13 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 	$scope.showUpgrades = function() {
 		updateCosts();
+
+		if(gems >=1)){
+			$('.trainEffectBtn').css('background-image', 'url(img/components/trainBtn.png)');	
+		}
+		else {
+			$('.trainEffectBtn').css('background-image', 'url(img/components/trainBtn-Disabled.png)');		
+		}
 
 		$('.upgradeView').show();
 		$('.upgradeView').animate({top : '10%'}, 500, function () {
