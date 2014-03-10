@@ -583,11 +583,11 @@ function gameCtrl($scope, $location, records, statsRecords){
 		if(gems >= 1){
 			gems--;
 
-			if(gems >=1)){
-				$('.trainEffectBtn').css('background-image', 'url(img/components/trainBtn.png)');	
+			if(gems >=1){
+				$('.trainBtn').css('background-image', 'url(img/components/trainBtn.png)');	
 			}
 			else {
-				$('.trainEffectBtn').css('background-image', 'url(img/components/trainBtn-Disabled.png)');		
+				$('.trainBtn').css('background-image', 'url(img/components/trainBtn-Disabled.png)');		
 			}
 
 			// **************** //
@@ -614,11 +614,11 @@ function gameCtrl($scope, $location, records, statsRecords){
 	$scope.showUpgrades = function() {
 		updateCosts();
 
-		if(gems >=1)){
-			$('.trainEffectBtn').css('background-image', 'url(img/components/trainBtn.png)');	
+		if(gems >=1){
+			$('.trainBtn').css('background-image', 'url(img/components/trainBtn.png)');	
 		}
 		else {
-			$('.trainEffectBtn').css('background-image', 'url(img/components/trainBtn-Disabled.png)');		
+			$('.trainBtn').css('background-image', 'url(img/components/trainBtn-Disabled.png)');		
 		}
 
 		$('.upgradeView').show();
