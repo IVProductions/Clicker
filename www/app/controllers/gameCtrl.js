@@ -1,5 +1,6 @@
 function gameCtrl($scope, $location, records, statsRecords){
 
+	var firstKill = true;
 	var prevValid = false;
 	var nextValid = false;
 	$('.prevValid').css('background-image', 'none');
@@ -54,7 +55,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	var upgCritChanceLevel = parseInt(currentStats.upgCritChanceLvl);
 	// ****** GEMCHANCE ******* //
 	var gemChance = parseFloat(currentStats.gemChance);
-	var nextGemChance = gemChance + 0.004;
+	var nextGemChance = gemChance + 0.001;
 	var upgGemChanceLevel = parseInt(currentStats.upgGemChanceLvl);
 	// ****** TRAINING EFFECT ******* //
 	var trainingEffect = parseFloat(currentStats.trainingEffect);
@@ -248,10 +249,17 @@ function gameCtrl($scope, $location, records, statsRecords){
 				// RESET HEALTH
 				currentHealth = health;
 				// DEFEATED CHAMPION
+				if(!enemy.defeated){
+					firstKill = true;
+				}
+				else {
+					firstKill = false;
+				}
 				enemy.defeated = true;
 				// GEM CHANCE
 				var random2 = Math.random();
-				if(random2 <= gemChance){
+				if(random2 <= gemChance || firstKill){
+					firstKill = false;
 					var r = random2.toString().substring(3,5);
 					var $gemAnim = $("<img>", {src: "img/components/gem.png", class: "gemAnim"+r, height: "50", width: "50"});
 					$gemAnim.css('position', 'absolute');
@@ -428,7 +436,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	$scope.upgPowerCost = upgPowerCost;
 	$scope.upgPowerLevel = upgPowerLevel + 1;
 	$scope.upgradePower = function () {
-		if(gold >= upgPowerCost){
+		if(gold >= upgPowerCost && upgPowerLevel != upgPowerCostArray.length){
 			gold = gold - upgPowerCost;
 			upgPowerLevel++;
 
@@ -458,7 +466,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	$scope.crit = crit;
 	$scope.nextCrit = nextCrit;
 	$scope.upgradeCrit = function () {
-		if(gold >= upgCritCost){
+		if(gold >= upgCritCost && upgCritLevel != upgCritCostArray.length){
 			gold = gold - upgCritCost;
 			upgCritLevel++;
 
@@ -490,7 +498,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	$scope.critChance = critChance;
 	$scope.nextCritChance = nextCritChance;
 	$scope.upgradeCritChance = function () {
-		if(gold >= upgCritChanceCost){
+		if(gold >= upgCritChanceCost && upgCritChanceLevel != upgCritChanceCostArray.length){
 			gold = gold - upgCritChanceCost;
 			upgCritChanceLevel++;
 
@@ -520,13 +528,13 @@ function gameCtrl($scope, $location, records, statsRecords){
 	$scope.gemChance = gemChance;
 	$scope.nextGemChance = nextGemChance;
 	$scope.upgradeGemChance = function () {
-		if(gold >= upgGemChanceCost){
+		if(gold >= upgGemChanceCost && upgGemChanceLevel != upgGemChanceCostArray.length){
 			gold = gold - upgGemChanceCost;
 			upgGemChanceLevel++;
 
 			// **************** //
-			gemChance = gemChance + 0.004;
-			nextGemChance = nextCritChance + 0.004;
+			gemChance = gemChance + 0.001;
+			nextGemChance = nextCritChance + 0.001;
 			// **************** //
 
 			upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel]; 
@@ -551,7 +559,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	$scope.trainingEffect = trainingEffect;
 	$scope.nextTrainingEffect = nextTrainingEffect;
 	$scope.upgradeTrainingEffect = function () {
-		if(gold >= upgTrainingEffectCost){
+		if(gold >= upgTrainingEffectCost && upgTrainingEffectLevel != upgTrainingEffectCostArray.length){
 			gold = gold - upgTrainingEffectCost;
 			upgTrainingEffectLevel++;
 
@@ -632,8 +640,10 @@ function gameCtrl($scope, $location, records, statsRecords){
 	}
 
 	var updateCosts = function() {
-		if(upgTrainingEffectLevel == (upgTrainingEffectCostArray.length - 1)){
+		if(upgTrainingEffectLevel == (upgTrainingEffectCostArray.length)){
 			$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			$('.info.5 .next').hide();
+			$('.info.5 .cost').hide();
 		}
 		else if(gold >= upgTrainingEffectCost){
 			$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
@@ -642,8 +652,10 @@ function gameCtrl($scope, $location, records, statsRecords){
 			$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
 		}
 
-		if(upgGemChanceLevel == (upgGemChanceCostArray.length - 1)){
+		if(upgGemChanceLevel == (upgGemChanceCostArray.length)){
 			$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			$('.info.4 .next').hide();
+			$('.info.4 .cost').hide();
 		}
 		else if(gold >= upgGemChanceCost){
 			$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
@@ -652,8 +664,10 @@ function gameCtrl($scope, $location, records, statsRecords){
 			$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
 		}
 
-		if(upgCritChanceLevel == (upgCritChanceCostArray.length - 1)){
+		if(upgCritChanceLevel == (upgCritChanceCostArray.length)){
 			$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			$('.info.3 .next').hide();
+			$('.info.3 .cost').hide();
 		}
 		else if(gold >= upgCritChanceCost){
 			$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
@@ -662,8 +676,10 @@ function gameCtrl($scope, $location, records, statsRecords){
 			$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
 		}
 
-		if(upgCritLevel == (upgCritCostArray.length - 1)){
+		if(upgCritLevel == (upgCritCostArray.length)){
 			$('.critBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			$('.info.2 .next').hide();
+			$('.info.2 .cost').hide();
 		}
 		else if(gold >= upgCritCost){
 			$('.critBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
@@ -672,8 +688,10 @@ function gameCtrl($scope, $location, records, statsRecords){
 			$('.critBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
 		}
 
-		if(upgPowerLevel == (upgPowerCostArray.length - 1)){
+		if(upgPowerLevel == (upgPowerCostArray.length)){
 			$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+			$('.info.1 .next').hide();
+			$('.info.1 .cost').hide();
 		}
 		else if(gold >= upgPowerCost){
 			$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
