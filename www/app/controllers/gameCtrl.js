@@ -432,16 +432,8 @@ function gameCtrl($scope, $location, records, statsRecords){
 			gold = gold - upgPowerCost;
 			upgPowerLevel++;
 
-			if(upgPowerLevel == (upgPowerCostArray.length - 1)){
-				$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
-			}
-			else if(gold >= upgPowerCost){
-				$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
-			}
-			else {
-				$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
-			}
-			
+			updateCosts();
+
 			// **************** //
 			upgMultiplier = upgMultiplier + 0.03;
 			nextUpgMultiplier = nextUpgMultiplier + 0.03;
@@ -471,15 +463,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 			gold = gold - upgCritCost;
 			upgCritLevel++;
 
-			if(upgCritLevel == (upgCritCostArray.length - 1)){
-				$('.critBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
-			}
-			else if(gold >= upgCritCost){
-				$('.critBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
-			}
-			else {
-				$('.critBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
-			}
+			updateCosts();
 
 			// **************** //
 			crit += 0.05;
@@ -511,15 +495,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 			gold = gold - upgCritChanceCost;
 			upgCritChanceLevel++;
 
-			if(upgCritChanceLevel == (upgCritChanceCostArray.length - 1)){
-				$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
-			}
-			else if(gold >= upgCritChanceCost){
-				$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
-			}
-			else {
-				$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
-			}
+			updateCosts();
 
 			// **************** //
 			critChance = critChance + 0.005;
@@ -550,15 +526,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 			gold = gold - upgGemChanceCost;
 			upgGemChanceLevel++;
 
-			if(upgGemChanceLevel == (upgGemChanceCostArray.length - 1)){
-				$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
-			}
-			else if(gold >= upgGemChanceCost){
-				$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
-			}
-			else {
-				$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
-			}
+			updateCosts();
 
 			// **************** //
 			gemChance = gemChance + 0.004;
@@ -590,15 +558,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 			gold = gold - upgTrainingEffectCost;
 			upgTrainingEffectLevel++;
 
-			if(upgTrainingEffectLevel == (upgTrainingEffectCostArray.length - 1)){
-				$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
-			}
-			else if(gold >= upgTrainingEffectCost){
-				$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
-			}
-			else {
-				$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
-			}
+			updateCosts();
 
 			// **************** //
 			trainingEffect = trainingEffect + 0.05;
@@ -645,6 +605,21 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 
 	$scope.showUpgrades = function() {
+		updateCosts();
+
+		$('.upgradeView').show();
+		$('.upgradeView').animate({top : '10%'}, 500, function () {
+
+		});
+	}
+
+	$scope.hideUpgrades = function() {
+		$('.upgradeView').animate({top : '100%'}, 500, function () {
+			$('.upgradeView').hide();
+		});
+	}
+
+	var updateCosts = function() {
 		if(upgTrainingEffectLevel == (upgTrainingEffectCostArray.length - 1)){
 			$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
 		}
@@ -694,17 +669,6 @@ function gameCtrl($scope, $location, records, statsRecords){
 		else {
 			$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
 		}
-
-		$('.upgradeView').show();
-		$('.upgradeView').animate({top : '10%'}, 500, function () {
-
-		});
-	}
-
-	$scope.hideUpgrades = function() {
-		$('.upgradeView').animate({top : '100%'}, 500, function () {
-			$('.upgradeView').hide();
-		});
 	}
 
 	$scope.changeView = function(view){
