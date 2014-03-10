@@ -621,6 +621,12 @@ function gameCtrl($scope, $location, records, statsRecords){
 			var rand2 = Math.random()+trainingEffect;
 			if(rand <= 10){
 				basePower = basePower*rand2;
+
+				$('.info.training .current').animate({fontSize : '1.2em'}, 200, function () {
+				$('.info.training .current').animate({fontSize : '0.8em'}, 200, function () {
+				
+					});	
+				});
 			}
 			// **************** //
 
@@ -630,11 +636,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			updateStats();	
 
-			$('.info.training .current').animate({fontSize : '1.2em'}, 200, function () {
-				$('.info.training .current').animate({fontSize : '0.8em'}, 200, function () {
-				
-				});	
-			});	
+
 		}
 		else {
 			//alert("not enough gold / max level reached");
