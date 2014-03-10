@@ -95,7 +95,7 @@
 <div class="upgradeView" ng-show="upgrades">
     <table>
         <tr>
-            <td class="info">
+            <td class="info power">
                 Power 
                 <span class="upgLvl">lvl {{upgPowerLevel}}</span> <br>
                 <span class="description">Permanently increase your power</span><br>
@@ -106,7 +106,7 @@
             <td class="upgBtn powerBtn" ng-click="upgradePower()"></td>
         </tr>
         <tr>
-            <td class="info">Crit 
+            <td class="info crit">Crit 
                 <span class="upgLvl">lvl {{upgCritLevel}}</span> <br>
                 <span class="description">Increases the effect of a critical strike</span><br>
                 <span class="current">Current: {{crit}}</span>
@@ -116,7 +116,7 @@
             <td class="upgBtn critBtn" ng-click="upgradeCrit()"></td>
         </tr>
         <tr>
-            <td class="info">Crit Chance 
+            <td class="info critChance">Crit Chance 
                 <span class="upgLvl">lvl {{upgCritChanceLevel}}</span> <br>
                 <span class="description">Increases the chance for a critical strike</span><br>
                 <span class="current">Current: {{critChance}}</span>
@@ -126,7 +126,7 @@
             <td class="upgBtn critChanceBtn" ng-click="upgradeCritChance()"></td>
         </tr>
         <tr>
-            <td class="info">Gem Chance 
+            <td class="info gemChance">Gem Chance 
                 <span class="upgLvl">lvl {{upgGemChanceLevel}}</span> <br>
                 <span class="description">Increases the chance of finding a gem</span><br>
                 <span class="current">Current: {{gemChance}}</span>
@@ -136,7 +136,7 @@
             <td class="upgBtn gemChanceBtn" ng-click="upgradeGemChance()"></td>
         </tr>
         <tr>
-            <td class="info">Training effect 
+            <td class="info trainingEffect">Training effect 
                 <span class="upgLvl">lvl {{upgTrainingEffectLevel}}</span> <br>
                 <span class="description">Increases the effect of training</span><br>
                 <span class="current">Current: {{trainingEffect+1}}</span>
@@ -146,7 +146,7 @@
             <td class="upgBtn trainEffectBtn" ng-click="upgradeTrainingEffect()"></td>
         </tr>
         <tr>
-            <td class="info">Training 
+            <td class="info training">Training 
                 <span class="upgLvl"></span> <br>
                 <span class="description">A chance to permanently increase your base power</span><br>
                 <span class="current">Current: {{basePower}}</span>
