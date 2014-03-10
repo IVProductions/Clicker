@@ -565,7 +565,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			// **************** //
 			trainingEffect = trainingEffect + 0.05;
-			nextTrainingEffect = nextTrainingEffect + 0.05;
+			nextTrainingEffect = trainingEffect + 0.05;
 			// **************** //
 
 			upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel]; 
@@ -597,9 +597,9 @@ function gameCtrl($scope, $location, records, statsRecords){
 			// **************** //
 			var rand = Math.random()*100;
 			var rand2 = Math.random()+trainingEffect;
-			if(rand <= 10){
+			//if(rand <= 10){
 				basePower = basePower*rand2;
-			}
+			//}
 			// **************** //
 
 			upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel]; 
