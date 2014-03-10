@@ -39,6 +39,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	// ****** UPG MULTIPLIER ******* //
 	var upgMultiplier = parseFloat(currentStats.upgMultiplier);
 	var nextUpgMultiplier = upgMultiplier + 0.03;
+	var upgPowerLevel = parseInt(currentStats.upgPowerLvl);
 	// ****** BASEPOWER ******* //
 	var basePower = parseInt(currentStats.basePower);
 	// ****** TOTAL POWER ******* //
@@ -46,15 +47,19 @@ function gameCtrl($scope, $location, records, statsRecords){
 	// ****** CRIT ******* //
 	var crit = parseFloat(currentStats.crit);
 	var nextCrit = crit + 0.05;
+	var upgCritLevel = parseInt(currentStats.upgCritLvl);
 	// ****** CRITCHANCE ******* //
 	var critChance = parseFloat(currentStats.critChance);
 	var nextCritChance = critChance + 0.005;
+	var upgCritChanceLevel = parseInt(currentStats.upgCritChanceLvl);
 	// ****** GEMCHANCE ******* //
 	var gemChance = parseFloat(currentStats.gemChance);
 	var nextGemChance = gemChance + 0.004;
+	var upgGemChanceLevel = parseInt(currentStats.upgGemChanceLvl);
 	// ****** TRAINING EFFECT ******* //
 	var trainingEffect = parseFloat(currentStats.trainingEffect);
 	var nextTrainingEffect = trainingEffect + 0.05;
+	var upgTrainingEffectLevel =  parseInt(currentStats.upgTrainingEffectLvl);
 
 	var updateStats = function () {
 		totalPower = hitMultiplier*upgMultiplier*nameMultiplier*basePower;
@@ -144,6 +149,11 @@ function gameCtrl($scope, $location, records, statsRecords){
 		currentStats.gemChance = gemChance;
 		currentStats.trainingEffect = trainingEffect;
 		currentStats.index = $scope.index;
+		currentStats.upgPowerLvl = upgPowerLevel;
+		currentStats.upgCritLvl = upgCritLevel;
+		currentStats.upgCritChanceLvl = upgCritChanceLevel;
+		currentStats.upgGemChanceLvl = upgGemChanceLevel;
+		currentStats.upgTrainingEffectLvl = upgTrainingEffectLevel;
 
 		window.localStorage.setItem("enemies",JSON.stringify(enemies));
 		window.localStorage.setItem("stats",JSON.stringify(stats));
@@ -413,8 +423,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	// UPGRADES
 
 	// ********** POWER / UPG MULTIPLIER *********** //
-	var upgPowerCostArray = [400,2200,6160,12936,20698,31046,45017,62124,83246,109885];
-	var upgPowerLevel = 0;
+	var upgPowerCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgPowerCost = upgPowerCostArray[upgPowerLevel];
 	$scope.upgPowerCost = upgPowerCost;
 	$scope.upgPowerLevel = upgPowerLevel;
@@ -430,19 +439,18 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			upgPowerCost = upgPowerCostArray[upgPowerLevel]; 
 			$scope.upgPowerCost = upgPowerCost;
-			$scope.upgPowerLevel = upgPowerLevel;
+			$scope.upgPowerLevel = upgPowerLevel + 1;
 
 			updateStats();	
 		}
 		else {
-			alert("not enough gold / max level reached");
+			//alert("not enough gold / max level reached");
 		}	
 	}
 	// ************************** //
 
 	// ********** CRIT *********** //
-	var upgCritCostArray = [18000,99000,277000,582000,931000,1400000,2095000,3140000,4715000,7072000];
-	var upgCritLevel = 0;
+	var upgCritCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgCritCost = upgCritCostArray[upgCritLevel];
 	$scope.upgCritCost = upgCritCost;
 	$scope.upgCritLevel = upgCritLevel;
@@ -460,20 +468,19 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			upgCritCost = upgCritCostArray[upgCritLevel]; 
 			$scope.upgCritCost = upgCritCost;
-			$scope.upgCritLevel = upgCritLevel;
+			$scope.upgCritLevel = upgCritLevel + 1;
 
 			updateStats();	
 		}
 		else {
-			alert("not enough gold / max level reached");
+			//alert("not enough gold / max level reached");
 		}			
 	}
 	// ************************** //
 
 
 	// ********** CRIT CHANCE *********** //
-	var upgCritChanceCostArray = [20000,110000,308000,646800,1034880,1552320,2250864,3106192,4162298,5494233];
-	var upgCritChanceLevel = 0;
+	var upgCritChanceCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel];
 	$scope.upgCritChanceCost = upgCritChanceCost;
 	$scope.upgCritChanceLevel = upgCritChanceLevel;
@@ -491,19 +498,18 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel]; 
 			$scope.upgCritChanceCost = upgCritChanceCost;
-			$scope.upgCritChanceLevel = upgCritChanceLevel;
+			$scope.upgCritChanceLevel = upgCritChanceLevel + 1;
 
 			updateStats();	
 		}
 		else {
-			alert("not enough gold / max level reached");
+			//alert("not enough gold / max level reached");
 		}		
 	}
 	// ************************** //
 
 	// ********** GEM CHANCE *********** //
-	var upgGemChanceCostArray = [15000,82500,231000,485100,776160,1164240,1688148,2329644,3121723,4120675];
-	var upgGemChanceLevel = 0;
+	var upgGemChanceCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel];
 	$scope.upgGemChanceCost = upgGemChanceCost;
 	$scope.upgGemChanceLevel = upgGemChanceLevel;
@@ -521,20 +527,19 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel]; 
 			$scope.upgGemChanceCost = upgGemChanceCost;
-			$scope.upgGemChanceLevel = upgGemChanceLevel;
+			$scope.upgGemChanceLevel = upgGemChanceLevel + 1;
 
 			updateStats();	
 		}
 		else {
-			alert("not enough gold / max level reached");
+			//alert("not enough gold / max level reached");
 		}		
 	}
 	// ************************** //
 
 
 	// ********** TRAINING EFFECT *********** //
-	var upgTrainingEffectCostArray = [10000,55000,154000,323000,517000,776000,1164000,1746000,2619000,3929000];
-	var upgTrainingEffectLevel = 0;
+	var upgTrainingEffectCostArray = [50,100,150,200,250,300,350,400,450,500];
 	var upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel];
 	$scope.upgTrainingEffectCost = upgTrainingEffectCost;
 	$scope.upgTrainingEffectLevel = upgTrainingEffectLevel;
@@ -552,12 +557,12 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel]; 
 			$scope.upgTrainingEffectCost = upgTrainingEffectCost;
-			$scope.upgTrainingEffectLevel = upgTrainingEffectLevel;
+			$scope.upgTrainingEffectLevel = upgTrainingEffectLevel + 1;
 
 			updateStats();	
 		}
 		else {
-			alert("not enough gold / max level reached");
+			//alert("not enough gold / max level reached");
 		}
 	}
 	// ************************** //
@@ -578,47 +583,62 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel]; 
 			$scope.upgGemChanceCost = upgGemChanceCost;
-			$scope.upgGemChanceLevel = upgGemChanceLevel;
+			$scope.upgGemChanceLevel = upgGemChanceLevel + 1;
 
 			updateStats();	
 		}
 		else {
-			alert("not enough gold / max level reached");
+			//alert("not enough gold / max level reached");
 		}	
 	}
 	// ************************** //
 
 
 	$scope.showUpgrades = function() {
-		if(gold >= upgTrainingEffectCost){
+		if(upgTrainingEffectLevel == (upgTrainingEffectCostArray.length - 1)){
+			$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+		}
+		else if(gold >= upgTrainingEffectCost){
 			$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
 		}
 		else {
 			$('.trainEffectBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
 		}
 
-		if(gold >= upgGemChanceCost){
+		if(upgGemChanceLevel == (upgGemChanceCostArray.length - 1)){
+			$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+		}
+		else if(gold >= upgGemChanceCost){
 			$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
 		}
 		else {
 			$('.gemChanceBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
 		}
 
-		if(gold >= upgCritChanceCost){
+		if(upgCritChanceLevel == (upgCritChanceCostArray.length - 1)){
+			$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+		}
+		else if(gold >= upgCritChanceCost){
 			$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
 		}
 		else {
 			$('.critChanceBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
 		}
 
-		if(gold >= upgCritCost){
+		if(upgCritLevel == (upgCritCostArray.length - 1)){
+			$('.critBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+		}
+		else if(gold >= upgCritCost){
 			$('.critBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
 		}
 		else {
 			$('.critBtn').css('background-image', 'url(img/components/upgBtn-Disabled.png)');		
 		}
 
-		if(gold >= upgPowerCost){
+		if(upgPowerLevel == (upgPowerCostArray.length - 1)){
+			$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Max.png)');
+		}
+		else if(gold >= upgPowerCost){
 			$('.powerBtn').css('background-image', 'url(img/components/upgBtn-Active.png)');	
 		}
 		else {
