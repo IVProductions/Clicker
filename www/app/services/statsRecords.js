@@ -17,7 +17,7 @@ Clicker.factory('statsRecords',function() {
             "upgCritChanceLvl": "0",
             "gemChance": "0.005",
             "upgGemChanceLvl": "0",
-            "trainingEffect": "1.0",
+            "trainingEffect": "0.1",
             "upgTrainingEffectLvl": "0",
             "names": "0",
             "highscore": "1"
@@ -39,7 +39,7 @@ Clicker.factory('statsRecords',function() {
             "upgCritChanceLvl": "0",
             "gemChance": "0.005",
             "upgGemChanceLvl": "0",
-            "trainingEffect": "1.0",
+            "trainingEffect": "0.1",
             "upgTrainingEffectLvl": "0",
             "names": "0",
             "highscore": "1"
@@ -61,7 +61,7 @@ Clicker.factory('statsRecords',function() {
             "upgCritChanceLvl": "0",
             "gemChance": "0.001",
             "upgGemChanceLvl": "0",
-            "trainingEffect": "1.0",
+            "trainingEffect": "0.1",
             "upgTrainingEffectLvl": "0",
             "names": "0",
             "highscore": "1"
