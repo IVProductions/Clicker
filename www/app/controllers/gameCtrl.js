@@ -59,7 +59,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	var upgGemChanceLevel = parseInt(currentStats.upgGemChanceLvl);
 	// ****** TRAINING EFFECT ******* //
 	var trainingEffect = parseFloat(currentStats.trainingEffect);
-	var nextTrainingEffect = trainingEffect + 0.02;
+	var nextTrainingEffect = trainingEffect + 0.05;
 	var upgTrainingEffectLevel =  parseInt(currentStats.upgTrainingEffectLvl);
 
 	var updateStats = function () {
@@ -564,8 +564,8 @@ function gameCtrl($scope, $location, records, statsRecords){
 			upgTrainingEffectLevel++;
 
 			// **************** //
-			trainingEffect = trainingEffect + 0.02;
-			nextTrainingEffect = trainingEffect + 0.02;
+			trainingEffect = trainingEffect + 0.05;
+			nextTrainingEffect = trainingEffect + 0.05;
 			// **************** //
 
 			upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel]; 
