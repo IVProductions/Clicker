@@ -100,7 +100,7 @@
       </server>
     </servers>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.ClickerDebug">
+  <component name="RunManager" selected="JavaScript Debug.Unnamed">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -108,7 +108,7 @@
       </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="false" name="ClickerDebug" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+    <configuration default="false" name="Unnamed" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
         <option name="engineId" value="chrome" />
         <option name="fileUrl" value="http://localhost:63342/www/" />
@@ -118,7 +118,7 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ClickerDebug" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Unnamed" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
