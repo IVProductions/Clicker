@@ -92,6 +92,11 @@ html, body {
     font-size: 10px;
 }
 
+.theme .highscore {
+    position: absolute;
+    right: 100px;
+}
+
 
 .main {
     height: 100%;
@@ -639,6 +644,8 @@ border-radius: 6px;
     font-size: 20px;
     text-align: center;
 } 
+
+
 
 
 @media screen and (max-width:1080px) {
