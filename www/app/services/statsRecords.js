@@ -20,7 +20,8 @@ Clicker.factory('statsRecords',function() {
             "trainingEffect": "0.1",
             "upgTrainingEffectLvl": "0",
             "names": "0",
-            "highscore": "1"
+            "highscore": "1",
+            "clickscore": "0"
         },
         {
             // SUPERVILLAINS
@@ -42,7 +43,8 @@ Clicker.factory('statsRecords',function() {
             "trainingEffect": "0.1",
             "upgTrainingEffectLvl": "0",
             "names": "0",
-            "highscore": "1"
+            "highscore": "1",
+            "clickscore": "0"
         },
         {
             // SOUTH PARK
@@ -64,7 +66,8 @@ Clicker.factory('statsRecords',function() {
             "trainingEffect": "0.1",
             "upgTrainingEffectLvl": "0",
             "names": "0",
-            "highscore": "1"
+            "highscore": "1",
+            "clickscore": "0"
         }
 
     ]

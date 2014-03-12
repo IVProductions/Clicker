@@ -272,7 +272,9 @@ function gameCtrl($scope, $location, records, statsRecords){
 					gems++;
 				}
 				if($scope.index == max){
-					alert("Du har runnet spillet, helsa mormor!");
+					currentStats.clickscore = totalClicks;
+
+					alert("Gratulerer! Din score: "+totalClicks);
 				}
 				if($scope.index != max){
 					nextValid = true;
@@ -285,22 +287,6 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			}
 			percentage = (currentHealth/health)*100;
-			
-			if(percentage <= 5){
-				$('.progress-cover').css("background-color","#f63a0f");
-			}
-			else if (percentage <= 25){
-				$('.progress-cover').css("background-color","#f27011");
-			}
-			else if (percentage <= 50){
-				$('.progress-cover').css("background-color","#f2b01e");
-			}
-			else if (percentage <= 75){
-				$('.progress-cover').css("background-color","#f2d31b");
-			}
-			else {
-				$('.progress-cover').css("background-color","#86e01e");
-			}
 			$('.progressbar-cover').css('bottom' , percentage + '%');  // the cover controls the bar height
 		}
 		updateStats();
@@ -422,7 +408,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 				}
 			}
 			else {
-				$('.nextValid').css('background-image', 'url(img/components/nextBtn.png)');
+				$('.nextValid').css('background-image', 'none');
 				nextValid = true;
 			}
 		}

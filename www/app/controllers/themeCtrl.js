@@ -1,6 +1,5 @@
 function themeCtrl($scope, $location, statsRecords, records){
 
-	window.localStorage.clear();
 	$scope.stats = statsRecords.stats;
 	if(window.localStorage.getItem("stats") != null){
         $scope.stats = JSON.parse(window.localStorage.getItem("stats"));
