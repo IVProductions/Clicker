@@ -584,7 +584,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 			var rand = Math.random()*100;
 			var rand2 = Math.random()+trainingEffect;
 			//if(rand <= 10){
-				basePower = basePower + 10*rand2;
+				basePower = basePower + (9+upgTrainingEffectLevel)*rand2;
 			//}
 			// **************** //
 
