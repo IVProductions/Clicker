@@ -533,7 +533,7 @@ Clicker.factory('records',function() {
                 "name": 'Eric Cartman',
                 "health": 50,
                 "armour": 0,
-                "reward": 1,
+                "reward": 2,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/cartman.png"
@@ -543,7 +543,7 @@ Clicker.factory('records',function() {
                 "name": 'Stan Marsh',
                 "health": 80,
                 "armour": 2,
-                "reward": 2,
+                "reward": 4,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/stan.png"
@@ -553,7 +553,7 @@ Clicker.factory('records',function() {
                 "name": 'Kyle Broflovski',
                 "health": 150,
                 "armour": 4,
-                "reward": 3,
+                "reward": 6,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/kyle.png"
@@ -563,7 +563,7 @@ Clicker.factory('records',function() {
                 "name": 'Kenny McCormick',
                 "health": 300,
                 "armour": 6,
-                "reward": 4,
+                "reward": 8,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/kenny.png"
@@ -573,7 +573,7 @@ Clicker.factory('records',function() {
                 "name": 'Butters Stotch',
                 "health": 500,
                 "armour": 10,
-                "reward": 5,
+                "reward": 10,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/butters.png"
@@ -583,7 +583,7 @@ Clicker.factory('records',function() {
                 "name": 'Wendy Testaburger',
                 "health": 800,
                 "armour": 20,
-                "reward": 6,
+                "reward": 12,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/wendy.png"
@@ -593,7 +593,7 @@ Clicker.factory('records',function() {
                 "name": 'Token Black',
                 "health": 1100,
                 "armour": 25,
-                "reward": 7,
+                "reward": 14,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/token.png"
@@ -603,7 +603,7 @@ Clicker.factory('records',function() {
                 "name": 'Jimmy Valmer',
                 "health": 1550,
                 "armour": 30,
-                "reward": 8,
+                "reward": 16,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/jimmy.png"
@@ -613,7 +613,7 @@ Clicker.factory('records',function() {
                 "name": 'Timmy Burch',
                 "health": 2000,
                 "armour": 36,
-                "reward": 9,
+                "reward": 18,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/timmy.png"
@@ -623,7 +623,7 @@ Clicker.factory('records',function() {
                 "name": 'Craig Tucker',
                 "health": 2500,
                 "armour": 44,
-                "reward": 10,
+                "reward": 20,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/craig.png"
@@ -633,7 +633,7 @@ Clicker.factory('records',function() {
                 "name": 'Clyde Donovan',
                 "health": 3000,
                 "armour": 55,
-                "reward": 11,
+                "reward": 22,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/clyde.png"
@@ -643,7 +643,7 @@ Clicker.factory('records',function() {
                 "name": 'Randy Marsh',
                 "health": 3600,
                 "armour": 65,
-                "reward": 12,
+                "reward": 24,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/randy.png"
@@ -653,7 +653,7 @@ Clicker.factory('records',function() {
                 "name": 'Sharon Marsh',
                 "health": 4200,
                 "armour": 75,
-                "reward": 13,
+                "reward": 26,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/sharon.png"
@@ -663,7 +663,7 @@ Clicker.factory('records',function() {
                 "name": 'Gerald Broflovski',
                 "health": 4900,
                 "armour": 85,
-                "reward": 14,
+                "reward": 28,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/gerald.png"
@@ -673,7 +673,7 @@ Clicker.factory('records',function() {
                 "name": 'Sheila Broflovski',
                 "health": 5700,
                 "armour": 100,
-                "reward": 15,
+                "reward": 30,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/sheila.png"
@@ -683,7 +683,7 @@ Clicker.factory('records',function() {
                 "name": 'Liane Cartman',
                 "health": 6500,
                 "armour": 120,
-                "reward": 16,
+                "reward": 32,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/liane.png"
@@ -693,7 +693,7 @@ Clicker.factory('records',function() {
                 "name": 'Ike Broflovski',
                 "health": 7300,
                 "armour": 135,
-                "reward": 17,
+                "reward": 34,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/ike.png"
@@ -703,7 +703,7 @@ Clicker.factory('records',function() {
                 "name": 'Shelly Marsh',
                 "health": 8200,
                 "armour": 150,
-                "reward": 18,
+                "reward": 36,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/shelly.png"
@@ -713,7 +713,7 @@ Clicker.factory('records',function() {
                 "name": 'Stephen Stotch',
                 "health": 9100,
                 "armour": 160,
-                "reward": 19,
+                "reward": 38,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/stephen.png"
@@ -723,7 +723,7 @@ Clicker.factory('records',function() {
                 "name": 'Linda Stotch',
                 "health": 10000,
                 "armour": 200,
-                "reward": 20,
+                "reward": 40,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/linda.png"
@@ -733,7 +733,7 @@ Clicker.factory('records',function() {
                 "name": 'Stuart McCormick',
                 "health": 11000,
                 "armour": 220,
-                "reward": 21,
+                "reward": 42,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/stuart.png"
@@ -743,7 +743,7 @@ Clicker.factory('records',function() {
                 "name": 'Carol McCormick',
                 "health": 12200,
                 "armour": 245,
-                "reward": 22,
+                "reward": 44,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/carol.png"
@@ -753,7 +753,7 @@ Clicker.factory('records',function() {
                 "name": 'Jimbo Kern',
                 "health": 13500,
                 "armour": 275,
-                "reward": 23,
+                "reward": 46,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/jimbo.png"
@@ -763,7 +763,7 @@ Clicker.factory('records',function() {
                 "name": 'Bebe Stevens',
                 "health": 15000,
                 "armour": 290,
-                "reward": 24,
+                "reward": 48,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/bebe.png"
@@ -773,7 +773,7 @@ Clicker.factory('records',function() {
                 "name": 'Tweek Tweak',
                 "health": 16500,
                 "armour": 310,
-                "reward": 25,
+                "reward": 50,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/tweak.png"
@@ -783,7 +783,7 @@ Clicker.factory('records',function() {
                 "name": 'Al Gore',
                 "health": 17800,
                 "armour": 335,
-                "reward": 26,
+                "reward": 52,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/algore.png"
@@ -793,7 +793,7 @@ Clicker.factory('records',function() {
                 "name": 'Dougie',
                 "health": 19000,
                 "armour": 350,
-                "reward": 27,
+                "reward": 54,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/dougie.png"
@@ -803,7 +803,7 @@ Clicker.factory('records',function() {
                 "name": 'Terrance',
                 "health": 21000,
                 "armour": 370,
-                "reward": 28,
+                "reward": 56,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/terrence.png"
@@ -813,7 +813,7 @@ Clicker.factory('records',function() {
                 "name": 'Phillip',
                 "health": 23200,
                 "armour": 400,
-                "reward": 29,
+                "reward": 58,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/philip.png"
@@ -823,7 +823,7 @@ Clicker.factory('records',function() {
                 "name": 'Towelie',
                 "health": 25000,
                 "armour": 420,
-                "reward": 30,
+                "reward": 60,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/towelie.png"
@@ -833,7 +833,7 @@ Clicker.factory('records',function() {
                 "name": 'Mr. Hankey',
                 "health": 26800,
                 "armour": 445,
-                "reward": 31,
+                "reward": 62,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/mrhankey.png"
@@ -843,7 +843,7 @@ Clicker.factory('records',function() {
                 "name": 'Ned',
                 "health": 28200,
                 "armour": 470,
-                "reward": 32,
+                "reward": 64,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/ned.png"
@@ -853,7 +853,7 @@ Clicker.factory('records',function() {
                 "name": 'Big Gay Al',
                 "health": 30000,
                 "armour": 520,
-                "reward": 33,
+                "reward": 66,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/biggayal.png"
@@ -863,7 +863,7 @@ Clicker.factory('records',function() {
                 "name": 'Starvin Marvin',
                 "health": 32000,
                 "armour": 560,
-                "reward": 34,
+                "reward": 68,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/starvinmarvin.png"
@@ -873,7 +873,7 @@ Clicker.factory('records',function() {
                 "name": 'ManBearPig',
                 "health": 35000,
                 "armour": 600,
-                "reward": 35,
+                "reward": 70,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/manbearpig.png"
@@ -883,7 +883,7 @@ Clicker.factory('records',function() {
                 "name": 'Satan',
                 "health": 38000,
                 "armour": 650,
-                "reward": 36,
+                "reward": 72,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/satan.png"
@@ -893,7 +893,7 @@ Clicker.factory('records',function() {
                 "name": 'Willzyx',
                 "health": 41500,
                 "armour": 700,
-                "reward": 37,
+                "reward": 74,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/willzyx.png"
@@ -903,7 +903,7 @@ Clicker.factory('records',function() {
                 "name": 'Crabpeople',
                 "health": 44000,
                 "armour": 750,
-                "reward": 38,
+                "reward": 76,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/crabpeople.png"
@@ -913,7 +913,7 @@ Clicker.factory('records',function() {
                 "name": 'Mecha Streisand',
                 "health": 47000,
                 "armour": 800,
-                "reward": 39,
+                "reward": 78,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/mechastreisand.png"
@@ -923,7 +923,7 @@ Clicker.factory('records',function() {
                 "name": 'God',
                 "health": 500000,
                 "armour": 1000,
-                "reward": 40,
+                "reward": 80,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/god.png"
