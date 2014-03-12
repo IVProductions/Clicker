@@ -431,7 +431,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	// UPGRADES
 
 	// ********** POWER / UPG MULTIPLIER *********** //
-	var upgPowerCostArray = [50,100,150,200,250,300,350,400,450,500];
+	var upgPowerCostArray = [20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,400,410,420,430,440,450,460,470,480,490,500,510,520,530,540,550,560,570,580,590,600,610,620,630,640,650,660,670,680,690,700,710,720,730,740,750,760,770,780,790,800,810,820,830,840,850,860,870,880,890,900,910,920,930,940,950,960,970,980,990,1000];
 	var upgPowerCost = upgPowerCostArray[upgPowerLevel];
 	$scope.upgPowerCost = upgPowerCost;
 	$scope.upgPowerLevel = upgPowerLevel + 1;
@@ -442,7 +442,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			// **************** //
 			upgMultiplier = upgMultiplier + 0.03;
-			nextUpgMultiplier = nextUpgMultiplier + 0.03;
+			nextUpgMultiplier = upgMultiplier + 0.03;
 			// **************** //
 
 			upgPowerCost = upgPowerCostArray[upgPowerLevel];
@@ -459,7 +459,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	// ************************** //
 
 	// ********** CRIT *********** //
-	var upgCritCostArray = [50,100,150,200,250,300,350,400,450,500];
+	var upgCritCostArray = [40,60,80,100,120,140,160,180,200,220,240,260,280,300,320,340,360,380,400,420,440,460,480,500,520,540,560,580,600,620];
 	var upgCritCost = upgCritCostArray[upgCritLevel];
 	$scope.upgCritCost = upgCritCost;
 	$scope.upgCritLevel = upgCritLevel + 1;
@@ -491,7 +491,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 
 	// ********** CRIT CHANCE *********** //
-	var upgCritChanceCostArray = [50,100,150,200,250,300,350,400,450,500];
+	var upgCritChanceCostArray = [100,200,300,400,500,600,700,800,900,1000];
 	var upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel];
 	$scope.upgCritChanceCost = upgCritChanceCost;
 	$scope.upgCritChanceLevel = upgCritChanceLevel + 1;
@@ -504,7 +504,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			// **************** //
 			critChance = critChance + 0.005;
-			nextCritChance = nextCritChance + 0.005;
+			nextCritChance = critChance + 0.005;
 			// **************** //
 
 			upgCritChanceCost = upgCritChanceCostArray[upgCritChanceLevel];
@@ -521,7 +521,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 	// ************************** //
 
 	// ********** GEM CHANCE *********** //
-	var upgGemChanceCostArray = [50,100,150,200,250,300,350,400,450,500];
+	var upgGemChanceCostArray = [200,400,600,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200,3400,3600,3800];
 	var upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel];
 	$scope.upgGemChanceCost = upgGemChanceCost;
 	$scope.upgGemChanceLevel = upgGemChanceLevel + 1;
@@ -534,7 +534,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 			// **************** //
 			gemChance = gemChance + 0.001;
-			nextGemChance = nextCritChance + 0.001;
+			nextGemChance = gemChance + 0.001;
 			// **************** //
 
 			upgGemChanceCost = upgGemChanceCostArray[upgGemChanceLevel]; 
@@ -552,7 +552,7 @@ function gameCtrl($scope, $location, records, statsRecords){
 
 
 	// ********** TRAINING EFFECT *********** //
-	var upgTrainingEffectCostArray = [50,100,150,200,250,300,350,400,450,500];
+	var upgTrainingEffectCostArray = [150,300,450,600,750,900,1050,1200,1350,1500,1650,1800,1950,2100,2250,2400,2550,2700,2850,3000];
 	var upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel];
 	$scope.upgTrainingEffectCost = upgTrainingEffectCost;
 	$scope.upgTrainingEffectLevel = upgTrainingEffectLevel + 1;
@@ -564,8 +564,8 @@ function gameCtrl($scope, $location, records, statsRecords){
 			upgTrainingEffectLevel++;
 
 			// **************** //
-			trainingEffect = trainingEffect + 0.05;
-			nextTrainingEffect = trainingEffect + 0.05;
+			trainingEffect = trainingEffect + 0.02;
+			nextTrainingEffect = trainingEffect + 0.02;
 			// **************** //
 
 			upgTrainingEffectCost = upgTrainingEffectCostArray[upgTrainingEffectLevel]; 

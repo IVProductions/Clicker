@@ -530,124 +530,404 @@ Clicker.factory('records',function() {
         [
             {
                 "id": 1,
-                "name": 'Cartman',
-                "health": 100,
+                "name": 'Eric Cartman',
+                "health": 50,
                 "armour": 0,
-                "reward": 2,
+                "reward": 1,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/cartman.png"
             },
             {
                 "id": 2,
-                "name": 'Stan',
-                "health": 200,
+                "name": 'Stan Marsh',
+                "health": 80,
                 "armour": 2,
-                "reward": 10,
+                "reward": 2,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/stan.png"
             },
             {
                 "id": 3,
-                "name": 'Kyle',
-                "health": 300,
+                "name": 'Kyle Broflovski',
+                "health": 150,
                 "armour": 4,
-                "reward": 20,
+                "reward": 3,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/kyle.png"
             },
             {
                 "id": 4,
-                "name": 'Kenny',
-                "health": 500,
-                "armour": 8,
-                "reward": 50,
+                "name": 'Kenny McCormick',
+                "health": 300,
+                "armour": 6,
+                "reward": 4,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/kenny.png"
             },
             {
                 "id": 5,
-                "name": 'Bebe',
-                "health": 600,
-                "armour": 12,
-                "reward": 100,
-                "defeated": false,
-                "guessed": false,
-                "imageURL": "img/southpark/bebe.png"
-            },
-            {
-                "id": 6,
-                "name": 'Butters',
-                "health": 800,
-                "armour": 18,
-                "reward": 200,
+                "name": 'Butters Stotch',
+                "health": 500,
+                "armour": 10,
+                "reward": 5,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/butters.png"
             },
             {
-                "id": 7,
-                "name": 'Clyde',
-                "health": 1000,
-                "armour": 22,
-                "reward": 300,
+                "id": 6,
+                "name": 'Wendy Testaburger',
+                "health": 800,
+                "armour": 20,
+                "reward": 6,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "img/southpark/clyde.png"
-            }, 
-            {
-                "id": 8,
-                "name": 'Craig',
-                "health": 1200,
-                "armour": 26,
-                "reward": 450,
-                "defeated": false,
-                "guessed": false,
-                "imageURL": "img/southpark/craig.png"
+                "imageURL": "img/southpark/wendy.png"
             },
             {
-                "id": 9,
-                "name": 'Jimmy',
-                "health": 1440,
-                "armour": 31,
-                "reward": 675,
+                "id": 7,
+                "name": 'Token Black',
+                "health": 1100,
+                "armour": 25,
+                "reward": 7,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/token.png"
+            },
+            {
+                "id": 8,
+                "name": 'Jimmy Valmer',
+                "health": 1550,
+                "armour": 30,
+                "reward": 8,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/jimmy.png"
             },
             {
-                "id": 10,
-                "name": 'Dougie',
-                "health": 1800,
-                "armour": 40,
-                "reward": 1013,
+                "id": 9,
+                "name": 'Timmy Burch',
+                "health": 2000,
+                "armour": 36,
+                "reward": 9,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "img/southpark/dougie.png"
+                "imageURL": "img/southpark/timmy.png"
+            },
+            {
+                "id": 10,
+                "name": 'Craig Tucker',
+                "health": 2500,
+                "armour": 44,
+                "reward": 10,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/craig.png"
             },
             {
                 "id": 11,
-                "name": 'Tweak',
-                "health": 2500,
-                "armour": 48,
-                "reward": 1519,
+                "name": 'Clyde Donovan',
+                "health": 3000,
+                "armour": 55,
+                "reward": 11,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/clyde.png"
+            },
+            {
+                "id": 12,
+                "name": 'Randy Marsh',
+                "health": 3600,
+                "armour": 65,
+                "reward": 12,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/randy.png"
+            },
+            {
+                "id": 13,
+                "name": 'Sharon Marsh',
+                "health": 4200,
+                "armour": 75,
+                "reward": 13,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/sharon.png"
+            },
+            {
+                "id": 14,
+                "name": 'Gerald Broflovski',
+                "health": 4900,
+                "armour": 85,
+                "reward": 14,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/gerald.png"
+            },
+            {
+                "id": 15,
+                "name": 'Sheila Broflovski',
+                "health": 5700,
+                "armour": 100,
+                "reward": 15,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/sheila.png"
+            },
+            {
+                "id": 16,
+                "name": 'Liane Cartman',
+                "health": 6500,
+                "armour": 120,
+                "reward": 16,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/liane.png"
+            },
+            {
+                "id": 17,
+                "name": 'Ike Broflovski',
+                "health": 7300,
+                "armour": 135,
+                "reward": 17,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/ike.png"
+            },
+            {
+                "id": 18,
+                "name": 'Shelly Marsh',
+                "health": 8200,
+                "armour": 150,
+                "reward": 18,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/shelly.png"
+            },
+            {
+                "id": 19,
+                "name": 'Stephen Stotch',
+                "health": 9100,
+                "armour": 160,
+                "reward": 19,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/stephen.png"
+            },
+            {
+                "id": 20,
+                "name": 'Linda Stotch',
+                "health": 10000,
+                "armour": 200,
+                "reward": 20,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/linda.png"
+            },
+            {
+                "id": 21,
+                "name": 'Stuart McCormick',
+                "health": 11000,
+                "armour": 220,
+                "reward": 21,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/stuart.png"
+            },
+            {
+                "id": 22,
+                "name": 'Carol McCormick',
+                "health": 12200,
+                "armour": 245,
+                "reward": 22,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/carol.png"
+            },
+            {
+                "id": 23,
+                "name": 'Jimbo Kern',
+                "health": 13500,
+                "armour": 275,
+                "reward": 23,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/jimbo.png"
+            },
+            {
+                "id": 24,
+                "name": 'Bebe Stevens',
+                "health": 15000,
+                "armour": 290,
+                "reward": 24,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/bebe.png"
+            },
+            {
+                "id": 25,
+                "name": 'Tweek Tweak',
+                "health": 16500,
+                "armour": 310,
+                "reward": 25,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/tweak.png"
             },
             {
-                "id": 12,
-                "name": 'Timmy',
-                "health": 3000,
-                "armour": 48,
-                "reward": 2278,
+                "id": 26,
+                "name": 'Al Gore',
+                "health": 17800,
+                "armour": 335,
+                "reward": 26,
                 "defeated": false,
                 "guessed": false,
-                "imageURL": "img/southpark/timmy.png"
-            } 
+                "imageURL": "img/southpark/algore.png"
+            },
+            {
+                "id": 27,
+                "name": 'Dougie',
+                "health": 19000,
+                "armour": 350,
+                "reward": 27,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/dougie.png"
+            },
+            {
+                "id": 28,
+                "name": 'Terrance',
+                "health": 21000,
+                "armour": 370,
+                "reward": 28,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/terrence.png"
+            },
+            {
+                "id": 29,
+                "name": 'Phillip',
+                "health": 23200,
+                "armour": 400,
+                "reward": 29,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/philip.png"
+            },
+            {
+                "id": 30,
+                "name": 'Towelie',
+                "health": 25000,
+                "armour": 420,
+                "reward": 30,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/towelie.png"
+            },
+            {
+                "id": 31,
+                "name": 'Mr. Hankey',
+                "health": 26800,
+                "armour": 445,
+                "reward": 31,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/mrhankey.png"
+            },
+            {
+                "id": 32,
+                "name": 'Ned',
+                "health": 28200,
+                "armour": 470,
+                "reward": 32,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/ned.png"
+            },
+            {
+                "id": 33,
+                "name": 'Big Gay Al',
+                "health": 30000,
+                "armour": 520,
+                "reward": 33,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/biggayal.png"
+            },
+            {
+                "id": 34,
+                "name": 'Starvin Marvin',
+                "health": 32000,
+                "armour": 560,
+                "reward": 34,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/starvinmarvin.png"
+            },
+            {
+                "id": 35,
+                "name": 'ManBearPig',
+                "health": 35000,
+                "armour": 600,
+                "reward": 35,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/manbearpig.png"
+            },
+            {
+                "id": 36,
+                "name": 'Satan',
+                "health": 38000,
+                "armour": 650,
+                "reward": 36,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/satan.png"
+            },
+            {
+                "id": 37,
+                "name": 'Willzyx',
+                "health": 41500,
+                "armour": 700,
+                "reward": 37,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/willzyx.png"
+            },
+            {
+                "id": 38,
+                "name": 'Crabpeople',
+                "health": 44000,
+                "armour": 750,
+                "reward": 38,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/crabpeople.png"
+            },
+            {
+                "id": 39,
+                "name": 'Mecha Streisand',
+                "health": 47000,
+                "armour": 800,
+                "reward": 39,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/mechastreisand.png"
+            },
+            {
+                "id": 40,
+                "name": 'God',
+                "health": 500000,
+                "armour": 1000,
+                "reward": 40,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/god.png"
+            }
         ]
     ]
     
