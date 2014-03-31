@@ -51,7 +51,7 @@ Clicker.factory('statsRecords',function() {
             "index": "0",
             "gold": "0",
             "totalClicks": "0",
-            "gems": "1000",
+            "gems": "0",
             "hitMultiplier": "1.0",
             "nameMultiplier": "1.0",
             "upgMultiplier": "1.0",
