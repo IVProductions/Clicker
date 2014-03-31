@@ -921,12 +921,182 @@ Clicker.factory('records',function() {
             {
                 "id": 40,
                 "name": 'God',
-                "health": 500000,
+                "health": 50000,
                 "armour": 1000,
                 "reward": 80,
                 "defeated": false,
                 "guessed": false,
                 "imageURL": "img/southpark/god.png"
+            },
+            {
+                "id": 41,
+                "name": 'Officer Barbrady',
+                "health": 53000,
+                "armour": 1200,
+                "reward": 82,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/officerbarbrady.png"
+            },
+            {
+                "id": 42,
+                "name": 'Moses',
+                "health": 56000,
+                "armour": 1400,
+                "reward": 84,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/moses.png"
+            },
+            {
+                "id": 43,
+                "name": 'Mr. Mackey',
+                "health": 59000,
+                "armour": 1600,
+                "reward": 86,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/mrmackey.png"
+            },
+            {
+                "id": 44,
+                "name": 'Chef',
+                "health": 62000,
+                "armour": 1800,
+                "reward": 88,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/chef.png"
+            },
+            {
+                "id": 45,
+                "name": 'Captain Hindsight',
+                "health": 65000,
+                "armour": 2000,
+                "reward": 90,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/captainhindsight.png"
+            },
+            {
+                "id": 46,
+                "name": 'Mr. Garrison',
+                "health": 68000,
+                "armour": 2200,
+                "reward": 92,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/mrgarrison.png"
+            },
+            {
+                "id": 47,
+                "name": 'Kanye West',
+                "health": 71000,
+                "armour": 2400,
+                "reward": 94,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/kanyewest.png"
+            },
+            {
+                "id": 48,
+                "name": 'A.W.E.S.O.M-O',
+                "health": 74000,
+                "armour": 2600,
+                "reward": 96,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/awesomo.png"
+            },
+            {
+                "id": 49,
+                "name": 'Marvin Marsh',
+                "health": 77000,
+                "armour": 2800,
+                "reward": 98,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/marvinmarsh.png"
+            },
+            {
+                "id": 50,
+                "name": 'Jennifer Lopez',
+                "health": 80000,
+                "armour": 3000,
+                "reward": 100,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/jenniferlopez.png"
+            },
+            {
+                "id": 51,
+                "name": 'Seaman',
+                "health": 83000,
+                "armour": 3200,
+                "reward": 102,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/seaman.png"
+            },
+            {
+                "id": 52,
+                "name": 'Scott Tenorman',
+                "health": 85000,
+                "armour": 3400,
+                "reward": 104,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/scotttenorman.png"
+            },
+            {
+                "id": 53,
+                "name": 'Mexican Staring Frog of Southern Sri Lanka',
+                "health": 88000,
+                "armour": 3600,
+                "reward": 106,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/mexicanfrog.png"
+            },
+            {
+                "id": 54,
+                "name": 'Seapeople',
+                "health": 91000,
+                "armour": 3800,
+                "reward": 108,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/seapeople.png"
+            },
+            {
+                "id": 55,
+                "name": 'Mr. Slave',
+                "health": 94000,
+                "armour": 4000,
+                "reward": 110,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/mrslave.png"
+            },
+            {
+                "id": 56,
+                "name": 'Ranger McFriendly',
+                "health": 97000,
+                "armour": 4200,
+                "reward": 112,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/rangermcfriendly.png"
+            },
+            {
+                "id": 57,
+                "name": 'Mr. Hat',
+                "health": 100000,
+                "armour": 4400,
+                "reward": 114,
+                "defeated": false,
+                "guessed": false,
+                "imageURL": "img/southpark/mrhat.png"
             }
         ]
     ]
