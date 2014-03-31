@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41af34e0-47aa-4507-b481-0fdb42a727ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/services/statsRecords.js" afterPath="$PROJECT_DIR$/www/app/services/statsRecords.js" />
-    </list>
+    <list default="true" id="41af34e0-47aa-4507-b481-0fdb42a727ed" name="Default" comment="" />
     <ignored path="Clicker.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="41af34e0-47aa-4507-b481-0fdb42a727ed" time="1395552493257" ignored="false" />
@@ -237,6 +235,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -260,7 +259,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="681" y="29" width="749" height="860" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
