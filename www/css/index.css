@@ -645,7 +645,105 @@ border-radius: 6px;
     text-align: center;
 } 
 
+@media only screen and (max-device-width: 480px) {
 
+}
+
+@media only screen and (max-device-width: 767px) {
+
+}
+
+@media only screen and (max-device-width: 768px) {
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 979px){
+
+}
+
+@media only screen and (max-device-width: 979px) {
+
+}
+
+@media all and (min-width: 1024px) {
+    .theme,
+    .play,
+    .main {
+        font-size: 4em;
+    }
+
+    .play {
+        padding-top: 20px!important;
+    }
+
+    .upgradeView table .upgBtn,
+    .upgradeView table .trainBtn {
+        background-size: 100px 100px;
+    }
+
+    .upgradeView .backBtn {
+        background-size: 140px 140px;    
+    }
+
+    .thirdTable .checkName .checkNameBtn,
+    .fourthTable .upgrades,
+    .fourthTable .nextValid,
+    .fourthTable .prevValid,
+    .fourthTable .home {
+        background-size: 90px 90px;
+    }
+
+    .secondTable .picture .health,
+    .secondTable .picture .armor,
+    .secondTable .picture .reward {
+        height: 75px;
+        width: 60px;    
+        background-size: 70% 90%!important; 
+    }
+
+    .theme table tr .superheroes,
+    .theme table tr .supervillains,
+    .theme table tr .southpark {
+        background-size: 240px 240px;  
+    }
+
+    .theme table tr {
+        height: 240px;
+    }
+
+    .theme .infoTheme {
+        font-size: 30px;
+    }
+
+    .play button {
+        margin-top: 300px;
+        width: 600px;
+        height: 150px;
+    }
+
+    .upgradeView table tr {
+        height: 165px;
+    }
+
+    .upgradeView table .info .cost,
+    .upgradeView table .info .next,
+    .upgradeView table .info .current,
+    .upgradeView table .info .description {
+        font-size: 2em; 
+    }
+
+    .thirdTable input {
+        font-size: 60px;
+    }
+
+    .theme table tr td {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+
+}
 
 
 @media screen and (max-width:1080px) {
